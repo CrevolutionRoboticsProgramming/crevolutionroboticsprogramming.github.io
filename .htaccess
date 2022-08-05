@@ -1,0 +1,6 @@
+AddHandler application/x-httpd-alt-php56___lsphp .php
+DirectoryIndex default.html default.htm index.php index.shtml index.html index.htm home.html home.htm index.php5 welcome.html welcome.htm
+AddHandler server-parsed .html
+AddHandler server-parsed .shtml
+AddHandler server-parsed .htm
+Options -Indexes
