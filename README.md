@@ -1,4 +1,4 @@
-## WEBSITE STUFF THAT HAS TO BE DONE:
+## TODO
 ### 1. Order Pinegrow license
 - Send the following email to support@pinegrow.com:
 
