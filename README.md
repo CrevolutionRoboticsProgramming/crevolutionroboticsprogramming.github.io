@@ -13,7 +13,7 @@ Crevolution Robotics
 - Order program
 - profit
 
-### 2. Set up new domain
+### 2. Set up new domain (Done)
 - Order new domain [go to this [link](https://domains.google.com/registrar/search?searchTerm=team2851&hl=en&tab=1), add the .org or whatever to cart, purchase]
 - Follow the [github](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) and [CNAME](https://help.instapage.com/hc/en-us/articles/115013755448-Creating-a-CNAME-record-on-Google-domains-google-) guides
 - Troubleshoot or discord dm me if anything goes wrong
