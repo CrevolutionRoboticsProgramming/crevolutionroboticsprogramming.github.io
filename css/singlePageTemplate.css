@@ -151,7 +151,7 @@
 
   div.gallery1 img {
     width: 100%;
-    height: auto;
+    height: 55vw;
     background-size: cover;
   }
   @media only screen and (min-width: 1091px) {
