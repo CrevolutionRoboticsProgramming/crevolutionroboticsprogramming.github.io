@@ -116,6 +116,10 @@
     letter-spacing: 4px;
     opacity: 0.9;
   }
+  .navbar-spacer {
+ padding: 25px;
+ background-color: #1f1f2e;
+  }
   .navbar li a, .navbar .navbar-brand {
     color: #d5d5d5 !important;
   }
@@ -142,6 +146,8 @@
   @media (max-width: 767px) {
     .navbar-nav li {display: none;}
     .navbar-default {background-color: transparent;}
+    .navbar-spacer {background-color: transparent;
+  padding: 0px}
   }
 
   .normal {
