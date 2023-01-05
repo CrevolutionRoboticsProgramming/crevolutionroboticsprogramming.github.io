@@ -1,4 +1,5 @@
-## TODO
+# TODO
+<!--
 ### 1. Order Pinegrow license
 - Send the following email to support@pinegrow.com:
 
@@ -20,3 +21,4 @@ Crevolution Robotics
 
 ### 3. Fix the website
 - Self explanatory, fix the website
+-->
