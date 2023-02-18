@@ -62,6 +62,62 @@
 		  clear: both;
 		  display: table;
 		}
+		.flex-container {
+  		display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			align-items: center;
+			align-content: space-between;
+			height:auto;
+		}
+		.flex-containerRuby {
+			height:auto;
+			padding:35px;
+		}
+		.flex-containerRuby > div {		
+			padding: 5px 5px 5px 5px;
+			flex-basis:400px;
+			margin: 5px;
+    		border: 1px solid #f22a2a;
+			flex-shrink: 1;
+			flex-grow: 1;
+		}
+		.flex-containerD {
+			height:auto;
+			align-items:center;
+			padding:35px;
+		}
+		.flex-containerD > div {		
+			padding: 5px 5px 5px 5px;
+			flex-basis:300px;
+			margin: 5px;
+			border: 1px solid #aefbeb;
+
+		}
+		.flex-containerP {
+			height:auto;
+		}
+		.flex-containerP > div {		
+			padding: 5px 5px 5px 5px;
+			flex-basis:400px;
+			margin: 5px;
+			border: 1px solid #ada6b6;
+			flex-shrink: 1;
+			flex-grow: 1;
+		}
+		.flex-containerG {
+			height:auto;
+		}
+		.flex-containerG > div {		
+			padding: 5px 5px 5px 5px;
+			flex-basis:400px;
+			margin: 5px;
+			border: 1px solid #ebe577;
+			flex-shrink: 1;
+			flex-grow: 1;
+		}
+		
+		
 		</style>
 	</head>
     <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -73,7 +129,7 @@
                     <div class="navbar-header">
 						<a class="navbar-brand" href="index.html">
                             <span class="logo">
-								<img src="assets/img/Carousel/crevologo.png" width="160">
+								<img src="assets/img/Crevo19o5.svg" width="160">
 							</span>
 							<span class="icon">
 								<img src="assets/img/Carousel/C_logo.png" width="80">
@@ -91,14 +147,26 @@
                         </div>
                         </nav>
    		<!-- SPONSORS -->
+		
 		<div id="sponsor" class="bg-2">
             <div class="container-fluid">
                 <h1 class="text-center">SPONSORS</h3>
                 <p class="text-center" style= "font-size: 20px";>Many thanks to all of our sponsors who have supported us in the past year!</p>
                 <p class="text-center" style= "font-size: 20px">If you would like to sponsor us, you can by clicking <a href="https://www.paypal.com/donate?hosted_button_id=S5B7QQBYTB4BY">here!</a> Make sure to leave us with your company/name so we may award you the proper <a href="#tiers">tiers!</a></p>
 
-					
-					
+				</div>
+				<div class = "flex-container flex-containerRuby">
+					<div><img src="assets/img/SponsorLogo2/Ruby/Accu-rite.png" title="Accu-rite" width="100%" height="300px"></div>
+					<div><img src="assets/img/SponsorLogo2/Ruby/PTTECH.png" title="PTTECH" width="100%" height="300px"></div>
+					<div><img src="assets/img/SponsorLogo2/Ruby/UCS.png" title="Utica Community Schools" width="100%" height="300"></div>
+				</div>
+				<div class = "flex-container flex-containerD">
+					<div><img src="assets/img/SponsorLogo2/Diamond/Spring.png" title="Spring Design & Manufacturing" width="100%" height="250"></div>
+				</div>
+				<!-- <div class ="flex-container">
+					<div></div>
+				</div> -->
+				<div class ="container-fluid">
 					<div class="Ruby">
 						
 					<u><p1>Ruby Tier</p1> </div> </u>
