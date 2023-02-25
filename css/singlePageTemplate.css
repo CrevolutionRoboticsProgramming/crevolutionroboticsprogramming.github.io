@@ -245,6 +245,13 @@
     outline: none;
     font-size: 15px;
   }
+  .Sub {
+    float: left;
+    padding-left:5%;
+    max-width: 40%;
+    min-width: 40%;
+    margin-left: 73px;
+  }
 }
   @media only screen and (max-width: 847px) {
     .contentSub {
@@ -268,19 +275,23 @@
       outline: none;
       font-size: 15px;
     }
-  }
-  .Sub {
-    float: left;
-    margin-left: 73px;
+    .Sub {
+      float: left;
+      padding-left:5%;
+      max-width: 40%;
+      min-width: 40%;
+      margin-left: 10vw;
+    }
   }
 
-  .robotPitures1 {
+
+  .robotPictures1 {
     position: relative;
     width: 100%;
     max-width: 200px;
     border: 1px solid #ccc;
   }
-  .robotPitures2 {
+  .robotPictures2 {
     display: block;
     width: 100%;
     height: auto;
@@ -297,7 +308,7 @@
     padding: 12px;
     text-align: center;
   }
-  .robotPitures1:hover .overlay {
+  .robotPictures1:hover .overlay {
     opacity: 1;
   }
 
@@ -554,11 +565,6 @@
     .blogResponsive2 {
       height: 375px;
     }
-    .Sub {
-      max-width: 40%;
-      min-width: 40%;
-      margin-left: 73px;
-    }
   }
   @media only screen and (max-width: 1400px) {
     .responsive{
@@ -577,11 +583,6 @@
     }
     .blogResponsive2 {
       height: 375px;
-    }
-    .Sub {
-      max-width: 40%;
-      min-width: 40%;
-      margin-left: 73px;
     }
   }
   @media only screen and (max-width: 1200px) {
@@ -607,11 +608,6 @@
     .blogResponsive2 {
       height: 525px;
     }
-    .Sub {
-      max-width: 38%;
-      min-width: 38%;
-      margin-left: 50px;
-    }
   }
   @media only screen and (max-width: 800px) {
     .responsive{
@@ -634,11 +630,6 @@
       width: 100%;
       height: auto;
     }
-    .Sub {
-      max-width: 100%;
-      min-width: 100%;
-      margin-left: 20px;
-    }
   }
   @media only screen and (max-width: 600px) {
     .responsive{
@@ -659,11 +650,6 @@
     }
     .blog-header {
       width: 100%;
-    }
-    .Sub {
-      max-width: 100%;
-      min-width: 100%;
-      margin-left: 15px;
     }
   }
 
