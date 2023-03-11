@@ -729,5 +729,25 @@
 
 .rubyborder {
     margin: 5px 5px 5px 5px;
-    border: 2px solid red
+    border: 1px solid red
+}
+.diamondborder{
+  margin: 5px 5px 5px 5px;
+  border: 1px solid #aefbeb
+}
+.platinumborder {
+  margin: 5px 5px 5px 5px;
+  border: 1px solid #ada6b6
+}
+.goldborder {
+  margin: 5px 5px 5px 5px;
+  border: 1px solid #ebe577
+}
+.silverborder {
+  margin: 5px 5px 5px 5px;
+  border: 1px solid #c1c1c1
+}
+.bronzeborder {
+  margin: 5px 5px 5px 5px;
+  border: 1px solid #8e702a
 }
