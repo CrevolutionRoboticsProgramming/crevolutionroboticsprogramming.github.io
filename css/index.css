@@ -1,0 +1,181 @@
+body {
+  background-color: #181a1b;
+
+  overflow-x: hidden;
+  /* ^ Used to hide the scrollbar*/
+
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-variant-alternates: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: Lato, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  /*Chrome, Safari, and Opera*/
+  display: none;
+}
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* ^ Used to hide the scrollbar*/
+
+
+.aligntext {
+  text-align: left;
+  margin-left: 36px;
+}
+.textcolor {
+  color: white;
+}
+.textitalic {
+  font-style: italic;
+}
+.textspacer {
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.navbar-nav li:hover {
+  color: #000 !important;
+  background-color: #c3a234 !important;
+}
+nav {
+  background-color: #1f1f2e;
+  opacity: 0.95;
+  font-family: Montserrat;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+#navspan {
+  padding: 0px 0px 0px 0px;
+}
+.nav-link {
+  padding: 22px 0 22px 0;
+}
+
+
+.navbar-toggler {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.bottomnav {
+  background-color: #1f1f2e;
+}
+.bottomLogo {
+  width: 167px;
+  margin: 0px 0px 0px 30%;
+}
+.bottomLogom {
+  width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.bottomPR {
+  width: 70px;
+}
+.bottomA {
+  margin: 0px 10px 0px 10px;
+}
+.slogon{
+  margin: 20px 0 20px 0;
+  font-size: 24px;
+}
+/*------------------------------------------------------------------*/
+
+.accordion {
+  --bs-accordion-bg: #222227;
+  --bs-accordion-color: #dadada;
+  --bs-accordion-btn-color: #dadada;
+  --bs-accordion-border-color:#dadada ;
+  --bs-accordion-active-color: #222227 ;
+  --bs-accordion-active-bg: #dadada ;
+}
+.accordion-collapse{
+  text-align: left;
+}
+
+.aboutus_desc {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-family: Lato, sans-serif;
+  line-height: 1.8;
+  margin-left: 36px;
+  margin-right: 36px;
+}
+.aboutus_title {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  letter-spacing: 6px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: inherit;
+}
+h3 {
+  color: white;
+}
+li {
+  color: white;
+}
+
+#calendar {
+  max-width: 90%;
+  
+  
+  --fc-today-bg-color: rgba(255, 213, 0, 0.15);
+  --fc-event-bg-color: #c3a234;
+  margin: 0 auto; 
+}
+.fc-view-container {
+    padding: 30px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);     
+  }
+
+
+.fc-toolbar-title{
+  color: white;
+}
+.fc-col-header-cell-cushion{
+  text-decoration: none;
+  color: #fff;
+}
+.fc-daygrid-day-number{
+  text-decoration: none;
+  color: #fff;
+}
+.mailform{
+  padding: 0 10% 0 10%;
+  
+}
+.mailform button:hover{
+  background-color: #c3a234 !important;
+}
+.mailform button{
+  background-color: #222227;
+  margin: 5px 0 20px 0;
+  border-color: #dadada;
+  border-width: 2px;
+}
+iframe{
+  border-radius: 5px;
+}
+.indexcar{
+  height: 48vw;
+}
+
