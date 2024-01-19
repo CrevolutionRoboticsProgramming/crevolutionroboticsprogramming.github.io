@@ -1,5 +1,20 @@
 # TODO
 <!--
+BUGS or problems to do after uploading new website
+
+    - Fix drop down corners on leads part on moblie by using css options.
+    - Fix Top photos
+    - Fix Robot tab in mobile
+    - Update contact css
+    - Add sponsors
+    - Have Nav bar color when at sections
+    - ^Maybe add small bar or smt under the text at nav^ 
+    -
+    - Fix the robot page carousel order. Should go 2009=A 2010=B etc.
+
+
+
+
 ### 1. Order Pinegrow license
 - Send the following email to support@pinegrow.com:
 

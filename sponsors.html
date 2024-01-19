@@ -1,426 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+	<title>Crevolution Robotics</title>
 	<head>
-		<title>Crevolution Robotics</title>
 		<!-- Theme Made By www.w3schools.com - No Copyright -->
-		<meta charset="UTF8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="assets/img/Carousel/C_logo.png" type="image/png"
-			sizes="16x16">
-		<link rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"
-			type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat"
-			rel="stylesheet" type="text/css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-		<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
-		<style>
-		* {
-		  box-sizing: border-box;
-		}
-		.columnR {
-		  float: left;
-		  width: 33.33%;
-		  padding: 5px;
-		}
-		.columnD {
-		  float: left;
-		  width: 25%;
-		  padding: 5px;
-		}
-		.columnP {
-		  float: left;
-		  width: 20%;
-		  padding: 5px;
-		}
-		.columnG {
-		  float: left;
-		  width: 14.2%;
-		  padding: 5px;
-		}
-		.columnS {
-		  float: left;
-		  width: 12.5%;
-		  padding: 5px;
-		}		
-		.columnB {
-		  float: left;
-		  width: 10%;
-		  padding: 5px;
-		}
-		
-		
-		.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-}
-		/* Look into flex box */
-		/* Clearfix (clear floats) */
-		.row::after {
-		  content: "";
-		  clear: both;
-		  display: table;
-		}
-		</style>
+		<meta charset="UTF8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="icon"
+			href="assets/img/Carousel/C_logo.png"
+			type="image/png"
+			sizes="16x16" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato"
+			rel="stylesheet"
+			type="text/css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat"
+			rel="stylesheet"
+			type="text/css" />
+		<link href="css/sponsors.css" rel="stylesheet" type="text/css" />
 	</head>
-	<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
-		<!-- NAV BAR -->
+	<body>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+			crossorigin="anonymous"></script>
 
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-left">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html">
-							<span class="logo">
-								<img src="assets/img/Crevo19o5.svg" width="160">
-							</span>
-							<span class="icon">
-								<img src="assets/img/Carousel/C_logo.png" width="80">
+		<!-- NAV BAR Also change expand md to lg later-->
+
+		<nav id="navspan" class="navbar fixed-top navbar-expand-lg navbar-dark">
+			<a href="index.html#home" class="navbar-brand lg-0" style="height: 40px"><img
+					class="d-inline-block align-top"
+					src="assets/img/Crevo19o5.svg"
+					width="170"
+					style="padding-left: 15px" />
+			</a>
+			<button
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarNav"
+				class="navbar-toggler"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav text-center">
+					<li class="nav-item active">
+						<a href="index.html#home" class="nav-link active"> HOME </a>
+					</li>
+					<li class="nav-item active">
+						<a href="index.html#about" class="nav-link active"> ABOUT US </a>
+					</li>
+					<li class="nav-item active">
+						<a href="index.html#current_events" class="nav-link active">
+							CURRENT EVENTS
+						</a>
+					</li>
+
+					<li class="nav-item active">
+						<a href="index.html#contact_us" class="nav-link active"> CONTACT US </a>
+					</li>
+					<li class="nav-item active">
+						<a href="robots.html" class="nav-link active"> ROBOTS </a>
+					</li>
+					<li class="nav-item active">
+						<a href="sponsors.html" class="nav-link active"> SPONSORS </a>
+					</li>
+					<!--
+							  <li class="nav-item active">
+							  <a href="page2.html" class="nav-link active"> BLOGS </a>
+						  </li>
+						  -->
+					<li class="nav-item active">
+						<a target="_blank" rel="noopener noreferrer"
+							href="https://www.paypal.com/donate?hosted_button_id=S5B7QQBYTB4BY"
+							class="nav-link active">
+							DONATE
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<script>
+			const navLinks = document.querySelectorAll('.nav-item')
+		  const menuToggle = document.getElementById('navbarNav')
+		  const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
+		  navLinks.forEach((l) => { l.addEventListener('click', function execute(){
+		   if(window.innerWidth <= 992) {
+			bsCollapse.toggle()
+			 }
+		
+		})
+		  })
+		  </script>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<!--<div class="ruby text-center">
+			<b><h1>Ruby Tier</h1></b>
+			<p class="rubyline w-100">-</p>
+			<div class="d-flex flex-wrap justify-content-center">
+				<div class="p-2"><a href="http://www.uticak12.org/" target="_blank"
+						rel="noopener noreferrer"><img
+							src="./assets/img/SponsorLogos2223/Ruby/UCS_logo.png"
+							title="Utica Community Schools" class="colpart"></a></div>
+				<div class="p-2"><a href="https://www.gm.com/" target="_blank"
+						rel="noopener noreferrer"><img
+							src="./assets/img/SponsorLogos2223/Ruby/GM_Gradient_Brandmark_RGB_eps_file.png"
+							title="General Motors" class="colpart"></a></div>
+				<div class="p-2"><a href="http://www.accu-rite.com/" target="_blank"
+						rel="noopener noreferrer"><img
+							src="./assets/img/SponsorLogos2223/Ruby/Accu-Rite.png"
+							title="Accu-Rite" class="colpart "></a></div>
+				<div class="p-2"><a href="http://www.printbed.com/" target="_blank"
+						rel="noopener noreferrer"><img
+							src="./assets/img/SponsorLogos2223/Ruby/PrintBedHorizontal.png"
+							title="Printbed"
+							class="colpart "></a></div>
+			</div>
+		</div> -->
+		<br>
+		<h2 class="textcolor text-center">Currently being updated to 2024
+			sponsors.</h2>
+		<h2 class="textcolor text-center">Thank you for your patience.</h2>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<!-- Footer -->
+		<footer class="d-none d-md-block">
+			<div class="bg-1 bottomnav">
+				<div class="container-fluid">
+					<br />
+					<div class="row">
+						<div class="col-md-3 ">
+							<a href="#home" class style="height: 40px"><img
+									class="bottomLogo "
+									src="assets/img/Carousel/C_logo.png" /></a>
+						</div>
+						<div class="col-md-6  text-center">
+							<p class="textcolor slogon">
+								"A Creative Revolution"
+							</p>
+							<p class="textcolor">
+								For any comments or questions that concern Crevolution,
+							</p>
+							<p class="textcolor">please
+								contact us at
+								<a
+									href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p>
+
+						</div>
+						<div class="col-md-3 text-center">
+							<a class="bottomA" target="_blank" rel="noopener noreferrer"
+								href="https://instagram.com/crevolution.robotics?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
+									class="bottomPR" src="assets/img/Social Media/Instagram.png"></a>
+							<a class="bottomA" target="_blank" rel="noopener noreferrer"
+								href="https://www.youtube.com/user/Crevolution2851">
+								<img class="bottomPR" src="assets/img/Social Media/Youtube.png">
+							</a>
+							<br>
+							<br>
+							<a class="bottomA" target="_blank" rel="noopener noreferrer"
+								href="https://www.facebook.com/Crevolution2851/"><img
+									class="bottomPR" src="assets/img/Social Media/Facebook.png"></a>
+							<a class="bottomA" target="_blank" rel="noopener noreferrer"
+								href="https://twitter.com/Crevolution2851">
+								<img class="bottomPR" src="assets/img/Social Media/Twitter.png">
 							</a>
 						</div>
-						<li><a href="#sponsor">SPONSORS</a></li>
-						<li><a href="#tiers">TIERS</a></li>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="page2.html">BLOGS</a></li>
-						<li><a href="https://www.paypal.com/donate?hosted_button_id=S5B7QQBYTB4BY"">
-								DONATE
-							</a></li>
-					</ul>
+					</div>
+					<br>
 				</div>
-			</nav>
-			<!-- SPONSORS -->
-			<div id="sponsor" class="bg-2">
-				<div class="container-fluid">
-					<h1 class="text-center">SPONSORS</h3>
-					<p class="text-center" style="font-size: 20px" ;>Many thanks to all of our
-						sponsors who have supported us in the past year!</p>
-					<p class="text-center" style="font-size: 20px">If you would like to sponsor
-						us, you can by clicking <a
-							href="https://www.paypal.com/donate?hosted_button_id=S5B7QQBYTB4BY">here!</a>
-						Make sure to leave us with your company/name so we may award you the
-						proper <a href="#tiers">tiers!</a></p>
+			</div>
+		</footer>
+		<!-- Moblie footer -->
+		<footer class="d-md-none">
+			<div id="contact_us" class="bg-1 bottomnav">
+				<div class="container-fluid text-center">
+					<br />
+					<a href="#home" class style="height: 40px"><img
+							class="bottomLogom"
+							src="assets/img/Carousel/C_logo.png" /></a>
 
-					<div class="Ruby">
+					<p class="textcolor slogon">
+						"A Creative Revolution"
+					</p>
+					<p class="textcolor">
+						For any comments or questions that concern Crevolution,
+					</p>
+					<p class="textcolor">please
+						contact us at
+						<a href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p>
+					<div class="row">
+						<div class="col-3 text-center">
+							<a class="bottomA" target="_blank" rel="noopener noreferrer"
+								href="https://instagram.com/crevolution.robotics?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
+									class="bottomPR" src="assets/img/Social Media/Instagram.png"></a>
+						</div>
+						<div class="col-3 text-center">
+							<a class="bottomA" target="_blank" rel="noopener noreferrer"
+								href="https://www.youtube.com/user/Crevolution2851">
+								<img class="bottomPR" src="assets/img/Social Media/Youtube.png"></a>
+						</div>
+						<div class="col-3 text-center">
+							<a class="bottomA" target="_blank" rel="noopener noreferrer"
+								href="https://www.facebook.com/Crevolution2851/"><img
+									class="bottomPR" src="assets/img/Social Media/Facebook.png"></a>
+						</div>
+						<div class="col-3 text-center">
+							<a class="bottomA" target="_blank" rel="noopener noreferrer"
+								href="https://twitter.com/Crevolution2851">
+								<img class="bottomPR" src="assets/img/Social Media/Twitter.png"></a>
 
-						<u><p1>Ruby Tier</p1> </div> </u>
-
-					<div class="flexcontainer">
-						<div><a href="http://www.uticak12.org/"><img
-									src="./assets/img/SponsorLogos2223/Ruby/UCS_logo.png"
-									title="Utica Community Schools" class="rubyborder flexcontainer"></a></div>
-						<div><a href="https://www.gm.com/"><img
-									src="./assets/img/SponsorLogos2223/Ruby/GM_Gradient_Brandmark_RGB_eps_file.png"
-									title="General Motors" class="rubyborder flexcontainer"></a></div>
-						<div><a href="http://www.accu-rite.com/"><img
-									src="./assets/img/SponsorLogos2223/Ruby/Accu-Rite.png"
-									title="Accu-Rite" class="rubyborder flexcontainer"></a></div>
-						<div><a href="http://www.accu-rite.com/"><img
-									src="./assets/img/SponsorLogos2223/Ruby/printbed.png" title="Printbed"
-									class="rubyborder flexcontainer"></a></div>
-					</div>
-
-					<div class="Emerald">
-
-						<p1>Emerald Tier</p1> </div>
-
-					<div class="flexcontainer">
-
-					</div>
-
-					<div class="Diamond">
-						<p1>Diamond Tier</p1>
-					</div>
-
-					<div class="flexcontainer">
-						<div><a href="https://www.ccmfg.net/"><img
-									src="./assets/img/SponsorLogos2223/Diamond/C&C Manufacturing.png"
-									title="C&C Manufacturing" class="diamondborder flexcontainer"></a></div>
-						<div><a href="https://www.baesystems.com/en/homeaa"><img
-									src="./assets/img/SponsorLogos2223/Diamond/BAE Systems.png"
-									title="BAE Systems" class="diamondborder flexcontainer"></a></div>
-						<div><a href="https://www.zf.com/mobile/en/company/company.html"><img
-									src="./assets/img/SponsorLogos2223/Diamond/ZF1.png" title="ZF Group"
-									class="diamondborder flexcontainer"></a></div>
-						<div><a href="https://springdesignmfg.com/"><img
-									src="./assets/img/SponsorLogos2223/Diamond/SD-Logo-1 (1).png"
-									title="Spring Design & Manufacturing"
-									class="diamondborder flexcontainer"></a></div>
-						<!--<div><a href="https://www.printbed.com/home"><img src="./assets/img/SponsorLogos2223/Diamond/PB-Logo-1 (1).png" title="Printbed" class="diamondborder flexcontainer"></a></div>
-							-->
-					</div>
-
-					<div class="Platinum">
-						<p1>Platinum Tier</p1>
-					</div>
-
-					<div class="flexcontainer">
-						<div><a href="https://www.essiumlabs.com/"><img
-									src="./assets/img/SponsorLogos2223/Platinum/Essium.png" title="Essium"
-									class="platinumborder flexcontainer"></a></div>
-						<div><a href="https://vivid-designinc.com/index.html"><img
-									src="./assets/img/SponsorLogos2223/Platinum/Vivid Design Group, Inc_.png"
-									title="Vivid Design Group" class="platinumborder flexcontainer"></a></div>
-						<div><a href="https://www.kuka.com/"><img
-									src="./assets/img/SponsorLogos2223/Platinum/KUKA-logo.png" title="KUKA"
-									class="platinumborder flexcontainer"></a></div>
-						<div><a href="https://www.continental.com/en"><img
-									src="./assets/img/SponsorLogos2223/Platinum/Continental_Logo_Tagline_Black_1c_IsoCV2.png"
-									title="Continental" class="platinumborder flexcontainer"></a></div>
-						<div><a href="https://www.intuitive-foundation.org/"><img
-									src="./assets/img/SponsorLogos2223/Platinum/TM_INTUITIVE-Foundation_STACK_blue_RGB copy (002).Jpeg (002).png"
-									title="Intuitive Foundation" class="platinumborder flexcontainer"></a></div>
-						<div><a href="https://jdctek.com/"><img
-									src="./assets/img/SponsorLogos2223/Platinum/JDCTek.png" title="JDCTek"
-									class="platinumborder flexcontainer"></a></div>
-						<div><a href="https://fusionwelding.com/"><img
-									src="./assets/img/SponsorLogos2223/Platinum/Fusion.png"
-									title="FUSION Welding Solutions" class="platinumborder flexcontainer"></a></div>
-					</div>
-
-					<div class="Gold">
-						<p1>Gold Tier</p1>
-					</div>
-
-					<div class="flexcontainer">
-						<div><a href><img src="./assets/img/SponsorLogos2223/Gold/DDE2020_RGB.png"
-									title="D&D Engineering" class="goldborder flexcontainer"></a></div>
-						<div><a href><img
-									src="./assets/img/SponsorLogos2223/Gold/Hayes Hauling & Demolition.png"
-									title="Hayes Hauling & Demolition" class="goldborder flexcontainer"></a></div>
-						<div><a href><img
-									src="./assets/img/SponsorLogos2223/Gold/Mahindra_Logo.png"
-									title="Mahindra" class="goldborder flexcontainer"></a></div>
-						<div><a href><img
-									src="./assets/img/SponsorLogos2223/Gold/LogoOnly_MARCO_FullColor-DRK (2).png"
-									title="Marco" class="goldborder flexcontainer"></a></div>
-						<div><a href><img src="./assets/img/SponsorLogos2223/Gold/MHSi Logo.png"
-									title="MHSI Global" class="goldborder flexcontainer"></a></div>
-						<div><a href><img
-									src="./assets/img/SponsorLogos2223/Gold/midas-international-llc-logo-vector.png"
-									title="Midas" class="goldborder flexcontainer"></a></div>
-						<div><a href><img src="./assets/img/SponsorLogos2223/Gold/Summit_LOGO.png"
-									title="Summit Plastic Molding" class="goldborder flexcontainer"></a></div>
-						<div><a href><img
-									src="./assets/img/SponsorLogos2223/Gold/Sequoia Logo1.png"
-									title="Sequoia Technolognies" class="goldborder flexcontainer"></a></div>
-					</div>
-
-					<div class="Silver">
-						<p1>Silver Tier</p1>
-					</div>
-
-					<div class="flexcontainer">
-						<div><a href="http://www.burwood-1.com/products"><img
-									src="assets/img/SponsorLogo2122/Silver/Burwood.png"
-									title="Burwood Business Machines" class="silverborder flexcontainer"></a></div>
-						<div><a href="https://www.duorobot.com/"><img
-									src="assets/img/SponsorLogo2122/Silver/DUO.png" title="DUO Robotics"
-									class="silverborder flexcontainer"></a></div>
-						<div><a href="https://www.fredeliasautosales.com/"><img
-									src="assets/img/SponsorLogo2122/Silver/Fred.png"
-									title="Fred Elias Auto Sales" class="silverborder flexcontainer"></a></div>
-						<div><a href="https://grossepointemedical.com/"><img
-									src="assets/img/SponsorLogo2122/Silver/Kancc.png" title="Kancc Medical"
-									class="silverborder flexcontainer"></a></div>
-						<div><img src="assets/img/SponsorLogo2122/Silver/Massive.png"
-								title="Massive Auto Parts LLC" class="silverborder flexcontainer"></div>
-						<div><a href="https://synergy-hp.com/"><img
-									src="assets/img/SponsorLogo2122/Silver/Synergy.png"
-									title="Synergy Health Partners" class="silverborder flexcontainer"></a></div>
-						<div><a href="https://autotransportusa.com/"><img
-									src="assets/img/SponsorLogo2122/Silver/USA.png"
-									title="USA Auto Transport" class="silverborder flexcontainer"></a></div>
-					</div>
-
-					<div class="Bronze">
-						<p1>Bronze Tier</p1>
-					</div>
-
-					<div class="flexcontainer">
-						<div><a href="https://customdentalceramics.net/"><img
-									src="assets/img/SponsorLogo2122/Bronze/Custom Dental Ceramics.png"
-									title="Custom Dental Ceramics" class="bronzeborder flexcontainer"></a></div>
-						<div><img src="assets/img/SponsorLogo2122/Bronze/Dr Z_s.png"
-								title="Dr Z's Rod Shop" class="bronzeborder flexcontainer"></div>
-						<div><a href="http://gentilescollision.com/"><img
-									src="assets/img/SponsorLogo2122/Bronze/Gentile.png"
-									title="Gentile's Collision" class="bronzeborder flexcontainer"></a></div>
-						<div><a href="https://www.jakesautomotive.com/"><img
-									src="assets/img/SponsorLogo2122/Bronze/Jake_s Auto.png"
-									title="Jake's Automotive" class="bronzeborder flexcontainer"></a></div>
-						<div><a href="https://justaddtomatoespizzasauce.com/"><img
-									src="assets/img/SponsorLogo2122/Bronze/JAT.png"
-									title="Just Add Tomatoes" class="bronzeborder flexcontainer"></a></div>
-						<div><a href="https://mypizzaplace.net/"><img
-									src="assets/img/SponsorLogo2122/Bronze/MPP.png" title="My Pizza Place"
-									class="bronzeborder flexcontainer"></a></div>
-						<div><img src="assets/img/SponsorLogo2122/Bronze/Summit.png"
-								title="Summit Construction" class="bronzeborder flexcontainer"></div>
-					</div>
-
-					<script>
-	function toggleSponsors() {
-	  var x = document.getElementById("sponsor");
-	  if (x.style.display === "none") {
-		x.style.display = "block";
-	  } else {
-		x.style.display = "none";
-	  }
-	}
-	</script>
-
-					<!--Note to future self: prepare for bootleg methods with future tiers-->
-
-					<div id="tiers" class="bg-1">
-						<div class="container-fluid">
-							<h3 class="text-center">SPONSOR TIERS</h3>
-							<div class="row" style="padding-bottom: 50px" ;>
-								<div class=".responsive">
-									<div class="text-center" id="Ruby Level">
-										<h1 style="color:#f22a2a" ;> Ruby Level - $5000</h1><!--<img src="assets/img/Tiers/Ruby.png" width="auto" height="25px">-->
-										<p>Sponsor Name (announced at all competitions)<br>
-											Banner (proudly displayed at all venues and events)<br>
-											Robot (used at all competitions)<br>
-											T-Shirt (worn at all team events)<br>
-											Newsletter (distributed to everyone associated with the team
-											including other sponsors)<br>
-											Website (found on the front page)<br>
-											Social Media (pinned comment on top of all of our social media
-											platforms)</p>
-									</div>
-								</div>
-								<div class=".responsive">
-									<div class="text-center" id="Emerald Level">
-										<h1 style="color:#2af266" ;> Emerald Level - $3000</h1>
-										<p>
-											Banner<br>
-											Robot<br>
-											T-Shirt<br>
-											Newsletter<br>
-											Website<br>
-											Social Media</p>
-									</div>
-								</div>
-								<div class=".responsive">
-									<div class="text-center" id="Diamond Level">
-										<h1 style="color:#aefbeb" ;> Diamond Level - $2000</h1><!--<img src="assets/img/Tiers/Diamond.png" width="auto" height="25px"> -->
-										<p>Banner<br>
-											T-Shirt<br>
-											Newsletter<br>
-											Website<br>
-											Social Media</p>
-									</div>
-								</div>
-								<div class=".responsive">
-									<div class="text-center" id="Platinum Level">
-										<h1 style="color:#ada6b6" ;> Platinum Level - $1000</h1>
-										<!-- <img src="assets/img/Tiers/Platinum.png" width="auto" height="25px"> -->
-										<p>
-											T-Shirt<br>
-											Newsletter<br>
-											Website<br>
-											Social Media</p>
-									</div>
-								</div>
-								<div class=".responsive">
-									<div class="text-center" id="Gold Level">
-										<h1 style="color:#ebe577" ;> Gold Level - $500</h1>
-										<!--	<img src="assets/img/Tiers/Gold.png" width="auto" height="25px"> -->
-										<p>Social Media<br>
-											Newsletter<br>
-											Website</p>
-									</div>
-								</div>
-								<div class=".responsive">
-									<div class="text-center" id="Silver Level">
-										<h1 style="color:#c1c1c1" ;> Silver Level - $200</h1>
-										<!--<img src="assets/img/Tiers/Silver.png" width="auto" height="25px"> -->
-										<p>Newsletter<br>
-											Website</p>
-									</div>
-								</div>
-								<div class=".embed-responsive">
-									<div class="text-center" id="Bronze Level">
-										<h1 style="color:#8e702a;"> Bronze Level - $100</h1>
-										<!-- <img src="assets/img/Tiers/Bronze.png" width="auto" height="25px"> -->
-										<p>Website</p>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
+					<br>
+				</div>
+			</div>
+		</footer>
 
-					<script>
-    function toggleSponsors() {
-      var x = document.getElementById("sponsor");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
+		<script>
+      $(document).ready(function () {
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              900,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
     </script>
-					<footer class="text-center"
-						style="background-color: #181a1b; padding-top: 30px">
-						<a style="color: #FFFFFF;"
-							href="https://www.paypal.com/donate?hosted_button_id=S5B7QQBYTB4BY"
-							data-toggle="tooltip" title="Donate">
-
-							<div><p1> DONATE</p1></div>
-						</footer>
-						<footer class="text-center"
-							style="background-color: #181a1b; padding-top: 30px">
-							<a href="page2.html" data-toggle="tooltip" title="TO BLOGS">
-								<div class="right-arrow">
-									<span class="glyphicon glyphicon-chevron-up" style="color: #FFFFFF;"></span>
-								</div>
-								<div style="color: #FFFFFF;"><p1>TO BLOGS</p1></div>
-							</a></footer>
-						<footer class="text-center"
-							style="background-color: #181a1b; padding-top: 30px">
-							<a href="index.html" data-toggle="tooltip" title="TO HOME">
-								<div class="left-arrow">
-									<span class="glyphicon glyphicon-chevron-up" style="color: #FFFFFF;"></span>
-								</div>
-								<div style="color: #FFFFFF;"><p1>TO HOME</p1></div>
-							</a></footer>
-
-						<script>
-			  $(document).ready(function(){
-				// Initialize Tooltip
-				$('[data-toggle="tooltip"]').tooltip();
-	  
-				// Add smooth scrolling to all links in navbar + footer link
-				$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-	  
-				  // Make sure this.hash has a value before overriding default behavior
-				  if (this.hash !== "") {
-	  
-					// Prevent default anchor click behavior
-					event.preventDefault();
-	  
-					// Store hash
-					var hash = this.hash;
-	  
-					// Using jQuery's animate() method to add smooth page scroll
-					// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-					$('html, body').animate({
-					  scrollTop: $(hash).offset().top
-					}, 900, function(){
-	  
-					  // Add hash (#) to URL when done scrolling (default click behavior)
-					  window.location.hash = hash;
-					});
-				  } // End if
-				});
-			  })
-			  </script>
-
-					</body>
-				</html>
+	</body>
+</html>

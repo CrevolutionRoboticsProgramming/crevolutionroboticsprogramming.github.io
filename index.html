@@ -1,670 +1,853 @@
 <!DOCTYPE html>
 <html lang="en">
-	<title>Crevolution Robotics</title>
-	<head>
-	  <!-- Theme Made By www.w3schools.com - No Copyright -->
-	  <meta charset="UTF8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="icon" href="assets/img/Carousel/C_logo.png" type="image/png" sizes="16x16">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <title>Crevolution Robotics</title>
+  <head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <meta charset="UTF8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="assets/img/Carousel/C_logo.png"
+      type="image/png"
+      sizes="16x16" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
 
-	  <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+    
 
-	</head>
+    <nav id="navspan" class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <a href="index.html#home" class="navbar-brand lg-0" style="height: 40px"><img
+          class="d-inline-block align-top"
+          src="assets/img/Crevo19o5.svg"
+          width="170"
+          style="padding-left: 15px" />
+      </a>
+      <button
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item active">
+            <a href="index.html#home" class="nav-link active" > HOME </a>
+          </li>
+          <li class="nav-item active" >
+            <a href="index.html#about" class="nav-link active" > ABOUT US </a>
+          </li>
+          <li class="nav-item active">
+            <a href="index.html#current_events" class="nav-link active">
+              CURRENT EVENTS
+            </a>
+          </li>
 
-	<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+          <li class="nav-item active">
+            <a href="index.html#contact_us" class="nav-link active"> CONTACT US </a>
+          </li>
+          <li class="nav-item active">
+            <a href="robots.html" class="nav-link active"> ROBOTS </a>
+          </li>
+          <li class="nav-item active">
+            <a href="sponsors.html" class="nav-link active"> SPONSORS </a>
+          </li>
+          <!--
+						<li class="nav-item active">
+						<a href="page2.html" class="nav-link active"> BLOGS </a>
+					</li>
+                    -->
+          <li class="nav-item active">
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://www.paypal.com/donate?hosted_button_id=S5B7QQBYTB4BY"
+              class="nav-link active">
+              DONATE
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<script>
+    const navLinks = document.querySelectorAll('.nav-item')
+  const menuToggle = document.getElementById('navbarNav')
+  const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
+  navLinks.forEach((l) => { l.addEventListener('click', function execute(){
+   if(window.innerWidth <= 992) {
+    bsCollapse.toggle()
+     }
 
-		<!-- NAV BAR -->
-		<nav class="navbar navbar-default navbar-fixed-top" style="padding: 0 0 0 0">
-			<div class="navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-left">
-					<div class="navbar-header">
-						<a class="navbar-brand" href="#home">
-							<span class="logo">
-								<img src="assets/img/Crevo19o5.svg" width="157">
-							</span>
-							<span class="icon">
-								<img src="assets/img/Carousel/C_logo.png" width="80">
-							</span>
-						</a>
-					</div>
-					
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#about">ABOUT US</a></li>
-					<li><a href="#current_events">CURRENT EVENTS</a></li>
-					<li><a href="#robot">ROBOTS</a></li>
-					<li><a href="#contact_us">CONTACT US</a></li>
-					<li><a href="sponsors.html">SPONSORS</a></li>
-					<li><a href="page2.html">BLOGS</a></li>
-					<li><a href="https://www.paypal.com/donate?hosted_button_id=S5B7QQBYTB4BY"">
-						DONATE
-					</a></li>
-				</ul>
-			</div>
-		</nav>
-<div class = "navbar-spacer">
+})
+  })
+  </script>
+    <!-- PIX CAROUSEL -->
+    <div id="home" class="container-fluid text-center bg-2">
+      <div id="carouselExampleInterval" class="carousel slide"
+        data-bs-ride="carousel">
+        <div
+          class="carousel-inner"
+          style=" width: 100vw; margin-top: 60px">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img
+              src="./assets/img/crevoheader.svg"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crevolution Logo" />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="./assets/img/Carousel/2023tp.JPG"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crev Team Image" />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="./assets/img/Carousel/2022tp1.jpg"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crev Team Image" />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="./assets/img/Carousel/2019TP33.png"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crev Team Image" />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="./assets/img/Carousel/TeamPic1.jpg"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crev Team Image" />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="./assets/img/Carousel/TeamPic2.jpg"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Crev Team Image" />
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img
+              src="./assets/img/Carousel/sponsors.png"
+              style="object-fit: cover"
+              class="d-block w-100 indexcar"
+              alt="Sponsors Image" />
+          </div>
 
-</div>
-		<!-- PIX CAROUSEL -->
-		<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-				<li data-target="#myCarousel" data-slide-to="4"></li>
-				<li data-target="#myCarousel" data-slide-to="5"></li>
-				<li data-target="#myCarousel" data-slide-to="6"></li>
-				<li data-target="#myCarousel" data-slide-to="7"></li>
-				<li data-target="#myCarousel" data-slide-to="8"></li>
-			</ol>
-
-			<!-- Wrapper for slides -->
-			<style>
-				.parallax {
-    				background-image: url("assets/img/crevoheader.svg");
-					min-height: 600px;
-					width: 100%;
-    				background-attachment: fixed;
-    				background-position: center center;
-    				background-size: cover;
-				}
-				.parallax2 {
-    				background-image: url("assets/img/Carousel/2022tp1.jpg");
-    				min-height: 600px;
-					width: 100%;
-    				background-attachment: fixed;
-    				background-position: center;
-    				background-size: cover;
-				}
-  				.parallax3 {
-    				background-image: url("assets/img/Carousel/2019TP33.png");
-    				min-height: 600px;
-					width: 100%;
-    				background-attachment: fixed;
-    				background-position: center;
-    				background-size: cover;
-				}
-				.parallax4 {
-    				background-image: url("assets/img/Carousel/TeamPic1.jpg");
-    				min-height: 600px;
-					width: 100%;
-    				background-attachment: fixed;
-    				background-position: center;
-    				background-size: cover;
-				}
-				.parallax5 {
-    				background-image: url("assets/img/Carousel/TeamPic21.jpg");
-    				min-height: 600px;
-					width: 100%;
-    				background-attachment: fixed;
-    				background-position: center;
-    				background-size: cover;
-				}
-				.parallax6 {
-    				background-image: url("assets/img/Carousel/2014tp1.png");
-    				min-height: 600px;
-					width: 100%;
-    				background-attachment: fixed;
-    				background-position: center;
-    				background-size: cover;
-				}
-				.parallax7 {
-    				background-image: url("assets/img/Carousel/2013tp.png");
-    				min-height: 600px;
-					width: 100%;
-    				background-attachment: fixed;
-    				background-position: center;
-    				background-size: cover;
-				}
-				.parallax8 {
-    				background-image: url("assets/img/Carousel/2012tp2.png");
-    				min-height: 600px;
-					width: 100%;
-    				background-attachment: fixed;
-    				background-position: center;
-    				background-size: cover;
-				}
-				.parallax9 {
-    				background-image: url("assets/img/Carousel/2009tp22.png");
-    				min-height: 600px;
-					width: 100%;
-    				background-attachment: fixed;
-    				background-position: center;
-    				background-size: cover;
-  				}
-				 /* .parallax10 {
-    				background-image: url("assets/img/Carousel/sponsors.png");
-					min-height: 600px;
-					width: 100%;
-    				background-attachment: fixed;
-    				background-position: center;
-    				background-repeat: no-repeat;
-					background-color:black;
-    				background-size: 65%;
-  				}*/
-			</style>
-
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<div class="parallax"></div>
-					<div class="gallery1">
-						<img src="assets/img/crevoheader.svg">
-					</div>
-				</div>
-				<div class="item">
-					<div class="parallax2"></div>
-					<div class="gallery1">
-						<img src="assets/img/Carousel/2022tp1.jpg">
-					</div>
-				</div>
-				<div class="item">
-					<div class="parallax3"></div>
-					<div class="gallery1">
-						<img src="assets/img/Carousel/2019TP33.png">
-					</div>
-				</div>
-				<div class="item">
-					<div class="parallax4"></div>
-					<div class="gallery1">
-						<img src="assets/img/Carousel/TeamPic1.jpg">
-					</div>
-				</div>
-				<div class="item">
-					<div class="parallax5"></div>
-					<div class="gallery1">
-						<img src="assets/img/Carousel/TeamPic2.jpg">
-					</div>
-				</div>
-				<div class="item">
-					<div class="parallax6"></div>
-					<div class="gallery1">
-						<img src="assets/img/Carousel/2014tp2.png">
-					</div>
-				</div>
-				<div class="item">
-					<div class="parallax7"></div>
-					<div class="gallery1">
-						<img src="assets/img/Carousel/2013tp.png">
-					</div>
-				</div>
-				<div class="item">
-					<div class="parallax8"></div>
-					<div class="gallery1">
-						<img src="assets/img/Carousel/2012tp2.png">
-					</div>
-				</div>
-				<div class="item">
-					<div class="parallax9"></div>
-					<div class="gallery1">
-						<img src="assets/img/Carousel/2009tp1.png">
-					</div>
-				</div>
-				<!--<div class="item">
-					<div class="parallax10"></div>
-					<div class="gallery1">
-						<img src="assets/img/Carousel/sponsors.png" width="1200" height="600">
-					</div>
-				</div> -->
-			</div>
-
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-			  <span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-			  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-			  <span class="sr-only">Next</span>
-			</a>
-		</div>
-
-		<!-- ABOUT US -->
-		<div id="about" class="container-fluid text-center bg-2">
-			<h3>ABOUT US</h3>
-			<p class="text-center" class="text-justify">Crevolution is a robotics team from Sterling Heights, Michigan, that is composed of students from the Utica Community Schools District. Each year, we build a robot to compete in a game designed by the FIRST organization, and have a lot of fun doing so.</p>
-            <br>
-            <ul class="text-left">
-                <li>Crevolution is a robotics team from Sterling Heights, Michigan</li>
-                <li>We are a part of the <a href="http://www.usfirst.org" target="_blank">FIRST</a> organization</li>
-                <li>We were founded in 2008 and our team consists of mainly students from Utica Community Schools</li>            
-                <li>Our sister team is the <a href="http://www.thunderchickens.org" target="_blank">Thunderchickens</a></li>
-                <li>Our team focuses on being student-run and getting students heavily involved in every aspect of the team</li>
-                <li>Crevolution receives a great deal of generous support from our local business sponsors</li>
-                <li>Our name means &quot;A Creative Revolution&quot; and we try to live this revolutionary spirit by changing the world into one that respects science and technology</li>
-                <li>We have also helped multiple teams in the area get started. These teams are all younger kids trying to learn more about how everything works and are curious about the various fields that it all applies to so that it gives them a head start for the real world</li>
-                <li>Crevolution Robotics is always looking for new members. We allow students to gain new skills and be a part of a team. If you're interested please send an email to <a href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></li></ul>
-			<!-- ABOUT THE SUB-TEAMS -->
-			<h3 style="padding-top: 55px;">ABOUT THE SUB-TEAMS</h3>
-			<div class="Sub">
-			<button type="button" class="collapsibleSub">Team Captain</button>
-				<div class="contentSub">
-					<p>Team Captain: Adeline Paul</p>
-					<p>The team captain is responsible for:</p>
-					<ul>
-						<li>Bridging communication between subteams</li>
-						<li>Encouraging collaboration between members</li>
-						<li>Maintaining schedule for training and build season</li>
-						<li>Communications to families and community</li>
-					</ul>
-				</div> 
-				<button type="button" class="collapsibleSub">Build</button>
-				<div class="contentSub">
-					<p>Build Lead: Niken Patel</p>
-					<p>During build season, Build is responsible for:</p>
-					<ul>
-						<li>Prototyping</li>
-						<li>Building schematics from Design</li>
-						<li>Building the practice field</li>
-						<li>Taking care of our trailer</li>
-					</ul>
-					<p>During off season, Build is responsible for:</p>
-					<ul>
-						<li>Training new members | <a href="https://1drv.ms/w/s!AkiWqYAnVfDshTfr2b4USNXJFmC8" target="_blank">Crevolution Build Syllabus</a></li>
-						<li>Prototyping</li>
-						<li>Working on other projects like our pit cart</li>
-					</ul>
-				</div>
-				<button type="button" class="collapsibleSub">Design</button>
-				<div class="contentSub">
-					<p>Design Lead: Colin Deal</p>
-					<p>During build season, Design is responsible for:</p>
-					<ul>
-						<li>Making schematics for Build</li>
-					</ul>
-					<p>During off season, Design is responsible for:</p>
-					<ul>
-						<li>Training new members with CAD* </li> * A program we use to work with 3D models</li>
-					</ul>
-				</div>
-				<button type="button" class="collapsibleSub">Systems & Controls</button>
-				<div class="contentSub">
-					<p>Systems & Controls Lead: Nick Tornopilsky</p>
-					<p>During build season, Systems & Controls is responsable for:</p>
-					<ul>
-						<li>Organizing and wiring the robot</li>
-					</ul>
-					<p>During off season, Systems & Controls is responsible for:</p>
-					<ul>
-						<li>Training new members</li>
-					</ul>
-				</div>
-				<button type="button" class="collapsibleSub">Business</button>
-				<div class="contentSub">
-					<p>Business Lead: Fynn Stover</p>
-					<p>During build season, Business is responsible for:</p>
-					<ul>
-						<li>Writing up essays</li>
-						<li>Recording the documentations</li>
-					</ul>
-					<p>During off season, Business is responsible for:</p>
-					<ul>
-						<li>Training new members</li>
-						<li>Updating the roster</li>
-						<li>Trying new PR projects</li>
-					</ul>
-				</div>
-			</div><div class="Sub">
-				<button type="button" class="collapsibleSub">Marketing</button>
-				<div class="contentSub">
-					<p>Marketing Lead: Cole Kosecki</p>
-					<p>During build season, Marketing is responsible for:</p>
-					<ul>
-						<li>Vectorizing sponsorship logos</li>
-						<li>Designing Crevolution t-shirts</li>
-						<li>Creating the robot logo</li>
-					</ul>
-					<p>During off season, Marketing is responsible for:</p>
-					<ul>
-						<li>Training new members to vectorize and digital design</li>
-					</ul>
-				</div>
-				<button type="button" class="collapsibleSub">Outreach</button>
-				<div class="contentSub">
-					<p>Outreach Lead: Anthony Le</p>
-					<p>During build season, Outreach is responsible for:</p>
-					<ul>
-						<li>Working on the Chairmans Award</li>
-						<li>Planning community events</li>
-						<li>Overseeing external communications</li>
-					</ul>
-					<p>During off season, Outreach is responsible for:</p>
-					<ul>
-						<li>Training new members in planning events and working with professional businesses or organizations</li>
-						<li>Planning more events</li>
-						<li>Working on new PR projects</li>
-					</ul>
-				</div>
-				<button type="button" class="collapsibleSub">Robot Programming</button>
-				<div class="contentSub">
-					<p>Robot Programming Lead: Edward Lei</p>
-					<p>During build season, Robot Programming is responsible for:</p>
-					<ul>
-						<li>Programming the robot to manuver with our drivers and during autonomous periods</li>
-						<li>Programming the robot to drive smoothly</li>
-					</ul>
-					<p>During off season, Robot Programming is responsible for:</p>
-					<ul>
-						<li>Training new members how to write basic code and program the robot's movements</li>
-					</ul>
-				</div>
-				<button type="button" class="collapsibleSub">App Development</button>
-				<div class="contentSub">
-					<p>App Development Lead: Ava Mortimore</p>
-					<p>During build season, App Development is responsible for:</p>
-					<ul>
-						<li>Editing the app to match this year's game</li>
-					</ul>
-					<p>During off season, App Development is responsible for:</p>
-					<ul>
-						<li>Teaching new members how to program apps</li>
-					</ul>
-				</div>
-				<button type="button" class="collapsibleSub">Website Development</button>
-				<div class="contentSub">
-					<p>Website Development Lead: Katelyn Hermiz</p>
-					<p>During build season, Website Development is responsible for:</p>
-					<ul>
-						<li>Updating our sponsor list</li>
-						<li>Programming the website to run smoother and look better</li>
-						<li>Keeping up with current events</li>
-					</ul>
-					<p>During off season, Website Development is responsible for:</p>
-					<ul>
-						<li>Teaching new members the basics of HTML, CSS, and Javascript with constant practice on different aspects of the website</li>
-					</ul>
-				</div>
-			</div>
-
-			<script>
-				var coll = document.getElementsByClassName("collapsibleSub");
-				var i;
-				for (i = 0; i < coll.length; i++) {
-				  coll[i].addEventListener("click", function() {
-					this.classList.toggle("activeSub");
-					var content = this.nextElementSibling;
-					if (content.style.display === "block") {
-    				  content.style.display = "none";
-    				} else {
-    				  content.style.display = "block";
-    				}
-					if (content.style.maxHeight){
-     				    content.style.maxHeight = null;
-    				} else {
-    				    content.style.maxHeight = content.scrollHeight + "px";
-    				}
-				  });
-				}
-			</script>
-		</div>
+        </div>
+        <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- ABOUT US -->
+    <div id="about" class="container-fluid text-center bg-2">
+      <h3 class="aboutus_title">ABOUT US</h3>
+      <p class="textcolor textitalic aboutus_desc">
+        Crevolution is a robotics team from Sterling Heights, Michigan, that is
+        composed of students from the Utica Community Schools District. Each
+        year, we build a robot to compete in a game designed by the FIRST
+        organization, and have a lot of fun doing so.
+      </p>
+      <br />
+      <ul class="aligntext">
         
-		<!-- Current Events -->
-		<script>
-			var ResultTime;
-			var EventNumber;
-			 function LaunchTime(EventNumber) {
-				 EventNumber=EventNumber-1;
-				var countDownDateArr = [new Date("January 6, 2024 12:00:00").getTime(),new Date("March 30, 2023 9:00:00").getTime()];
-				var countDownDate = countDownDateArr[EventNumber];
-				var VarStringId= ["TimeTest","TimeTest2","TimeTest3","TimeTest4"];
-			setInterval(function(){
-				var now = new Date().getTime();
-		    var distance = countDownDate - now;
-		    if (distance > 0) {
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-		    document.getElementById(VarStringId[EventNumber]).innerHTML = days + "d " + hours + "h "
-		    + minutes + "m " + seconds + "s ";
-		    } else{
-		    document.getElementById(VarStringId[EventNumber]).innerHTML = 0 + "d " + 0 + "h "
-		    + 0 + "m " + 0- + "s ";}
-			},1000)
-			}
-		</script>
+        <li class="textspacer">
+          Crevolution is a highschool robotics team, participating in the
+          <a href="http://www.usfirst.org" target="_blank">FIRST</a>
+          organization
+        </li>
+        <li class="textspacer">
+          Our team is compromised of students from all over the Utica Community Schools district.
+        </li>
+        <li class="textspacer">
+          In 2008 we were founded by our sister team,
+          <a href="http://www.thunderchickens.org" target="_blank">Thunderchickens</a>
+          .
+        </li>
+        <li class="textspacer">
+          The name Crevolution is a portmanteau, with its root words being creative and revolutionary. Our team's driving goal is to help transform the world into one which respects science and technology.
+        </li>
+        <li class="textspacer">
+          Since our beginnings, we have also focused highly on helping those around us. Community support and youth STEAM workshops are something we prioritize.
+        </li>
+        <li class="textspacer">
+          We are always looking for new members! If you are in the surrounding area, and are looking to be a part of our team, please reach out at 
+          <a href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a>
+          .
+        </li>
+      </ul>
+      <br>
+      <h2 class="textcolor">ABOUT THE SUB-TEAMS</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapsezero"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  Team Captain
+                </button>
+              </h2>
+              <div
+                id="collapsezero"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Team Captain: Adeline Paul</p>
+                  <p>The team captain is responsible for:</p>
+                  <ul>
+                    <li>Bridging communication between subteams</li>
+                    <li>Encouraging collaboration between members</li>
+                    <li>Maintaining schedule for training and build season</li>
+                    <li>Communications to families and community</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne">
+                  Build
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Build Lead: Niken Patel</p>
+                  <p>During build season, Build is responsible for:</p>
+                  <ul>
+                    <li>Prototyping</li>
+                    <li>Building schematics from Design</li>
+                    <li>Building the practice field</li>
+                    <li>Taking care of our trailer</li>
+                  </ul>
+                  <p>During off season, Build is responsible for:</p>
+                  <ul>
+                    <li>
+                      Training new members |
+                      <a
+                        href="https://1drv.ms/w/s!AkiWqYAnVfDshTfr2b4USNXJFmC8"
+                        target="_blank">Crevolution Build Syllabus</a>
+                    </li>
+                    <li>Prototyping</li>
+                    <li>Working on other projects like our pit cart</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  Design
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Design Lead: Colin Deal</p>
+                  <p>During build season, Design is responsible for:</p>
+                  <ul>
+                    <li>Making schematics for Build</li>
+                    <li>Simulating forces, creating automated manufacturing files</li>
+                  </ul>
+                  <p>During off season, Design is responsible for:</p>
+                  <ul>
+                    <li>Training new members with CAD</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree">
+                  Systems & Controls
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Systems & Controls Lead: Nick Tornopilsky</p>
+                  <p>
+                    During build season, Systems & Controls is responsable for:
+                  </p>
+                  <ul>
+                    <li>Organizing and wiring the robot</li>
+                  </ul>
+                  <p>
+                    During off season, Systems & Controls is responsible for:
+                  </p>
+                  <ul>
+                    <li>Training new members</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour">
+                  Business
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Business Lead: Fynn Stover</p>
+                  <p>During build season, Business is responsible for:</p>
+                  <ul>
+                    <li>Writing up essays</li>
+                    <li>Recording the documentations</li>
+                  </ul>
+                  <p>During off season, Business is responsible for:</p>
+                  <ul>
+                    <li>Training new members</li>
+                    <li>Updating the roster</li>
+                    <li>Trying new PR projects</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<div id="current_events" class="bg-1">
-				<div class="container-fluid">
-					<div class="row text-center">
-						<h3 class="text-center">CURRENT EVENTS</h3>
-						 <p class="text-center"><em>We have no upcoming competitions currently but check back soon!</em></p> 
-						<p>Countdown Till the 2024 challenge FRC Centerstage on January 6:</p> 
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <div class="accordion" id="accordionExample2">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive">
+                  Marketing
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <p>Marketing Lead: Cole Kosecki</p>
+                  <p>During build season, Marketing is responsible for:</p>
+                  <ul>
+                    <li>Vectorizing sponsorship logos</li>
+                    <li>Designing Crevolution t-shirts</li>
+                    <li>Creating the robot logo</li>
+                  </ul>
+                  <p>During off season, Marketing is responsible for:</p>
+                  <ul>
+                    <li>
+                      Training new members to vectorize and digital design
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix">
+                  Outreach
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <p>Outreach Lead: Anthony Le</p>
+                  <p>During build season, Outreach is responsible for:</p>
+                  <ul>
+                    <li>Working on the Chairmans Award</li>
+                    <li>Planning community events</li>
+                    <li>Overseeing external communications</li>
+                  </ul>
+                  <p>During off season, Outreach is responsible for:</p>
+                  <ul>
+                    <li>
+                      Training new members in planning events and working with
+                      professional businesses or organizations
+                    </li>
+                    <li>Planning more events</li>
+                    <li>Working on new PR projects</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven">
+                  Robot Programming
+                </button>
+              </h2>
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <p>Robot Programming Lead: Edward Lei</p>
+                  <p>
+                    During build season, Robot Programming is responsible for:
+                  </p>
+                  <ul>
+                    <li>
+                      Programming the robot to manuver with our drivers and
+                      during autonomous periods
+                    </li>
+                    <li>Programming the robot to drive smoothly</li>
+                  </ul>
+                  <p>
+                    During off season, Robot Programming is responsible for:
+                  </p>
+                  <ul>
+                    <li>
+                      Training new members how to write basic code and program
+                      the robot's movements
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseapp"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  App Development
+                </button>
+              </h2>
+              <div
+                id="collapseapp"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <p>App Development Lead: Ava Mortimore</p>
+                  <p>
+                    During build season, App Development is responsible for:
+                  </p>
+                  <ul>
+                    <li>Editing the app to match this year's game</li>
+                  </ul>
+                  <p>During off season, App Development is responsible for:</p>
+                  <ul>
+                    <li>Teaching new members how to program apps</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight"
+                  aria-expanded="false"
+                  aria-controls="collapseEight">
+                  Website Development
+                </button>
+              </h2>
+              <div
+                id="collapseEight"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                  <p>Website Development Lead: Katelyn Hermiz</p>
+                  <p>
+                    During build season, Website Development is responsible for:
+                  </p>
+                  <ul>
+                    <li>Updating our sponsor list</li>
+                    <li>
+                      Programming the website to run smoother and look better
+                    </li>
+                    <li>Keeping up with current events</li>
+                  </ul>
+                  <p>
+                    During off season, Website Development is responsible for:
+                  </p>
+                  <ul>
+                    <li>
+                      Teaching new members the basics of HTML, CSS, and
+                      Javascript with constant practice on different aspects of
+                      the website
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <script>
+      var coll = document.getElementsByClassName("collapsibleSub");
+      var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("activeSub");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
+    <!-- Current Events -->
+    <script>
+      var ResultTime;
+      var EventNumber;
+      function LaunchTime(EventNumber) {
+        EventNumber = EventNumber - 1;
+        var countDownDateArr = [
+          new Date("January 6, 2024 11:00:00").getTime(),
+          new Date("March 30, 2023 9:00:00").getTime(),
+        ];
+        var countDownDate = countDownDateArr[EventNumber];
+        var VarStringId = ["TimeTest", "TimeTest2", "TimeTest3", "TimeTest4"];
+        setInterval(function () {
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          if (distance > 0) {
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor(
+              (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+            );
+            var minutes = Math.floor(
+              (distance % (1000 * 60 * 60)) / (1000 * 60)
+            );
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById(VarStringId[EventNumber]).innerHTML =
+              days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+          } else {
+            document.getElementById(VarStringId[EventNumber]).innerHTML =
+              0 + "d " + 0 + "h " + 0 + "m " + 0 - +"s ";
+          }
+        }, 1000);
+      }
+    </script>
+
+    <div id="current_events" class="bg-1">
+      <div class="container-fluid">
+        <div class="row text-center textcolor">
+          <h3 class="textcolor">CURRENT EVENTS</h3>
+         <!-- <p class="textcolor">
+            <em>We have no upcoming competitions currently but check back
+              soon!</em>
+          </p> -->
+          <p>Countdown Until Kickoff on January 6:</p> 
 						<h1 id="TimeTest"></p><script> LaunchTime(1); </script></h1> 
-						<!-- <p>Countdown Until Our 2nd Competition on March 30th at Troy Athens Highschool:</p> -->
-						<!--<p>Countdown Until Our 2nd Competition on March 30th at Troy Athens Highschool:</p>
+          <!-- <p>Countdown Until Our 2nd Competition on March 30th at Troy Athens Highschool:</p> -->
+          <!--<p>Countdown Until Our 2nd Competition on March 30th at Troy Athens Highschool:</p>
 						<h1 id="TimeTest2"></p><script> LaunchTime(2); </script></h1> -->
-						<div class="col-sm-12">
-							<p align="center">
-							<div class="embed-responsive embed-responsive-16by9">
-								<iframe width="100%" class="embed-responsive-item" src="https://www.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=crevo.robotics%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FNew_York"></iframe>
-							</div>
-	<!-- 						<iframe style="border:solid 1px #777" width="92%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=crevo.robotics%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FNew_York"></iframe></p>
-							<iframe width="92%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23c0c0c0&amp;src=crevo.robotics%40gmail.com&amp;color=%23182C57&amp;ctz=America%2FNew_York;output=embed"></iframe> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		
-		<!-- ROBOTS -->
-		<div id="robot" class="bg-2" >
-			<div class="container-fluid">
-				<h3 class="text-center">ROBOTS</h3>
-				<p class="text-center">Our warriors through the years.</p>
-				<p class="text-center">Hover over the robots to see their name and photo credit.</p>
-				<div class="row text-center">
-					<div class="col-sm-12" style="align-items: center;">
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2009-fin.jpg" class="robotPictures2">
-								<div class="overlay">Ganymede | Photo by: George Chene</div>
-								<div class="desc">2009</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2010-fin.jpg" class="robotPictures2">
-								<div class="overlay">Cerberus | Photo by: George Chene</div>
-								<div class="desc">2010</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2011-fin.jpg" class="robotPictures2">
-								<div class="overlay">Hermes | Photo by: George Chene</div>
-								<div class="desc">2011</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2012bot.jpg" class="robotPictures2">
-								<div class="overlay">Iris | Photo by: Dan Ernst</div>
-								<div class="desc">2012</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2013-fin.jpg" class="robotPictures2">
-								<div class="overlay">Discobulus | Photo by: George Chene</div>
-								<div class="desc">2013</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2014-fin.jpg" class="robotPictures2">
-								<div class="overlay">Athena | Photo by: George Chene</div>
-								<div class="desc">2014</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2015bot.jpg" class="robotPictures2">
-								<div class="overlay">Pricus | Photo by: Dan Ernst</div>
-								<div class="desc">2015</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2016bot.JPG" class="robotPictures2">
-								<div class="overlay">Achilles | Photo by: Dan Ernst</div>
-								<div class="desc">2016</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2017-fin.jpg" class="robotPictures2">
-								<div class="overlay">Talos | Photo by: Sydney Moranko</div>
-								<div class="desc">2017</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2018-fin.jpg" class="robotPictures2">
-								<div class="overlay">Hyperion | Photo by: Sydney Moranko</div>
-								<div class="desc">2018</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2019-fin.jpg" class="robotPictures2">
-								<div class="overlay">Asteria | Photo by: Thomas Eridon</div>
-								<div class="desc">2019</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2020-Robot.jpg" class="robotPictures2">
-								<div class="overlay">Aegis | Photo by: Cam Lee</div>
-								<div class="desc">2020-2021</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2022.jpg" class="robotPictures2">
-								<div class="overlay">Daedalus | Photo by: Dan Ernst</div>
-								<div class="desc">2022</div>
-							</div>
-						</div>
-						<div class="responsive">
-							<div class="robotPictures1">
-								<img src="assets/img/Robots/2023.jpg" class="robotPictures2">
-								<div class="overlay">MaysOverTone | Photo by: Jim Kapanka</div>
-								<div class="desc">2023</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+          <div class="col-sm-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <div id='calendar'></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
 
-		<!-- SOCIAL MEDIA -->
-		<div id="contact_us" class="bg-1">
-			<div class="container-fluid">
-				<div class="row text-center">
-					<h3 class="text-center">CONTACT US</h3>
-					<p class="text-center"><em>We'd love to hear from you!</em></p>
-					
-					
-					<p align="center">For any comments or questions that concern Crevolution, please contact us at <a href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p> 
-					<p class="text-center"><em>Follow us on Social Media to stay up to date</em></p>
-					<div class="col-sm-3">
-						<div class="thumbnail" style="background-color: #2c2f31; height: 100px">
-							<a href="https://twitter.com/Crevolution2851"><img src="assets/img/Social Media/Twitter.svg" width="100"></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="thumbnail" style="background-color: #2c2f31; height: 100px">
-							<a href="https://www.youtube.com/user/Crevolution2851"><img src="assets/img/Social Media/Youtube.svg" width="100"></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="thumbnail" style="background-color: #2c2f31; height: 100px">
-							<a href="https://instagram.com/crevolution.robotics?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img src="assets/img/Social Media/Instagram.svg" width="100"></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="thumbnail" style="background-color: #2c2f31; height: 100px">
-							<a href="https://www.facebook.com/Crevolution2851/"><img src="assets/img/Social Media/Facebook.svg" width="100"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+    <script>
 
-		<!-- CONTACT US (Part of Social Media)-->
-		<div id="contact" class="bg-1">
-			<div class="container-fluid">
-				<div class="row text-center">
-				<!--	<p class="text-center"><em>We'd love to hear from you!</em></p>
-					<div class="col-sm-12">
-						<p align="center">For any comments or questions that concern Crevolution, please contact us at <a href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p>  -->
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.3508162499984!2d-83.01199528841927!3d42.56907577105401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dbf5cb46e185%3A0x2a08df774b0870be!2sHeritage%20Junior%20High%20School!5e0!3m2!1sen!2sus!4v1702935699456!5m2!1sen!2sus" width="92%" height="600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-						<br><p>Our build site is located at 37400 Dodge Park Rd, Sterling Heights, MI 48312</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer class="text-center" style="background-color: #181a1b; padding-top: 30px">
-			<a style="color: #FFFFFF;" href="https://www.paypal.com/donate?hosted_button_id=S5B7QQBYTB4BY" data-toggle="tooltip" title="Donate">
-			  
-			 <div><p1> DONATE</p1></div>
-		  </footer>
+      document.addEventListener('DOMContentLoaded', function() {
+        const calendarEl = document.getElementById('calendar')
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          height: 600,
+          events: [
+        {
+          title: 'Kickoff',
+          start: '2024-01-06'
+        },{
+          title: 'Woodhaven Competition',
+          start: '2024-03-09',
+          end: '2024-03-11'
+        },{
+          title: 'Troy #1 Competition',
+          start: '2024-03-23',
+          end: '2024-03-25'
+        }
+        
+        ]})
+        calendar.render()
+      })
 
-		<!-- Footer -->
-		<footer class="text-center" style="background-color: #181a1b; padding-top: 30px">
-			<a href="sponsors.html" data-toggle="tooltip" title="TO SPONSORS">
-			<div class="right-arrow"  >
-			  <span class="glyphicon glyphicon-chevron-up" style="color: #FFFFFF;"></span>			  
-			</div>
-			<div style="color: #FFFFFF;" ><p1>TO SPONSORS</p1></div>
-		</a></footer>
-		<footer class="text-center" style="background-color: #181a1b; padding-top: 30px">
-			<a href="page2.html" data-toggle="tooltip" title="TO BLOGS">
-			<div class="left-arrow"  >
-			  <span class="glyphicon glyphicon-chevron-up" style="color: #FFFFFF;"></span>			  
-			</div>
-			<div style="color: #FFFFFF;" ><p1>TO BLOGS</p1></div>
-		</a></footer>
-		
+    </script>
 
-		<script>
-		$(document).ready(function(){
-		  // Initialize Tooltip
-		  $('[data-toggle="tooltip"]').tooltip();
 
-		  // Add smooth scrolling to all links in navbar + footer link
-		  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-			// Make sure this.hash has a value before overriding default behavior
-			if (this.hash !== "") {
 
-			  // Prevent default anchor click behavior
-			  event.preventDefault();
+    <!-- SOCIAL MEDIA -->
+    <div id="contact_us" >
+      <br>
+      <br>
+    <div class="row">
+    <div class="col-md-6 mailform textcolor">
+      <h1>Contact Us:</h1>
+      <form target="_blank" action="https://formsubmit.co/crevo.robotics@gmail.com" method="POST">
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="name" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="col">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+      </form>
+      <br>
+    </div>
+    
+    <!-- CONTACT US (Part of Social Media)-->
+    <div id="contact" class="bg-1 col-md-6 text-center">
+      
+            <iframe style="width: 80%;"
+              height="500px"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.3508162499984!2d-83.01199528841927!3d42.56907577105401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824dbf5cb46e185%3A0x2a08df774b0870be!2sHeritage%20Junior%20High%20School!5e0!3m2!1sen!2sus!4v1702935699456!5m2!1sen!2sus"></iframe>
+          
+          <br>
+          <p class="textcolor " style="padding: 0 10% 0 10%;">
+            Our build site is located at 37400 Dodge Park Rd, Sterling Heights, MI 48312
+          </p>
+          <br>
+          
+        </div>
+  </div>
+</div>
+    <!-- Footer -->
+    <footer class="d-none d-md-block">
+      <div class="bg-1 bottomnav">
+        <div class="container-fluid">
+          <br />
+          <div class="row">
+            <div class="col-md-3 ">
+              <a href="#home" class style="height: 40px"><img
+                  class="bottomLogo "
+                  src="assets/img/Carousel/C_logo.png" /></a>
+            </div>
+            <div class="col-md-6  text-center">
+              <p class="textcolor slogon">
+                "A Creative Revolution"
+              </p>
+              <p class="textcolor">
+                For any comments or questions that concern Crevolution,
+              </p>
+              <p class="textcolor">please
+                contact us at
+                <a href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p>
 
-			  // Store hash
-			  var hash = this.hash;
+            </div>
+            <div class="col-md-3 text-center">
+              <a class="bottomA" target="_blank" rel="noopener noreferrer"
+                href="https://instagram.com/crevolution.robotics?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
+                  class="bottomPR" src="assets/img/Social Media/Instagram.png"></a>
+              <a class="bottomA" target="_blank" rel="noopener noreferrer"
+                href="https://www.youtube.com/user/Crevolution2851">
+                <img class="bottomPR" src="assets/img/Social Media/Youtube.png">
+              </a>
+              <br>
+              <br>
+              <a class="bottomA" target="_blank" rel="noopener noreferrer"
+                href="https://www.facebook.com/Crevolution2851/"><img
+                  class="bottomPR" src="assets/img/Social Media/Facebook.png"></a>
+              <a class="bottomA" target="_blank" rel="noopener noreferrer"
+                href="https://twitter.com/Crevolution2851">
+                <img class="bottomPR" src="assets/img/Social Media/Twitter.png">
+              </a>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </footer>
+<!-- Moblie footer -->
+<footer class="d-md-none">
+  <div id="contact_us" class="bg-1 bottomnav">
+    <div class="container-fluid text-center">
+      <br />    
+          <a href="#home" class style="height: 40px"><img
+              class="bottomLogom"
+              src="assets/img/Carousel/C_logo.png" /></a>
+        
+          <p class="textcolor slogon">
+            "A Creative Revolution"
+          </p>
+          <p class="textcolor">
+            For any comments or questions that concern Crevolution,
+          </p>
+          <p class="textcolor">please
+            contact us at
+            <a href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p>
+            <div class="row">
+        <div class="col-3 text-center">
+          <a class="bottomA" target="_blank" rel="noopener noreferrer"
+            href="https://instagram.com/crevolution.robotics?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
+              class="bottomPR" src="assets/img/Social Media/Instagram.png"></a>
+            </div>
+              <div class="col-3 text-center">
+              <a class="bottomA" target="_blank" rel="noopener noreferrer"
+            href="https://www.youtube.com/user/Crevolution2851">
+            <img class="bottomPR" src="assets/img/Social Media/Youtube.png"></a>
+        </div>
+          <div class="col-3 text-center">
+          <a class="bottomA" target="_blank" rel="noopener noreferrer"
+            href="https://www.facebook.com/Crevolution2851/"><img
+              class="bottomPR" src="assets/img/Social Media/Facebook.png"></a>
+            </div>
+              <div class="col-3 text-center">
+              <a class="bottomA" target="_blank" rel="noopener noreferrer"
+            href="https://twitter.com/Crevolution2851">
+            <img class="bottomPR" src="assets/img/Social Media/Twitter.png"></a>
+        
+      </div>
+      </div>
+      <br>
+    </div>
+  </div>
+</footer>
 
-			  // Using jQuery's animate() method to add smooth page scroll
-			  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-			  $('html, body').animate({
-				scrollTop: $(hash).offset().top
-			  }, 900, function(){
 
-				// Add hash (#) to URL when done scrolling (default click behavior)
-				window.location.hash = hash;
-			  });
-			} // End if
-		  });
-		})
-		</script>
+    <script>
+      $(document).ready(function () {
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip();
 
-	</body>
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              900,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
 </html>
-
-
-
