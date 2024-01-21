@@ -1,0 +1,161 @@
+body {
+    background-color: #181a1b;
+  
+    overflow-x: hidden;
+    /* ^ Used to hide the scrollbar*/
+  
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-variant-alternates: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    font-stretch: normal;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: Lato, sans-serif;
+  }
+  
+  body::-webkit-scrollbar {
+    /*Chrome, Safari, and Opera*/
+    display: none;
+  }
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  /* ^ Used to hide the scrollbar*/
+  
+  
+  .aligntext {
+    text-align: left;
+    margin-left: 36px;
+  }
+  .textcolor {
+    color: white;
+  }
+  .textitalic {
+    font-style: italic;
+  }
+  .textspacer {
+    padding-bottom: 3px;
+    padding-top: 3px;
+  }
+  
+  .navbar-nav li:hover {
+    color: #000 !important;
+    background-color: #c3a234 !important;
+  }
+  nav {
+    background-color: #1f1f2e;
+    opacity: 0.95;
+    font-family: Montserrat;
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+  #navspan {
+    padding: 0px 0px 0px 0px;
+  }
+  .nav-link {
+    padding: 22px 0 22px 0;
+  }
+  
+  
+  .navbar-toggler {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-right: 11px;
+  }
+  
+  .bottomnav {
+    background-color: #1f1f2e;
+  }
+  .bottomLogo {
+    width: 167px;
+    margin: 0px 0px 0px 30%;
+  }
+  .bottomLogom {
+    width: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .bottomPR {
+    width: 70px;
+  }
+  .bottomA {
+    margin: 0px 10px 0px 10px;
+  }
+  .slogon{
+    margin: 20px 0 20px 0;
+    font-size: 24px;
+  }
+  /*------------------------------------------------------------------*/
+
+
+  .week{
+    background-color: #222227;
+  }
+  .accordion {
+    --bs-accordion-bg: #222227;
+    --bs-accordion-color: #dadada;
+    --bs-accordion-btn-color: #dadada;
+    --bs-accordion-border-color:#dadada ;
+    --bs-accordion-active-color: #222227 ;
+    --bs-accordion-active-bg: #dadada ;
+  }
+  .accordion-collapse{
+    text-align: left;
+  }
+  
+  .aboutus_desc {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: Lato, sans-serif;
+    line-height: 1.8;
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+  .innersiema{
+    max-height: 300px;
+    height: 18.3vw;
+    max-width: 400px;
+    border-radius: 15px !important; 
+    text-align: left;
+  }
+  .insideimage{
+    max-width: 100%;
+    padding: 0 1px 0 1px;
+    max-height: 300px;
+  }
+  .weektext{
+    padding: 10px 4% 10px 9%;
+    max-width: 45%;
+  }
+.innersiema{
+    max-height: 300px;
+  height: 18.3vw;
+  max-width: 400px;
+  border-radius: 15px !important; 
+  text-align: left;
+}
+.insideimage{
+    max-width: 100%;
+    padding: 0 1px 0 1px;
+    max-height: 300px;
+  }
+.rightimage{
+    padding: 6% 4% 10px 16%;
+}
+
+
+
+
+
+
