@@ -129,16 +129,16 @@ nav {
   width: 8%;    
 }
 .innersiema{
-  max-height: 300px;
-  height: 18.3vw;
-  max-width: 400px;
+  max-height: 300px !important;
+  height: 18.3vw !important;
+  max-width: 400px !important;
   border-radius: 15px !important; 
   text-align: left;
 }
 .insideimage{
-  max-width: 100%;
+  max-width: 100% !important;
   padding: 0 1px 0 1px;
-  max-height: 300px;
+  max-height: 300px !important;
 }
 .ccbutton{
   color: white;
