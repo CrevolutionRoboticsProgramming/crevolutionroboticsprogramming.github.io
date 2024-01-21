@@ -63,6 +63,7 @@ nav {
 }
 .nav-link {
   padding: 22px 0 22px 0;
+  
 }
 
 
@@ -139,7 +140,7 @@ li {
   
   --fc-today-bg-color: rgba(255, 213, 0, 0.15);
   --fc-event-bg-color: #c3a234;
-  margin: 0 auto; 
+  margin: 0 auto !important; 
 }
 .fc-view-container {
     padding: 30px;
