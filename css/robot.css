@@ -69,6 +69,7 @@ nav {
 .navbar-toggler {
   margin-top: 11px;
   margin-bottom: 11px;
+  margin-right: 11px;
 }
 
 .bottomnav {
@@ -154,6 +155,11 @@ nav {
   background-color: #444459;
 }
 lite-youtube{
+  height: 315px;
+  width: 100%;
+  border-radius: 15px; 
+}
+.lite-youtube{
   height: 315px;
   width: 100%;
   border-radius: 15px; 
