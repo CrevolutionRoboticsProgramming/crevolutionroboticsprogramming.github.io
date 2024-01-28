@@ -7,10 +7,12 @@ BUGS or problems to do after uploading new website
     - Fix Robot tab in mobile
     - Update contact css
     - Add sponsors
+    - Download icons for bootstrap
     - Have Nav bar color when at sections
     - ^Maybe add small bar or smt under the text at nav^ 
     -
     - Fix the robot page carousel order. Should go 2009=A 2010=B etc.
+    - swap robot page to swiper js. should fix alot
 
 
 
