@@ -3,18 +3,18 @@
 BUGS or problems to do after uploading new website
 
     - Fix drop down corners on leads part on moblie by using css options.
+    - Fix drop down by adding other color for icon
     - Fix Top photos
-    - Fix Robot tab in mobile
-    - Update contact css
-    - Add sponsors
-    - Download icons for bootstrap
+    - Fix Robot tab in mobile and use coverflow effect
+    - Add sponsors / tiers
+    - Download icons for bootstrap and google fonts
     - Have Nav bar color when at sections
     - ^Maybe add small bar or smt under the text at nav^ 
     -
     - Fix the robot page carousel order. Should go 2009=A 2010=B etc.
-    - swap robot page to swiper js. should fix alot
-
-
+    - swap robot page to swiper js, maybe? more lazy load, and free mode with Thumbs maybe or use Controller in the api. should fix alot
+    - add Parallax to parts of the website.
+    - add swiper to main page and add in lazyload for 2 slides ahead.
 
 
 ### 1. Order Pinegrow license

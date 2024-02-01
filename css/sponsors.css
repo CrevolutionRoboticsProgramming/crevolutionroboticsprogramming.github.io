@@ -1,7 +1,7 @@
 body {
   background-color: #181a1b;
 
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   /* ^ Used to hide the scrollbar*/
 
   font-style: normal;
@@ -24,6 +24,9 @@ body {
 body::-webkit-scrollbar {
   /*Chrome, Safari, and Opera*/
   display: none;
+}
+::-webkit-scrollbar { 
+  width: 0 !important
 }
 body {
   -ms-overflow-style: none; /* IE and Edge */
@@ -63,6 +66,7 @@ nav {
 }
 .nav-link {
   padding: 22px 0 22px 0;
+  
 }
 
 

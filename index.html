@@ -22,12 +22,13 @@
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
       type="text/css" />
+      <link href="css/swiper-bundle.min.css" rel="stylesheet"
+            type="text/css" />
   </head> 
 
   <body>
-    <script
-      src="js/bootstrap.min.js" ></script>
-
+    <script src="js/bootstrap.min.js" ></script>
+      <script src="js/swiper-bundle.min.js"></script>
     
 
     <nav id="navspan" class="navbar fixed-top navbar-expand-lg navbar-dark">
@@ -96,75 +97,92 @@
   })
   </script>
     <!-- PIX CAROUSEL -->
+    
+   
     <div id="home" class="container-fluid text-center bg-2">
-      <div id="carouselExampleInterval" class="carousel slide"
-        data-bs-ride="carousel">
-        <div
-          class="carousel-inner"
+      <div class="swiper">
+        <div class="swiper-wrapper"
           style=" width: 100vw; margin-top: 60px">
-          <div class="carousel-item active" data-bs-interval="5000">
+          <div class="swiper-slide">
             <img
               src="./assets/img/crevoheader.svg"
               style="object-fit: cover"
               class="d-block w-100 indexcar"
-              alt="Crevolution Logo" />
+              alt="Crevolution Logo" loading="lazy"/>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
+          <div class="swiper-slide">
             <img
               src="./assets/img/Carousel/2023tp.JPG"
               style="object-fit: cover"
               class="d-block w-100 indexcar"
-              alt="Crev Team Image" />
+              alt="Crev Team Image" loading="lazy"/>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
+          <div class="swiper-slide">
             <img
               src="./assets/img/Carousel/2022tp1.jpg"
               style="object-fit: cover"
               class="d-block w-100 indexcar"
-              alt="Crev Team Image" />
+              alt="Crev Team Image" loading="lazy"/>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
+          <div class="swiper-slide">
             <img
               src="./assets/img/Carousel/2019TP33.png"
               style="object-fit: cover"
               class="d-block w-100 indexcar"
-              alt="Crev Team Image" />
+              alt="Crev Team Image" loading="lazy"/>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
+          <div class="swiper-slide">
             <img
               src="./assets/img/Carousel/TeamPic1.jpg"
               style="object-fit: cover"
               class="d-block w-100 indexcar"
-              alt="Crev Team Image" />
+              alt="Crev Team Image" loading="lazy"/>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
+          <div class="swiper-slide">
             <img
               src="./assets/img/Carousel/TeamPic2.jpg"
               style="object-fit: cover"
               class="d-block w-100 indexcar"
-              alt="Crev Team Image" />
+              alt="Crev Team Image" loading="lazy"/>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
+          <div class="swiper-slide">
             <img
               src="./assets/img/Carousel/sponsors.png"
               style="object-fit: cover"
               class="d-block w-100 indexcar"
-              alt="Sponsors Image" />
+              alt="Sponsors Image" loading="lazy"/>
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </div>
 
         </div>
-        <button class="carousel-control-prev" type="button"
-          data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button"
-          data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
       </div>
     </div>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        lazy: true,
+      spaceBetween: 1,
+      lazyPreloadPrevNext: 1,
+      speed: 1300,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      });
+                            </script>
     <!-- ABOUT US -->
     <div id="about" class="container-fluid text-center bg-2">
       <h3 class="aboutus_title">ABOUT US</h3>
