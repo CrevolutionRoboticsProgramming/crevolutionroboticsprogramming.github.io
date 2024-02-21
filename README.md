@@ -11,8 +11,7 @@ BUGS or problems to do after uploading new website
     - Have Nav bar color when at sections
     - ^Maybe add small bar or smt under the text at nav^ 
     -
-    - Fix the robot page carousel order. Should go 2009=A 2010=B etc.
-    - swap robot page to swiper js, maybe? more lazy load, and free mode with Thumbs maybe or use Controller in the api. should fix alot
+    - more lazy load, and free mode with Thumbs maybe or use Controller in the api. should fix alot
     - add Parallax to parts of the website.
     - add swiper to main page and add in lazyload for 2 slides ahead.
 
