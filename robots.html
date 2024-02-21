@@ -174,31 +174,29 @@
                                             class="d-block sideimage "
                                             alt="Robot">
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class=" innersiema">
-                                            <div class=" swipera">
-                                                <div class="swiper-wrapper">
-                                                    <div
-                                                        class="swiper-slide"><img
-                                                            src="assets/img/Robots/2023-2.jpg"
-                                                            class="insideimage "
-                                                            alt="Robot"></div>
-                                                    <div
-                                                        class="swiper-slide"><img
-                                                            src="assets/img/Robots/2023-3.png"
-                                                            class=" insideimage "
-                                                            alt="Robot"></div>
-                                                    <div
-                                                        class="swiper-slide"><img
-                                                            src="assets/img/Robots/2023-4.jpg"
-                                                            class=" insideimage "
-                                                            alt="Robot"></div>
-                                                </div>
+                                    <div
+                                        class="col-md-6 d-flex justify-content-end">
+                                        <div class="swiper swipera innersiema">
+                                            <div class="swiper-wrapper">
+                                                <div
+                                                    class="swiper-slide"><img
+                                                        src="assets/img/Robots/2023-2.jpg"
+                                                        class="insideimage "
+                                                        alt="Robot"></div>
+                                                <div
+                                                    class="swiper-slide"><img
+                                                        src="assets/img/Robots/2023-3.png"
+                                                        class=" insideimage "
+                                                        alt="Robot"></div>
+                                                <div
+                                                    class="swiper-slide"><img
+                                                        src="assets/img/Robots/2023-4.jpg"
+                                                        class=" insideimage "
+                                                        alt="Robot"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                                 <br>
                                 <lite-youtube videoid="3gTlIVyBmKI"
                                     title="YouTube video player" frameborder="0"
@@ -264,20 +262,25 @@
                                         </div>
                                         <div
                                             class="col-md-6 d-flex justify-content-end">
-                                            <div class="innersb innersiema">
-                                                <div><img
-                                                        src="assets/img/Robots/2022-3.jpg"
-                                                        class="d-block insideimage "
-                                                        alt="Robot"></div>
-                                                <div><img
-                                                        src="assets/img/Robots/2022-2.jpg"
-                                                        class="d-block insideimage "
-                                                        alt="Robot"></div>
-                                                <div><img
-                                                        src="assets/img/Robots/2022-4.jpg"
-                                                        class="d-block insideimage "
-                                                        alt="Robot"></div>
-
+                                            <div
+                                                class="swiper swiperb innersiema">
+                                                <div class="swiper-wrapper">
+                                                    <div
+                                                        class="swiper-slide"><img
+                                                            src="assets/img/Robots/2022-2.jpg"
+                                                            class="insideimage "
+                                                            alt="Robot"></div>
+                                                    <div
+                                                        class="swiper-slide"><img
+                                                            src="assets/img/Robots/2022-3.jpg"
+                                                            class=" insideimage "
+                                                            alt="Robot"></div>
+                                                    <div
+                                                        class="swiper-slide"><img
+                                                            src="assets/img/Robots/2022-4.jpg"
+                                                            class=" insideimage "
+                                                            alt="Robot"></div>
+                                                </div>
                                             </div>
 
                                         </div>
@@ -345,18 +348,22 @@
                                         </div>
                                         <div
                                             class="col-md-6 d-flex justify-content-end">
-                                            <div class="innersc innersiema">
-                                                <div><img
-                                                        src="assets/img/Robots/2020-3.jpeg"
-                                                        class="d-block insideimage "
-                                                        alt="Robot"></div>
-                                                <div><img
-                                                        src="assets/img/Robots/2020-2.jpg"
-                                                        class="d-block insideimage "
-                                                        alt="Robot"></div>
 
+                                            <div
+                                                class="swiper swiperc innersiema">
+                                                <div class="swiper-wrapper">
+                                                    <div
+                                                        class="swiper-slide"><img
+                                                            src="assets/img/Robots/2020-3.jpeg"
+                                                            class="insideimage "
+                                                            alt="Robot"></div>
+                                                    <div
+                                                        class="swiper-slide"><img
+                                                            src="assets/img/Robots/2020-2.jpg"
+                                                            class=" insideimage "
+                                                            alt="Robot"></div>
+                                                </div>
                                             </div>
-
                                         </div>
                                     </div>
                                     <br>
@@ -1252,12 +1259,13 @@
                         </div>
 
                     </div>
+
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
                 <script>
                     
-        var swiper = new Swiper(".swiper", {    
+                    var swiper = new Swiper(".swiper", {    
             grabCursor: true,
       spaceBetween: 1,
       speed: 1300,
@@ -1269,7 +1277,7 @@
       },
       debugger: true,
       });
-      var swiper = new Swiper(".swipera", {    
+      var swipera = new Swiper(".swipera", {    
 spaceBetween: 1,
 speed: 1300,
 nested: true,
@@ -1281,12 +1289,38 @@ autoplay: {
       },
       debugger: true,
 });
+var swiperb = new Swiper(".swiperb", {    
+spaceBetween: 1,
+speed: 1300,
+nested: true,
+centeredSlides: true,
+loop: true,
+autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      },
+      debugger: true,
+});
+var swiperc = new Swiper(".swiperc", {    
+spaceBetween: 1,
+speed: 1300,
+nested: true,
+centeredSlides: true,
+loop: true,
+autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      },
+      debugger: true,
+});
+
                     
                 </script>
                 <p class="d-none d-md-block">Content credit: Daniel Ernst,
                     Thomas
                     Eridon, Jim Kapanka, George
-                    Chene, Sydney Moranko, Robozone, First, Mays Overton, Cam
+                    Chene, Sydney Moranko, Robozone, First, Mays Overton,
+                    Cam
                     Lee,
                 </p>
                 <br>
@@ -1306,7 +1340,8 @@ autoplay: {
                         <br />
                         <div class="row">
                             <div class="col-md-3 ">
-                                <a href="#home" class style="height: 40px"><img
+                                <a href="#home" class
+                                    style="height: 40px"><img
                                         class="bottomLogo "
                                         src="assets/img/Carousel/C_logo.png" /></a>
                             </div>
@@ -1315,7 +1350,8 @@ autoplay: {
                                     "A Creative Revolution"
                                 </p>
                                 <p class="textcolor">
-                                    For any comments or questions that concern
+                                    For any comments or questions that
+                                    concern
                                     Crevolution,
                                 </p>
                                 <p class="textcolor">please
@@ -1444,3 +1480,14 @@ $(document).ready(function(){
 
         </body>
     </html>
+
+    <!-- 
+
+
+
+
+
+
+
+
+    -->
