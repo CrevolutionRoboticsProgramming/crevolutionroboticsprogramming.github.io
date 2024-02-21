@@ -133,16 +133,16 @@ nav {
   width: 8%;    
 }
 .innersiema{
-  max-height: 300px !important;
-  height: 18.3vw !important;
-  max-width: 400px !important;
+  max-height: 300px ;
+  height: 18.3vw ;
+  max-width: 400px ;
   border-radius: 15px !important; 
-  text-align: left;
+  
 }
 .insideimage{
-  max-width: 100% !important;
-  padding: 0 1px 0 1px;
-  max-height: 300px !important;
+  width: 100% ;
+  max-height: 300px ;
+  
 }
 .ccbutton{
   color: white;
@@ -168,3 +168,14 @@ lite-youtube{
   width: 100%;
   border-radius: 15px; 
 }
+.swiper{
+  --swiper-navigation-color: #dadada;
+  
+}
+.swiper-button-prev{
+padding: 3%;
+}
+.swiper-button-next{
+padding: 3%;
+}
+
