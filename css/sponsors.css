@@ -179,3 +179,44 @@ nav {
     background-color: #f9f100;
     font-size: 2px;
   }
+  .gold{
+    color: #f9f100;
+  }
+  .gold .colpart{
+    width: 240px;
+    max-width: 100% !important;
+    padding: 2% 10% 2% 10%;
+  }
+  .goldline{
+    background-color: #f9f100;
+    font-size: 2px;
+  }
+  
+  .sil{
+    color: #c7c1b9;
+  }
+  .sil .colpart{
+    width: 200px;
+    max-width: 100% !important;
+    padding: 2% 10% 2% 10%;
+  }
+  .silline{
+    background-color: #c7c1b9;
+    font-size: 2px;
+  }
+
+  .bro{
+    color: #ae793c;
+  }
+  .bro .colpart{
+    width: 180px;
+    max-width: 100% !important;
+    padding: 2% 10% 2% 10%;
+  }
+  .broline{
+    background-color: #ae793c;
+    font-size: 2px;
+  }
+  .mmlogo{
+    border-radius: 15px !important;
+  }
