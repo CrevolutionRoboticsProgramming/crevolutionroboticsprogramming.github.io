@@ -100,6 +100,10 @@ nav {
   font-size: 24px;
 }
 /*------------------------------------------------------------------*/
+.colorFix{
+  background-color: #4b4b57;
+  border-radius: 15px;
+}
 .flex-wrap{
   margin: 0 5% 0 5%;  
 }
@@ -109,7 +113,7 @@ nav {
   .ruby .colpart{
     width: 425px;
     max-width: 100% !important;
-    padding: 2% 4% 2% 4%;
+    padding: 2% 3% 2% 3%;
   }
 
   .rubyline{
@@ -131,25 +135,45 @@ nav {
   }
 
   .plat{
-    color: #e1e0bd;
+    color: #e5e4e2 ;
   }
   .plat .colpart{
     width: 350px;
     max-width: 100% !important;
-    padding: 2% 4% 2% 4%;
+    padding: 2% 6% 2% 6%;
   }
   .platline{
-    background-color: #eeedc1;
+    background-color: #e5e4e2 ;
     font-size: 2px;
+  }
+  .sdlogo{
+    width: 500px !important;
+    max-width: 100% !important;
+  }
+  .dia{
+    color: #b0fdef;
+  }
+  .dia .colpart{
+    width: 300px;
+    max-width: 100% !important;
+    padding: 2% 9% 2% 9%;
+  }
+  .dialine{
+    background-color: #b0fdef;
+    font-size: 2px;
+  }
+  .TMlogo{
+    width: 225px !important;
+    max-width: 90% !important;
   }
 
   .gold{
     color: #f9f100;
   }
   .gold .colpart{
-    width: 300px;
+    width: 240px;
     max-width: 100% !important;
-    padding: 2% 4% 2% 4%;
+    padding: 2% 10% 2% 10%;
   }
   .goldline{
     background-color: #f9f100;
