@@ -123,6 +123,7 @@ nav {
   .pblogo{
     width: 700px !important;
     max-width: 100% !important;
+    max-height: 187.1px !important;
   }
   h1{
     font-size: 10vw;
