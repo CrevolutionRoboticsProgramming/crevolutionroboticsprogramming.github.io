@@ -192,6 +192,11 @@ nav {
     background-color: #f9f100;
     font-size: 2px;
   }
+  .jblogo{
+    width: 400px !important;
+    max-width: 100% !important;
+    max-height: 94.7px !important; 
+  }
   
   .sil{
     color: #c7c1b9;
