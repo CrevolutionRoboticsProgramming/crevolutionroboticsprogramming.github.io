@@ -151,6 +151,10 @@ nav {
     width: 500px !important;
     max-width: 100% !important;
   }
+  .aflogo{
+    width: 1000px !important;
+    max-width: 100% !important;
+  }
   .dia{
     color: #b0fdef;
   }
