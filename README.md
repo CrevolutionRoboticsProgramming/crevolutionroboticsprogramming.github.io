@@ -6,7 +6,7 @@ BUGS or problems to do after uploading new website
     - Fix drop down by adding other color for icon
     - Fix Top photos
     - Fix Robot tab in mobile and use coverflow effect
-    - Add sponsors / tiers
+    - Add tiers
     - Download icons for bootstrap and google fonts
     - Have Nav bar color when at sections
     - ^Maybe add small bar or smt under the text at nav^ 
