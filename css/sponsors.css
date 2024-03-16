@@ -151,10 +151,6 @@ nav {
     width: 500px !important;
     max-width: 100% !important;
   }
-  .bglogo{
-    width: 700px !important;
-    max-width: 100% !important;
-  }
   .aflogo{
     width: 1000px !important;
     max-width: 100% !important;
@@ -175,6 +171,7 @@ nav {
     width: 225px !important;
     max-width: 90% !important;
   }
+  
 
   .gold{
     color: #f9f100;
@@ -202,6 +199,11 @@ nav {
   }
   .jblogo{
     width: 400px !important;
+    max-width: 100% !important;
+    max-height: 94.7px !important; 
+  }
+  .lllogo{
+    width: 500px !important;
     max-width: 100% !important;
     max-height: 94.7px !important; 
   }
