@@ -52,7 +52,7 @@ body {
 
 .navbar-nav li:hover {
   color: #000 !important;
-  background-color: #c3a234 !important;
+  background-color: #c3a234 !important; /*#C28510 and 2B2D42 */
 }
 nav {
   background-color: #1f1f2e;
