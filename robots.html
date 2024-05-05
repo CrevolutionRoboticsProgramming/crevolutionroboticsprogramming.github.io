@@ -2,7 +2,7 @@
 <html lang="en">
     <title>Crevolution Robotics</title>
     <head>
-        <!-- Theme Made By www.w3schools.com - No Copyright -->
+
         <meta charset="UTF8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="assets/img/Carousel/C_logo.png" type="image/png"
@@ -26,8 +26,15 @@
             type="text/css" />
     </head>
     <body>
+        <script src="js/jQuery.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+            </script>
 
         <!-- NAV BAR Also change expand md to lg later-->
 
@@ -110,31 +117,510 @@
           </script>
         <main class="textcolor">
             <br>
+
             <br>
+
             <br>
-            <h2 class="textcolor text-center">Below is our past robots.</h2>
-            <h3 class="textcolor text-center">Scroll through them to see our
+            <h2 class="textcolor text-center textpad">Below is our past
+                robots.</h2>
+            <h3 class="textcolor text-center textpad">Scroll through them to see
+                our
                 past warriors through out the years.</h3>
             <br>
-            <br>
-            <div class="d-lg-none">
-                <h2 class="textcolor text-center">Currently adding moblie
-                    support.</h2>
-                <h2 class="textcolor text-center">Please view on a bigger
-                    screen.</h2>
+
+            <!--Small Screen-->
+            <script type="text/javascript">
+                // If you do not want to use jQuery you can use Pure JavaScript. Just does not look as good
+                $( document ).ready(function() {
+                    $('[data-bs-toggle="tooltip"]').tooltip();
+                });
+                </script>
+
+            <div class="d-sm-none center">
+                <div class="mswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2024.png"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Siren</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 124lbs</p>
+                                        <p>Size: 28" x 28" x 26"
+                                        </p>
+                                        <p>Speed: 16.5 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: MK4i Swerve Drive</p>
+                                        <p>Status: In Service</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2022.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">MaysOverTone</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 106lbs</p>
+                                        <p>Size: 24" x 26" x 31"
+                                        </p>
+                                        <p>Speed: 16.5 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: MK4i Swerve Drive</p>
+                                        <p>Status: Displayable</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2023.png"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Daedalus</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 123lbs</p>
+                                        <p>Size: 28" x 30" x 34"
+                                        </p>
+                                        <p>Speed: 7.1 & 11.7
+                                            ft/s</p>
+
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: West Coast Tank
+                                            drive</p>
+                                        <p>Status: In Service</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2020.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Aegis</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 125lbs</p>
+                                        <p>Size: 29" x 29" x 28"
+                                        </p>
+                                        <p>Speed: 6 & 13
+                                            ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: West Coast Tank
+                                            drive</p>
+                                        <p>Status: Disassembled</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2019.png"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Asteria</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 125lbs</p>
+                                        <p>Size: 33" x 26" x 48"
+                                        </p>
+                                        <p>Speed: 7 & 15 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: Colson Tank
+                                            drive</p>
+                                        <p>Status: In Service</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2018.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Hyperion</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 124lbs</p>
+                                        <p>Size: 33" x 26" x 48"
+                                        </p>
+                                        <p>Speed: 11 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: Drop center tank
+                                            drive</p>
+                                        <p>Status: Disassembled</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2017.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Talos</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 125lbs</p>
+                                        <p>Size: 28" x 32" x 24"
+                                        </p>
+                                        <p>Speed: 12 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: Tank Drive</p>
+                                        <p>Status: Disassembled</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2016.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Achilles</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 125lbs</p>
+                                        <p>Size: 32" x 22" x 15"
+                                        </p>
+                                        <p>Speed: 10 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: MK4i Swerve Drive</p>
+                                        <p>Status: Disassembled</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2015.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Pricus</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 105lbs</p>
+                                        <p>Size: 28" x 30" x 48"
+                                        </p>
+                                        <p>Speed: 8 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: Tank Drive</p>
+                                        <p>Status: Disassembled</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2014.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Athena</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 116lbs</p>
+                                        <p>Size: 28" x 28" x 44"
+                                        </p>
+                                        <p>Speed: 11 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: Omnidirectional
+                                            H-drive</p>
+                                        <p>Status: Disassembled</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2013.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Discobulus</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 118lbs</p>
+                                        <p>Size: 30" x 30" x 28"
+                                        </p>
+                                        <p>Speed: 11 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: Tank Drive</p>
+                                        <p>Status: Displayable</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2012.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Iris</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 123lbs</p>
+                                        <p>Size: 26" x 32" x 48"
+                                        </p>
+                                        <p>Speed: 9 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: Tank Drive</p>
+                                        <p>Status: Displayable</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2011.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Hermes</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 114lbs</p>
+                                        <p>Size: 28" x 28" x 39"
+                                        </p>
+                                        <p>Speed: 9 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: Tank Drive</p>
+                                        <p>Status: Disassembled</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2010.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Cerberus</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 120lbs</p>
+                                        <p>Size: 32" x 26" x 28"
+                                        </p>
+                                        <p>Speed: 12 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: Tank Drive</p>
+                                        <p>Status: Disassembled</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="mimage"
+                                src="assets/img/Robots/Small Cropped/2009.jpg"
+                                alt="Robot">
+                            <h1 class="mtitle"
+                                data-swiper-parallax="-200">Ganymede</h1>
+                            <button type="button"
+                                class="btn btn-secondary tooltipm"
+                                data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="If you want more information, Please view on a larger screen">
+                                <i class="bi bi-question-lg"></i>
+                            </button>
+                            <div class="mtext" data-swiper-parallax="-100">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p>Weight: 123lbs</p>
+                                        <p>Size: 26" x 32" x 56"
+                                        </p>
+                                        <p>Speed: 9 ft/s</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p>Drive train: Tank Drive</p>
+                                        <p>Status: Disassembled</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--        
+                    <div class="swiper-button-prev nextm"></div>
+                    <div class="swiper-button-next nextm"></div> 
+                -->
+                </div>
+
+                <br>
+                <h6 class="textcolor text-center">View on a bigger screen for
+                    more
+                    information</h6>
+                <br>
                 <br>
                 <br>
             </div>
+            <script>
+                    
+var mswiper = new Swiper(".mswiper", {    
+ grabCursor: true,
+  spaceBetween: 1,
+  speed: 1300,
+  centeredSlides: true,
+  parallax:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+  });
+  </script>
+            <!--Small Screen-->
+            <div class="d-none d-sm-block d-lg-none center">
+                <br>
+                <br>
+                <h2 class="textcolor text-center textpad">Please rotate your
+                    screen to view the robots.</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!--Wide Screen-->
             <div class="swiper  outerSiema d-none d-lg-block">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="row">
-                            <div class="col-lg-5 leftpart">
+                            <div class="col-lg-5 leftpart"
+                                data-swiper-parallax="-150">
                                 <h1> 2024: Siren</h1>
                                 <br>
                                 <h3>Quick Facts:</h3>
                                 <ul>
-                                    <li>Weight: 123lbs</li>
+                                    <li>Weight: 124lbs</li>
                                     <li>Size: 28" L x 28" W x 26" H </li>
                                     <li>Top speed: 16.5 ft/s</li>
                                     <li>Drive train: MK4i Swerve Drive</li>
@@ -165,7 +651,8 @@
                                     <i class="bi bi-gear"></i></a>
 
                             </div>
-                            <div class="col-md-7 rightpart">
+                            <div class="col-md-7 rightpart "
+                                data-swiper-parallax="-50">
                                 <div class="row imagerow text-center">
                                     <div class="col-md-6 ">
                                         <img
@@ -210,7 +697,8 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="row">
-                                <div class="col-md-5 leftpart">
+                                <div class="col-md-5 leftpart "
+                                    data-swiper-parallax="-150">
                                     <h1> 2023: MaysOverTone</h1>
                                     <br>
                                     <h3>Quick Facts:</h3>
@@ -248,7 +736,8 @@
                                         <i class="bi bi-gear"></i></a>
 
                                 </div>
-                                <div class="col-md-7 rightpart">
+                                <div class="col-md-7 rightpart"
+                                    data-swiper-parallax="-50">
                                     <div class="row imagerow text-center">
                                         <div class="col-md-6 ">
                                             <img
@@ -295,7 +784,8 @@
 
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2022: Daedalus</h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -344,7 +834,8 @@
                                             href="#">CAD
                                             <i class="bi bi-gear"></i></a>
                                     </div>
-                                    <div class="col-md-7 rightpart">
+                                    <div class="col-md-7 rightpart"
+                                        data-swiper-parallax="-50">
                                         <div class="row imagerow text-center">
                                             <div class="col-md-6 ">
                                                 <img
@@ -389,7 +880,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2020-2021: Aegis</h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -440,7 +932,8 @@
                                             href="#">CAD
                                             <i class="bi bi-gear"></i></a>
                                     </div>
-                                    <div class="col-md-7 rightpart">
+                                    <div class="col-md-7 rightpart"
+                                        data-swiper-parallax="-50">
                                         <div class="row imagerow text-center">
                                             <div class="col-md-6 ">
                                                 <img
@@ -480,7 +973,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2019: Asteria </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -575,7 +1069,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2018: Hyperion </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -670,7 +1165,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2017: Talos </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -761,7 +1257,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2016: Achilles </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -853,7 +1350,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2015: Pricus </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -862,9 +1360,7 @@
                                             <li>Size: 28" L x 30" W x 48" H
                                             </li>
                                             <li>Top speed: 8 ft/s</li>
-                                            <li>Drive train: Colson West Coast
-                                                ball
-                                                shifting
+                                            <li>Drive train: Tank
                                                 drive</li>
                                             <li>Status: Disassembled</li>
                                         </ul>
@@ -948,7 +1444,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2014: Athena </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -1038,7 +1535,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2013: Discobulus </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -1127,7 +1625,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2012: Iris </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -1135,7 +1634,7 @@
                                             <li>Weight: 123lbs</li>
                                             <li>Size: 26" L x 32" W x 48" H
                                             </li>
-                                            <li>Top speed: 11 ft/s</li>
+                                            <li>Top speed: 9 ft/s</li>
                                             <li>Drive train: Tank drive</li>
                                             <li>Status: Displayable</li>
                                         </ul>
@@ -1217,7 +1716,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2011: Hermes </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -1225,7 +1725,7 @@
                                             <li>Weight: 114lbs</li>
                                             <li>Size: 28" L x 28" W x 39" H
                                             </li>
-                                            <li>Top speed: 10 ft/s</li>
+                                            <li>Top speed: 9 ft/s</li>
                                             <li>Drive train: Tank drive</li>
                                             <li>Status: Disassembled</li>
                                         </ul>
@@ -1310,12 +1810,13 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2010: Cerberus </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
                                         <ul>
-                                            <li>Weight: 124lbs</li>
+                                            <li>Weight: 120lbs</li>
                                             <li>Size: 32" L x 26" W x 28" H
                                             </li>
                                             <li>Top speed: 12 ft/s</li>
@@ -1405,7 +1906,8 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="row">
-                                    <div class="col-md-5 leftpart">
+                                    <div class="col-md-5 leftpart"
+                                        data-swiper-parallax="-150">
                                         <h1> 2009: Ganymede </h1>
                                         <br>
                                         <h3>Quick Facts:</h3>
@@ -1505,7 +2007,7 @@
       spaceBetween: 1,
       speed: 1300,
       centeredSlides: true,
-      loop: true,
+      parallax:true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
