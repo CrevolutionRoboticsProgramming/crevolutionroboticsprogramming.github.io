@@ -2,6 +2,7 @@ body {
   background-color: #181a1b;
 
   overflow-x: hidden !important;
+  
   /* ^ Used to hide the scrollbar*/
 
   font-style: normal;

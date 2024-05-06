@@ -25,7 +25,7 @@
         <link href="css/swiper-bundle.min.css" rel="stylesheet"
             type="text/css" />
     </head>
-    <body>
+    <body style="overflow-x: hidden;">
         <script src="js/jQuery.js"></script>
         <script src="js/swiper-bundle.min.js"></script>
         <script src="js/popper.min.js"></script>
@@ -75,7 +75,8 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
                     <li class="nav-item active">
                         <a href="index.html#contact_us" class="nav-link active">
-                            CONTACT US </a>
+                            CONTACT US
+                        </a>
                     </li>
                     <li class="nav-item active">
                         <a href="robots.html" class="nav-link active"> ROBOTS
@@ -88,11 +89,6 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
                         <a href="sponsors.html" class="nav-link active">
                             SPONSORS </a>
                     </li>
-                    <!--
-                              <li class="nav-item active">
-                              <a href="page2.html" class="nav-link active"> BLOGS </a>
-                          </li>
-                          -->
                     <li class="nav-item active">
                         <a target="_blank" rel="noopener noreferrer"
                             href="https://www.paypal.com/paypalme/CrevolutionRobotics"
@@ -104,22 +100,21 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
             </div>
         </nav>
         <script>
-            const navLinks = document.querySelectorAll('.nav-item')
-          const menuToggle = document.getElementById('navbarNav')
-          const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
-          navLinks.forEach((l) => { l.addEventListener('click', function execute(){
-           if(window.innerWidth <= 992) {
-            bsCollapse.toggle()
-             }
-        
+          const navLinks = document.querySelectorAll('.nav-item')
+        const menuToggle = document.getElementById('navbarNav')
+        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuToggle, {toggle: false})
+        navLinks.forEach((l) => { l.addEventListener('click', function execute(){
+         if(window.innerWidth <= 992) {
+          bsCollapse.toggle()
+           }
+      
+      })
         })
-          })
-          </script>
+        </script>
         <main class="textcolor">
             <br>
-
             <br>
-
+            <br>
             <br>
             <h2 class="textcolor text-center textpad">Below is our past
                 robots.</h2>
@@ -136,7 +131,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
                 });
                 </script>
 
-            <div class="d-sm-none center">
+            <div class="d-sm-none center ">
                 <div class="mswiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -587,14 +582,12 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
                     
 var mswiper = new Swiper(".mswiper", {    
  grabCursor: true,
+ slidesPerView: 1,
   spaceBetween: 1,
   speed: 1300,
   centeredSlides: true,
   parallax:true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  }
+  
   });
   </script>
             <!--Small Screen-->
@@ -603,6 +596,12 @@ var mswiper = new Swiper(".mswiper", {
                 <br>
                 <h2 class="textcolor text-center textpad">Please rotate your
                     screen to view the robots.</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <br>
                 <br>
                 <br>
@@ -2209,23 +2208,18 @@ autoplay: {
                     <br>
                     <br>
                 </main>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <footer class="d-none d-md-block">
+                <footer class="d-none d-lg-block">
                     <div class="bg-1 bottomnav">
                         <div class="container-fluid">
                             <br />
                             <div class="row">
-                                <div class="col-md-3 ">
+                                <div class="col-lg-3 ">
                                     <a href="#home" class
                                         style="height: 40px"><img
                                             class="bottomLogo "
                                             src="assets/img/Carousel/C_logo.png" /></a>
                                 </div>
-                                <div class="col-md-6  text-center">
+                                <div class="col-lg-6  text-center">
                                     <p class="textcolor slogon">
                                         "A Creative Revolution"
                                     </p>
@@ -2240,7 +2234,7 @@ autoplay: {
                                             href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p>
 
                                 </div>
-                                <div class="col-md-3 text-center">
+                                <div class="col-lg-3 text-center">
                                     <a class="bottomA" target="_blank"
                                         rel="noopener noreferrer"
                                         href="https://instagram.com/crevolution.robotics?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
@@ -2272,7 +2266,7 @@ autoplay: {
                     </div>
                 </footer>
                 <!-- Moblie footer -->
-                <footer class="d-md-none">
+                <footer class="d-lg-none">
                     <div id="contact_us" class="bg-1 bottomnav">
                         <div class="container-fluid text-center">
                             <br />
