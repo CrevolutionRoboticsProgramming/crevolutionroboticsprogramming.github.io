@@ -6,14 +6,11 @@ BUGS or problems to do after uploading new website
     - Fix drop down by adding other color for icon
     - Fix Top photos
     - Fix Robot tab in mobile and use coverflow effect
-    - Add tiers
     - Download icons for bootstrap and google fonts
     - Have Nav bar color when at sections
     - ^Maybe add small bar or smt under the text at nav^ 
-    -
+    - Fix nav bar on robot page to work on index #location
     - more lazy load, and free mode with Thumbs maybe or use Controller in the api. should fix alot
-    - add Parallax to parts of the website.
-    - add swiper to main page and add in lazyload for 2 slides ahead.
 
 
 ### 1. Order Pinegrow license
