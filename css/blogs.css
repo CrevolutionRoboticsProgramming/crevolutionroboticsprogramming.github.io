@@ -1,5 +1,5 @@
 body {
-  background-color: #181a1b;
+  background-color: #0f0f0f;
 
   overflow-x: hidden !important;
   /* ^ Used to hide the scrollbar*/
@@ -18,7 +18,7 @@ body {
   font-stretch: normal;
   font-size: 15px;
   line-height: 1.8;
-  font-family: Lato, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -55,8 +55,8 @@ body {
   background-color: #c3a234 !important;
 }
 nav {
-  background-color: #1f1f2e;
-  opacity: 0.95;
+  background-color: #1F1F1F;
+  opacity: 1;
   font-family: Montserrat;
   font-size: 12px;
   letter-spacing: 4px;
@@ -77,7 +77,7 @@ nav {
 }
 
 .bottomnav {
-  background-color: #1f1f2e;
+  background-color: #1f1f1f;
 }
 .bottomLogo {
   width: 167px;

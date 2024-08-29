@@ -1,5 +1,5 @@
 body {
-  background-color: #181a1b;
+  background-color: #0f0f0f;
 
   overflow-x: hidden !important;
   /* ^ Used to hide the scrollbar*/
@@ -55,8 +55,8 @@ body {
   background-color: #c3a234 !important; /*#C28510 and 2B2D42 */
 }
 nav {
-  background-color: #1f1f2e;
-  opacity: 0.95;
+  background-color: #1F1F1F;
+  opacity: 1;
   font-family: Montserrat;
   font-size: 12px;
   letter-spacing: 4px;
@@ -77,7 +77,7 @@ nav {
 }
 
 .bottomnav {
-  background-color: #1f1f2e;
+  background-color: #1f1f1f;
 }
 .bottomLogo {
   width: 167px;
@@ -102,12 +102,12 @@ nav {
 /*------------------------------------------------------------------*/
 
 .accordion {
-  --bs-accordion-bg: #222227;
+  --bs-accordion-bg: #1C1707;
   --bs-accordion-color: #dadada;
   --bs-accordion-btn-color: #dadada;
   --bs-accordion-border-color:#dadada ;
-  --bs-accordion-active-color: #222227 ;
-  --bs-accordion-active-bg: #dadada ;
+  --bs-accordion-active-color: #1f1f1f ;
+  --bs-accordion-active-bg: #DFCB87 ;
 }
 .accordion-collapse{
   text-align: left;
@@ -117,7 +117,7 @@ nav {
   font-size: 17px;
   font-weight: 400;
   margin-bottom: 10px;
-  font-family: Lato, sans-serif;
+  font-family: Montserrat, sans-serif;
   line-height: 1.8;
   margin-left: 36px;
   margin-right: 36px;
