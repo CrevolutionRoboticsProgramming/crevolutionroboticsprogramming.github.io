@@ -52,7 +52,7 @@ body {
 
 .navbar-nav li:hover {
   color: #000 !important;
-  background-color: #c3a234 !important;
+  background-color: #F0B825 !important;
 }
 nav {
   background-color: #1f1f1f;
@@ -262,7 +262,7 @@ nav {
     height: 35px;
     padding: 10px 0 40px 0; 
   }
-  .what{
+  .tierdescription{
       list-style-type: none;
       color: white;
       font-size: 25px ;
@@ -277,4 +277,12 @@ nav {
   .left{
     text-align: left;
     width: 300px;
+  }
+
+  .socialtierlist{
+    padding-bottom: 0%;
+  }
+
+  .sponsortierimg{
+    width: 60%;
   }

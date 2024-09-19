@@ -18,7 +18,7 @@ body {
   font-stretch: normal;
   font-size: 15px;
   line-height: 1.8;
-  font-family: Lato, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -52,7 +52,7 @@ body {
 
 .navbar-nav li:hover {
   color: #000 !important;
-  background-color: #c3a234 !important; /*#C28510 and 2B2D42 */
+  background-color: #F0B825 !important; /*#C28510 and 2B2D42 */
 }
 nav {
   background-color: #1F1F1F;
@@ -102,12 +102,12 @@ nav {
 /*------------------------------------------------------------------*/
 
 .accordion {
-  --bs-accordion-bg: #1C1707;
+  --bs-accordion-bg: #251B03;
   --bs-accordion-color: #dadada;
   --bs-accordion-btn-color: #dadada;
   --bs-accordion-border-color:#dadada ;
   --bs-accordion-active-color: #1f1f1f ;
-  --bs-accordion-active-bg: #DFCB87 ;
+  --bs-accordion-active-bg: #FCEFD0 ;
 }
 .accordion-collapse{
   text-align: left;
@@ -127,8 +127,7 @@ nav {
   padding-bottom: 25px;
   letter-spacing: 6px;
   font-size: 24px;
-  font-weight: 600;
-  font-family: inherit;
+  font-family: Montserrat, sans-serif;
 }
 h3 {
   color: white;
@@ -194,3 +193,43 @@ padding: 3%;
 padding: 3%;
 }
 
+.aubot{
+  background-color: #0b0b0b;
+  color:#fff;
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+
+body {
+  padding-top: 2rem;
+}
+
+@media (min-width: 576px) {
+  .card-group.card-group-scroll {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+  }
+}
+
+.card-group.card-group-scroll > .card {
+  flex-basis: 35%;
+}
+
+.card-body {
+  background-color: #0b0b0b;
+  color: #fff;
+}
+
+.card-footer {
+  background-color: #000;
+  color: #FCEFD0
+}
+.nt {
+  background-color: #656CB2;
+  color: #fff;
+}
+.t {
+  background-color: #F0B825;
+  color: #000;
+}
