@@ -233,3 +233,7 @@ body {
   background-color: #F0B825;
   color: #000;
 }
+.card-group {
+  margin-left: 10%;
+  margin-right: 10%;
+}
