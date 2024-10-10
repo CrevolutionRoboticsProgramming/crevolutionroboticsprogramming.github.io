@@ -85,81 +85,44 @@
   })
   </script>
     <!-- PIX CAROUSEL -->
-
-    <div id="home" class="container-fluid text-center bg-2">
-      <div class="swiper">
-        <div class="swiper-wrapper"
-          style=" width: 100vw; margin-top: 60px">
-          <div class="swiper-slide">
-            <img
-              src="./assets/img/Carousel/ExcellenceInEngineeringTeamPic.JPG"
-              style="object-fit: cover"
-              class="d-block w-100 indexcar"
-              alt="Crevolution Logo" loading="lazy" />
-            <div
-              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          </div>
-
-          <div class="swiper-slide">
-            <img
-              src="./assets/img/Carousel/2023tp.JPG"
-              style="object-fit: cover"
-              class="d-block w-100 indexcar"
-              alt="Crev Team Image" loading="lazy" />
-            <div
-              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./assets/img/Carousel/2022tp1.jpg"
-              style="object-fit: cover"
-              class="d-block w-100 indexcar"
-              alt="Crev Team Image" loading="lazy" />
-            <div
-              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./assets/img/Carousel/2019TP33.png"
-              style="object-fit: cover"
-              class="d-block w-100 indexcar"
-              alt="Crev Team Image" loading="lazy" />
-            <div
-              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./assets/img/Carousel/TeamPic1.jpg"
-              style="object-fit: cover"
-              class="d-block w-100 indexcar"
-              alt="Crev Team Image" loading="lazy" />
-            <div
-              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./assets/img/Carousel/TeamPic2.jpg"
-              style="object-fit: cover"
-              class="d-block w-100 indexcar"
-              alt="Crev Team Image" loading="lazy" />
-            <div
-              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="./assets/img/Carousel/sponsors.png"
-              style="object-fit: cover"
-              class="d-block w-100 indexcar"
-              alt="Sponsors Image" loading="lazy" />
-            <div
-              class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          </div>
-
+    <div id="carouselExample" class="carousel slide ">
+      
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <img src="assets/img/Carousel/ExcellenceInEngineeringTeamPic.JPG" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="carousel-item">
+          <img src="assets/img/Carousel/2023tp.JPG" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/Carousel/2022tp1.jpg" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/Carousel/2019TP33.png" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/Carousel/TeamPic1.jpg" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/Carousel/TeamPic2.jpg" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/Carousel/sponsors.png" style="object-fit: cover" class="d-block w-100 indexcar" alt="Crev Team Image" loading="lazy">
+        </div>
       </div>
+      <img class="crevomark position-absolute bottom-0 translate-middle" src="assets/img/Crevomark.svg"> 
+      <button class=" pnbtn carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="pnbtn carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>  
+         
     </div>
+
     <script>
       var swiper = new Swiper(".swiper", {      
       spaceBetween: 1,
@@ -296,17 +259,6 @@
             <small>Leads: Cayla T. / Adeline P.</small>
         </div>
       </div>
-        <div class="card">
-          <div class="card-body">
-              <h5 class="card-title">Recruitment & Training <span class="badge nt rounded-pill">NT</span></h5>
-              <p class="card-text">
-                  <b>Recruitment & Training</b>
-              </p>
-          </div>
-          <div class="card-footer">
-              <small>Lead: Shila L.</small>
-          </div>
-      </div>
     </div>
     </div>
     
@@ -425,10 +377,36 @@
           title: 'Open House',
           start:'2024-09-19'
         },{
+          title: 'Henry Ford II Parade',
+          start:'2024-10-11'
+        },{
+          title:'BWW Fundraiser (II)',
+          start:'2024-10-20'
+        },{
+          title:'STEAM Night',
+          start:'2024-10-23'
+        },{
+          title:'FLL Scrimmage Volunteers',
+          start:'2024-10-26'
+        },{
+          title:'BWW Fundraiser (III)',
+          start:'2024-11-10'
+        },{
+          title:'BWW Fundraiser (IV)',
+          start:'2024-12-15'
+        },{
           title: 'Season Kickoff 2025',
           start: '2025-01-04'
-        }
-        
+        },{
+          title:'BWW Fundraiser (V)',
+          start:'2025-01-12'
+        },{
+          title:'BWW Fundraiser (VI)',
+          start:'2025-02-02'
+        },{
+          title:'BWW Fundraiser (VII)',
+          start:'2025-03-02'
+        }        
         ]})
         calendar.render()
       })
