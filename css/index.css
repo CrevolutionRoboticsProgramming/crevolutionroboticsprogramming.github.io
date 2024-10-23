@@ -52,14 +52,16 @@ body {
 
 .navbar-nav li:hover {
   color: #000 !important;
-  background-color: #F0B825 !important; /*#C28510 and 2B2D42 */
+  background-color: #efb821 !important; /*#C28510 and 2B2D42 */
 }
 nav {
   background-color: #1F1F1F;
   opacity: 1;
   font-family: Montserrat;
   font-size: 12px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-bottom: 5px solid #efb821;
 }
 #navspan {
   padding: 0px 0px 0px 0px;
@@ -68,7 +70,6 @@ nav {
   padding: 22px 0 22px 0;
   
 }
-
 
 .navbar-toggler {
   margin-top: 11px;
@@ -95,42 +96,35 @@ nav {
 .bottomA {
   margin: 0px 10px 0px 10px;
 }
-.slogon{
+.slogon {
+font-weight: 900;
   margin: 20px 0 20px 0;
   font-size: 24px;
 }
 /*------------------------------------------------------------------*/
 
 .accordion {
-  --bs-accordion-bg: #251B03;
+  --bs-accordion-bg: #000000;
   --bs-accordion-color: #dadada;
   --bs-accordion-btn-color: #dadada;
   --bs-accordion-border-color:#dadada ;
   --bs-accordion-active-color: #1f1f1f ;
-  --bs-accordion-active-bg: #FCEFD0 ;
+  --bs-accordion-active-bg: #efb821 ;
 }
 .accordion-collapse{
   text-align: left;
 }
 
-.aboutus_desc {
-  font-size: 17px;
-  font-weight: 400;
-  margin-bottom: 10px;
-  font-family: Montserrat, sans-serif;
-  line-height: 1.8;
-  margin-left: 36px;
-  margin-right: 36px;
-}
 .aboutus_title {
   padding-top: 50px;
   padding-bottom: 25px;
-  letter-spacing: 6px;
-  font-size: 24px;
-  font-family: Montserrat, sans-serif;
 }
-h3 {
-  color: white;
+h2 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 li {
   color: white;
@@ -141,7 +135,7 @@ li {
   
   
   --fc-today-bg-color: rgba(255, 213, 0, 0.15);
-  --fc-event-bg-color: #c3a234;
+  --fc-event-bg-color: #efb821;
   margin: 0 auto !important; 
 }
 .fc-view-container {
@@ -168,7 +162,7 @@ li {
   
 }
 .mailform button:hover{
-  background-color: #c3a234 !important;
+  background-color: #efb821 !important;
 }
 .mailform button{
   background-color: #222227;
@@ -230,12 +224,13 @@ body {
   color: #fff;
 }
 .t {
-  background-color: #F0B825;
+  background-color: #efb821;
   color: #000;
 }
 .card-group {
   margin-left: 10%;
   margin-right: 10%;
+  filter: drop-shadow(0px 0px 20px #efb82133);
 }
 .rebrand {
   background-color: #090909;
@@ -253,4 +248,35 @@ body {
 }
 .pnbtn {
   filter: drop-shadow(0px 0px 10px #000000);
+}
+
+a {
+  color:#7dbbe7
+}
+.list-group {
+  filter: drop-shadow(0px 0px 20px #efb82133);
+}
+
+.eventlist {
+  margin-left: 20%; margin-right: 20%;
+}
+.pastevents {
+  margin-left: 20%; margin-right: 20%;
+  filter: drop-shadow(0px 0px 20px #efb82122);
+}
+.moreevents {
+  margin-left: 20%; margin-right: 20%;
+  filter: drop-shadow(0px 0px 20px #efb82122);
+}
+.list-group-item {
+  background-color: #0f0f0f;
+  color: #fff;
+}
+.bold {
+  font-weight: 700;
+}
+.date {
+  color: #efb821;
+}
+.eventlist-b {
 }

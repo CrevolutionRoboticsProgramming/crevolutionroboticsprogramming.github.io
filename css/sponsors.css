@@ -55,11 +55,13 @@ body {
   background-color: #F0B825 !important;
 }
 nav {
-  background-color: #1f1f1f;
+  border-bottom: 5px solid #efb821;
+  background-color: #1F1F1F;
   opacity: 1;
   font-family: Montserrat;
   font-size: 12px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 #navspan {
   padding: 0px 0px 0px 0px;
@@ -77,6 +79,7 @@ nav {
 }
 
 .bottomnav {
+  border-bottom: 5px solid #efb821;
   background-color: #1f1f1f;
 }
 .bottomLogo {
@@ -95,7 +98,8 @@ nav {
 .bottomA {
   margin: 0px 10px 0px 10px;
 }
-.slogon{
+.slogon {
+font-weight: 900;
   margin: 20px 0 20px 0;
   font-size: 24px;
 }
@@ -127,7 +131,11 @@ nav {
   }
   h1{
     font-size: 10vw;
-    
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
   }
   @media screen and (min-width: 425px) {
     h1 {

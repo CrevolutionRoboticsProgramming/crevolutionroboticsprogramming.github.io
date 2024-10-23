@@ -18,10 +18,9 @@
       href="https://fonts.googleapis.com/css?family=Lato"
       rel="stylesheet"
       type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-      type="text/css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="css/swiper-bundle.min.css" rel="stylesheet"
       type="text/css" />
   </head>
@@ -143,7 +142,7 @@
                             </script>
     <!-- ABOUT US -->
     <div id="about" class="container-fluid text-center bg-2">
-      <h3 class="aboutus_title">ABOUT US</h3>
+      <h2 class="aboutus_title">ABOUT US</h3>
       <p class="textcolor textitalic aboutus_desc">
         Crevolution is a robotics team from Sterling Heights, Michigan, that is
         composed of students from the Utica Community Schools District. Each
@@ -187,7 +186,7 @@
         </li>
       </ul>
       <br>
-      <h2 class="textcolor">ABOUT THE SUB-TEAMS</h2>
+      <h2>ABOUT THE SUB-TEAMS</h2>
       <br>
       <div class="card-group">
         <div class="card">
@@ -321,105 +320,127 @@
       }
     </script>
 
-    <div id="current_events" class="bg-1">
-      <div class="container-fluid">
-        <div class="row text-center textcolor">
-          <h3 class="textcolor">CURRENT EVENTS</h3>
-          <!-- <p class="textcolor">
-            <em>We have no upcoming competitions currently but check back
-              soon!</em>
-          </p> -->
-          <p>We have no upcoming competitions currently but check back
-            soon!</p>
-          <!-- 	<h1 id="TimeTest"></p><script> LaunchTime(1); </script></h1>  -->
-          <!-- <p>Countdown Until Our 2nd Competition on March 30th at Troy Athens Highschool:</p> -->
-          <!--<p>Countdown Until Our 2nd Competition on March 30th at Troy Athens Highschool:</p>
-						<h1 id="TimeTest2"></p><script> LaunchTime(2); </script></h1> -->
-          <div class="col-sm-12">
-            <div class="embed-responsive embed-responsive-16by9">
-              <div id='calendar'></div>
-            </div>
+<h2 class="text-center textcolor">CURRENT EVENTS</h2>
+<br>
+<div class="accordion pastevents" id="pastevents">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bold" type="button" data-bs-toggle="collapse" data-bs-target="#past" aria-expanded="false" aria-controls="past">
+        PAST EVENTS
+      </button>
+    </h2>
+    <div id="past" class="accordion-collapse collapse" data-bs-parent="#pastevents">
+      <div class="eventlist-2 list-group">
+        <div class="list-group-item" aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="bold mb-1">Open House</h5>
+            <small class="date">Thu, September 19, 2024</small>
           </div>
+          <p class="mb-1">Gene L. Klida Utica Academy for International Studies</p>
+        </div>
+        <div class="list-group-item">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="bold mb-1">Henry Ford II HS Parade</h5>
+            <small class="date">Fri, October 11, 2024</small>
+          </div>
+          <p class="mb-1">Henry Ford II High School</p>
+        </div>
+        <div class="list-group-item">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="bold mb-1">BWW Fundraiser (Oct)</h5>
+            <small class="date">Sun, October 20, 2024</small>
+          </div>
+          <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
         </div>
       </div>
     </div>
-    <br>
+  </div>
 
-    <script src='js/index.global.min.js'></script>
-    <script>
+</div>
+<br>
+<div class="eventlist list-group">
+  <div class="list-group-item" aria-current="true">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="bold mb-1">STEAM Night</h5>
+      <small class="date">Wed, October 23, 2024</small>
+    </div>
+    <p class="mb-1">Gene L. Klida Utica Academy for International Studies</p>
+  </div>
+  <div class="list-group-item">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="bold mb-1">FLL Scrimmage</h5>
+      <small class="date">Sat, October 26, 2024</small>
+    </div>
+    <p class="mb-1">Shelby Jr. High</p>
+  </div>
+  <div class="list-group-item">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="bold mb-1">BWW Fundraiser (Nov)</h5>
+      <small class="date">Sun, November 10, 2024</small>
+    </div>
+    <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+  </div>
+</div>
 
-      document.addEventListener('DOMContentLoaded', function() {
-        const calendarEl = document.getElementById('calendar')
-        const calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth',
-          height: 600,
-          events: [
-        {
-          title: 'Season Kickoff 2024',
-          start: '2024-01-06'
-        },{
-          title: 'Woodhaven Competition 2024',
-          start: '2024-03-09',
-          end: '2024-03-11'
-        },{
-          title: 'Troy #1 Competition 2024',
-          start: '2024-03-23',
-          end: '2024-03-25'
-        },{
-          title: 'States Competition 2024',
-          start: '2024-04-05',
-          end: '2024-04-07'
-        },{
-          title: 'Worlds Competition 2024',
-          start: '2024-04-17',
-          end: '2024-04-21'
-        },{
-          title: 'Open House',
-          start:'2024-09-19'
-        },{
-          title: 'Henry Ford II Parade',
-          start:'2024-10-11'
-        },{
-          title:'BWW Fundraiser (II)',
-          start:'2024-10-20'
-        },{
-          title:'STEAM Night',
-          start:'2024-10-23'
-        },{
-          title:'FLL Scrimmage Volunteers',
-          start:'2024-10-26'
-        },{
-          title:'BWW Fundraiser (III)',
-          start:'2024-11-10'
-        },{
-          title:'BWW Fundraiser (IV)',
-          start:'2024-12-15'
-        },{
-          title: 'Season Kickoff 2025',
-          start: '2025-01-04'
-        },{
-          title:'BWW Fundraiser (V)',
-          start:'2025-01-12'
-        },{
-          title:'BWW Fundraiser (VI)',
-          start:'2025-02-02'
-        },{
-          title:'BWW Fundraiser (VII)',
-          start:'2025-03-02'
-        }        
-        ]})
-        calendar.render()
-      })
+<br>
 
-    </script>
-
+<div class="accordion moreevents" id="moreevents">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed bold" type="button" data-bs-toggle="collapse" data-bs-target="#more" aria-expanded="false" aria-controls="more">
+        MORE EVENTS
+      </button>
+    </h2>
+    <div id="more" class="accordion-collapse collapse" data-bs-parent="#moreevents">
+      <div class="eventlist-2 list-group">
+        <div class="list-group-item" aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="bold mb-1">BWW Fundraiser (Dec)</h5>
+            <small class="date">Sun, December 15, 2024</small>
+          </div>
+          <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+        </div>
+        <div class="list-group-item">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="bold mb-1">Season Kickoff</h5>
+            <small class="date">Saturday, January 4, 2025</small>
+          </div>
+          <p class="mb-1">Gene L. Klida Utica Academy for International Studies</p>
+        </div>
+        <div class="list-group-item">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="bold mb-1">BWW Fundraiser (Jan)</h5>
+            <small class="date">Sun, January 12, 2025</small>
+          </div>
+          <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+        </div>
+        <div class="list-group-item">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="bold mb-1">BWW Fundraiser (Feb)</h5>
+            <small class="date">Sun, February 2, 2025</small>
+          </div>
+          <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+        </div>
+        <div class="list-group-item">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="bold mb-1">BWW Fundraiser (Mar)</h5>
+            <small class="date">Sun, March 2, 2025</small>
+          </div>
+          <p class="mb-1">Buffalo Wild Wings: 44833 Mound Rd. Sterling Heights, MI</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<br>
+<br>
     <!-- SOCIAL MEDIA -->
     <div id="contact_us">
       <br>
       <br>
       <div class="row">
         <div class="col-md-6 mailform textcolor">
-          <h1>Contact Us:</h1>
+          <h2>Contact Us:</h2>
           <form target="_blank"
             action="https://formsubmit.co/crevo.robotics@gmail.com"
             method="POST">
@@ -489,8 +510,7 @@
             </div>
             <div class="col-lg-6  text-center">
               <p class="textcolor slogon">
-                "A Creative Revolution"
-              </p>
+                "A CREATIVE REVOLUTION"              </p>
               <p class="textcolor">
                 For any comments or questions that
                 concern
@@ -543,8 +563,7 @@
               src="assets/img/CrevoSmall.svg" /></a>
 
           <p class="textcolor slogon">
-            "A Creative Revolution"
-          </p>
+            "A CREATIVE REVOLUTION"          </p>
           <p class="textcolor">
             For any comments or questions that concern
             Crevolution,
