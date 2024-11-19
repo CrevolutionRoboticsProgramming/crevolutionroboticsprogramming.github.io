@@ -50,32 +50,7 @@ body {
   padding-top: 3px;
 }
 
-.navbar-nav li:hover {
-  color: #000 !important;
-  background-color: #efb821 !important; /*#C28510 and 2B2D42 */
-}
-nav {
-  background-color: #1F1F1F;
-  opacity: 1;
-  font-family: Montserrat;
-  font-size: 12px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  border-bottom: 5px solid #efb821;
-}
-#navspan {
-  padding: 0px 0px 0px 0px;
-}
-.nav-link {
-  padding: 22px 0 22px 0;
-  
-}
 
-.navbar-toggler {
-  margin-top: 11px;
-  margin-bottom: 11px;
-  margin-right: 11px;
-}
 
 .bottomnav {
   background-color: #1f1f1f;
@@ -271,6 +246,13 @@ a {
 .list-group-item {
   background-color: #0f0f0f;
   color: #fff;
+  transition: background-color 500ms
+}
+.list-group-item:hover {
+  background-color: #281e03;
+}
+.comp:hover {
+  background-color: #656CB2; !important
 }
 .bold {
   font-weight: 700;
@@ -278,5 +260,6 @@ a {
 .date {
   color: #efb821;
 }
-.eventlist-b {
+.comp {
+  background-color: #191b32;
 }
