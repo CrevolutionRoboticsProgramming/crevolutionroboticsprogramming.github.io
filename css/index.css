@@ -246,7 +246,7 @@ a {
 .list-group-item {
   background-color: #0f0f0f;
   color: #fff;
-  transition: background-color 500ms
+  transition: background-color 500ms;
 }
 .list-group-item:hover {
   background-color: #281e03;
@@ -262,4 +262,16 @@ a {
 }
 .comp {
   background-color: #191b32;
+}
+.col-form-label {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: right;
+}
+.form-control {
+  background-color: #f6f9fd;
+  transition: background-color 500ms;
+}
+.form-control:hover {
+  background-color: #FFFCF2;
 }
