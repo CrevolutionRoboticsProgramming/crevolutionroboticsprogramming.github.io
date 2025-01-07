@@ -275,3 +275,7 @@ a {
 .form-control:hover {
   background-color: #FFFCF2;
 }
+.reefscape {
+  background-image: linear-gradient(160deg, #656CB2, #2e684c);
+  border-radius: 15px;
+}

@@ -71,7 +71,14 @@ nav {
   padding: 22px 0 22px 0;
   
 }
-
+h2 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+}
 
 .navbar-toggler {
   margin-top: 11px;

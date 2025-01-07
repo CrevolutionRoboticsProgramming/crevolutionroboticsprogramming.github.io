@@ -395,3 +395,10 @@ font-weight: 900;
     padding: 3px;
     padding-left: 10px; padding-right: 10px;
   }
+  .all {
+    background-color: #efb821;
+    color: #000;
+    font-weight: 800;
+    padding: 3px;
+    padding-left: 10px; padding-right: 10px;
+  }
