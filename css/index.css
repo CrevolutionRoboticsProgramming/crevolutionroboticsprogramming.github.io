@@ -279,3 +279,9 @@ a {
   background-image: linear-gradient(160deg, #656CB2, #2e684c);
   border-radius: 15px;
 }
+@media screen {
+  .reefscape {
+    background-image: linear-gradient(160deg, #656CB2, #2e684c);
+  border-radius: 15px;
+  width: 90%;
+}
