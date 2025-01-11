@@ -279,10 +279,10 @@ a {
   background-image: linear-gradient(160deg, #656CB2, #2e684c);
   border-radius: 15px;
 }
-@media only screen
+/*@media only screen
 and (max-device-width: 480px)
 and (orientation: portrait) {
   .reefscape {
   width: 90% !important;
 }
-}
+}*/
