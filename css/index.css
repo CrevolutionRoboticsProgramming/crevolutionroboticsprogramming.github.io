@@ -231,16 +231,13 @@ a {
 .list-group {
   filter: drop-shadow(0px 0px 20px #efb82133);
 }
-
-.eventlist {
-  margin-left: 20%; margin-right: 20%;
+.eventm {
+  margin-left: 20%; margin-right: 20%;  
 }
 .pastevents {
-  margin-left: 20%; margin-right: 20%;
   filter: drop-shadow(0px 0px 20px #efb82122);
 }
 .moreevents {
-  margin-left: 20%; margin-right: 20%;
   filter: drop-shadow(0px 0px 20px #efb82122);
 }
 .list-group-item {
@@ -279,10 +276,27 @@ a {
   background-image: linear-gradient(160deg, #656CB2, #2e684c);
   border-radius: 15px;
 }
-/*@media only screen
-and (max-device-width: 480px)
-and (orientation: portrait) {
-  .reefscape {
-  width: 90% !important;
+@media screen and (max-width: 770px) {
+  .reefscape-vid {
+    width: 100%;
+    height: 320px;
+  }
+  .eventm {
+    margin-left: 10%; margin-right: 10%;  
+  }
+  .reefscapelogo {
+    width: 50%;
+  }
 }
-}*/
+@media screen and (min-width: 770px) {
+.reefscape-vid {
+  width: 640px;
+  height: 320px;
+}
+.eventm {
+  margin-left: 20%; margin-right: 20%;  
+}
+.reefscapelogo {
+  width: 25%;
+}
+}
