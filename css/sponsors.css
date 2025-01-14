@@ -342,4 +342,55 @@ font-weight: 900;
   }
   .container {
     margin-left: auto;
+
   }
+  .card {
+    background: #00000000;
+    padding : 4px;
+    border-radius: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .blob {
+    filter: blur(40px);
+    position: absolute;
+    z-index: -1; /* to keep it at below everything else */
+    top: 0; /* to align it at top */
+    left: 0; /* to align it at left */
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* to make it circular */
+    background: rgb(255, 255, 255, 0.5);
+  }
+  .fakeblob {
+    display: hidden;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .inner {
+    /* ... */
+    transition: background 300ms ease-in-out;
+  }
+  .card:hover > .plat {
+    backdrop-filter: blur(80px);
+    background: rgb(26, 26, 26, 0.6);
+  }
+  .card:hover > .goldv {
+    backdrop-filter: blur(80px);
+    background: #967c4488;
+  }
+  .card:hover > .silv {
+    backdrop-filter: blur(80px);
+    background: #463f50cc;
+  }
+  .card:hover > .brnz {
+    backdrop-filter: blur(80px);
+    background: #63432bfa;
+  }
+    
+  

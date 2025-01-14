@@ -31,10 +31,11 @@
 		  $("#nav-placeholder").load("assets/nav.html");
 		});
 		</script>
-
+	
 	
 	</head>
 	<body>
+
 		<br>
 		<br>
 		<br>
@@ -49,16 +50,21 @@
 				<h1>Platinum Tier</h1>
 			</div>
 		  </div>
-			<div class="row plat">
+		  <div class="card">
+			<div class="plat inner">
+			<div class="row">
 			  <div class="col">
 				<img width="80%" src="/assets/img/Sponsors2024-25/P/printbed.svg">
 			  </div>
 			  <div class="col">
 				<img width="80%" src="/assets/img/Sponsors2024-25/P/ucs.svg">
 			  </div>
+			  </div>
 			</div>
+			<div class="blob"></div>
+			<div class="fakeblob"></div>
 		  </div>
-		
+		</div>
 		  <br>
 		<div class="container text-center">
 			<div class="row">
@@ -66,7 +72,9 @@
 				<h1>Gold Tier</h1>
 			</div>
 		  </div>
-			<div class="row goldv">
+		  <div class="card">
+			<div class="goldv inner">
+			<div class="row">
 			  <div class="col">
 				<img width="80%" src="/assets/img/Sponsors2024-25/G/gm.svg">
 			  </div>
@@ -76,9 +84,12 @@
 			  <div class="col">
 				<img width="80%" src="/assets/img/Sponsors2024-25/G/namc.svg">
 			  </div>
+			  </div>
 			</div>
+			<div class="blob"></div>
+			<div class="fakeblob"></div>
 		  </div>
-
+</div>
 		  <br>
 		<div class="container text-center">
 			<div class="row">
@@ -86,16 +97,21 @@
 				<h1>Silver Tier</h1>
 			</div>
 		  </div>
-			<div class="row silv">
+		  <div class="card">
+			<div class="silv inner">
+			<div class="row">
 			  <div class="col">
 				<img width="80%" src="/assets/img/Sponsors2024-25/S/ghf.svg">
 			  </div>
 			  <div class="col">
 				<img width="80%" src="/assets/img/Sponsors2024-25/S/dod.svg">
 			  </div>
+			  </div>
 			</div>
+			<div class="blob"></div>
+			<div class="fakeblob"></div>
 		  </div>
-
+</div>
 		  <br>
 		<div class="container text-center">
 			<div class="row">
@@ -103,7 +119,8 @@
 				<h1>Bronze Tier</h1>
 			</div>
 			</div>
-			<div class="brnz">
+			<div class="card">
+			<div class="brnz inner">
 			<div class="row">
 			  <div class="col">
 				<img class="sponsorimg" width="80%" src="/assets/img/Sponsors2024-25/B/abb.svg">
@@ -122,7 +139,13 @@
 				<div class="col">
 				  <img class="sponsorimg" width="80%" src="/assets/img/Sponsors2024-25/B/omyo.svg">
 				</div>
+				<div class="col">
+				<img class="sponsorimg" width="80%" src="/assets/img/Sponsors2024-25/B/oel.svg">
+				</div>
 			  </div>
+			</div>
+			<div class="blob"></div>
+			<div class="fakeblob"></div>
 			</div>
 			</div>
 		  <br>
@@ -131,7 +154,8 @@
 			<div class="col">
 				<h1>Member Tier</h1>
 			</div>
-			<div class="memb">
+			<div class="card">
+			<div class="memb inner">
 				<div class="row">
 			  <div class="col">
 				<img class="sponsorimg" width="80%" src="/assets/img/Sponsors2024-25/M/3d.svg">
@@ -199,6 +223,9 @@
 								</div>
 								</div>
 			</div>
+			<div class="blob"></div>
+			<div class="fakeblob"></div>
+			<span style="color: #0f0f0f;">sponsor page</span></div>
 			</div>
 			</div>
 		<br>
@@ -314,7 +341,37 @@
 			  </div>
 			</div>
 		  </footer>
-	  
+	  <script>
+		
+
+const all = document.querySelectorAll(".card");
+
+window.addEventListener("mousemove", (ev) => {
+  
+  all.forEach((e) => {
+    const blob = e.querySelector(".blob");
+    const fblob = e.querySelector(".fakeblob");
+    const rec = fblob.getBoundingClientRect();
+    blob.style.opacity = "1";
+  
+    blob.animate(
+      [
+        {
+          transform: `translate(${
+            (ev.clientX - rec.left) - (rec.width / 2)
+          }px,${(ev.clientY - rec.top) - (rec.height / 2)}px)`
+        }
+      ],
+      {
+        duration: 300,
+        fill: "forwards"
+      }
+    );
+  });
+});
+
+
+	  </script>
 		<script>
       $(document).ready(function () {
         // Initialize Tooltip
