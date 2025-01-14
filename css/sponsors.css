@@ -104,10 +104,6 @@ font-weight: 900;
   font-size: 24px;
 }
 /*------------------------------------------------------------------*/
-.colorFix{
-  background-color: #4b4b57; 
-  border-radius: 15px;
-}
 .flex-wrap{
   margin: 0 5% 0 5%;  
 }
@@ -296,7 +292,7 @@ font-weight: 900;
   }
 
   .col {
-    text-align: left;
+    text-align: center;
   }
   .bordera {
     border-bottom: #e5e4e2 solid 3px;
@@ -305,22 +301,23 @@ font-weight: 900;
     border-left: #e5e4e2 solid 3px;
   }
   .plat {
-    background-color: #1e2146;
-    border-top-left-radius: 24px;
-    border-top-right-radius: 24px;
-    
+    background-color: #6c6e86;    
+    border-radius: 30px;
   }
   .goldv {
-    background-color: #423510;
+    background-color: #967c44;
+    border-radius: 30px;
   }
   .silv {
-    background-color: #23212e;
+    background-color: #463f50;
+    border-radius: 30px;
   }
   .brnz {
-    background-color: #241b14;
+    background-color: #63432b;
+    border-radius: 30px;
   }
-  .sponsors {
-    background-color: #2c1515;
+  .memb {
+    background-color: #6b2323;
     border-radius: 30px;
   }
   .row {
@@ -333,11 +330,16 @@ font-weight: 900;
     padding: 0 4px;
   }
   
-  .column img {
+  .col img {
     margin-top: 8px;
     vertical-align: middle;
+    height: 150px;
+    margin: 20px;
   }
   .column2 {
     flex: 20%;
     padding: 0 4px;
+  }
+  .container {
+    margin-left: auto;
   }
