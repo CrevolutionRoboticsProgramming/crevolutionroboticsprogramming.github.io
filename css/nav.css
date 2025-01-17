@@ -1,6 +1,6 @@
 .navbar-nav li:hover {
     color: #000 !important;
-    background-color: #efb821 !important; /*#C28510 and 2B2D42 */
+    background-color: #efb821 !important;
   }
   nav {
     background-color: #1F1F1F;
@@ -10,6 +10,8 @@
     letter-spacing: 2px;
     font-weight: 700;
     border-bottom: 5px solid #efb821;
+    margin: 5px;
+    border-radius: 10px;
   }
   #navspan {
     padding: 0px 0px 0px 0px;

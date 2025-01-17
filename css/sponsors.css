@@ -378,7 +378,7 @@ font-weight: 900;
   }
   .card:hover > .plat {
     backdrop-filter: blur(80px);
-    background: rgb(26, 26, 26, 0.6);
+    background: #0f0f0f99;
   }
   .card:hover > .goldv {
     backdrop-filter: blur(80px);
