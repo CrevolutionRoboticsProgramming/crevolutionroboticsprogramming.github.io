@@ -137,13 +137,17 @@ li {
   
 }
 .mailform button:hover{
-  background-color: #efb821 !important;
+  border-color: #fff;
+  background-color: #000;
 }
+
 .mailform button{
   background-color: #222227;
   margin: 5px 0 20px 0;
-  border-color: #dadada;
+  border-color: #efb821;
   border-width: 2px;
+  display: block;
+  margin: auto
 }
 iframe{
   border-radius: 5px;

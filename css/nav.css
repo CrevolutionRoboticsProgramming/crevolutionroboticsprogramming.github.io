@@ -12,6 +12,9 @@
     border-bottom: 5px solid #efb821;
     margin: 5px;
     border-radius: 10px;
+    filter: drop-shadow(0px 0px 20px #000);
+    overflow-x:hidden;
+
   }
   #navspan {
     padding: 0px 0px 0px 0px;
@@ -26,3 +29,4 @@
     margin-bottom: 11px;
     margin-right: 11px;
   }
+  

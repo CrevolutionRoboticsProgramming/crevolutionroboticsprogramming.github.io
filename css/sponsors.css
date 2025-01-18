@@ -395,6 +395,9 @@ font-weight: 900;
   p {
     margin-bottom: 0%;
   }
-  bottomp {
+  .bottomp {
     margin-bottom: 5px !important;
   }
+ .knownlink:hover {
+  filter: drop-shadow(5px 5px #00000066);
+ }
