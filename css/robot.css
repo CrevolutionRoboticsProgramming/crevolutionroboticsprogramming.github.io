@@ -217,6 +217,8 @@ padding: 3%;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   opacity: 0.50;
+  
+  border-top: #38311F solid 5px; border-bottom: #38311F solid 5px;
 }
 .nextm{
   display: inline-block;
@@ -226,7 +228,7 @@ padding: 3%;
 }
 
 .mtext{
-  background-color: #1f1f2e;
+  background-color: #191919;
   font-size: 15px;
   border-radius: 5px;
   margin: 5px 5% 5px 5%;
@@ -235,10 +237,9 @@ padding: 3%;
     bottom: 2%;
     display: flex;
     justify-content: center;
-    background-color: rgba(31, 31, 46, 0.90);
 }
 .mtitle{
-  background-color: #1f1f2e;
+  background-color: #191919;
   font-size: 40px;
   border-radius: 5px;
   padding: 5px 10px 5px 10px;
@@ -247,14 +248,13 @@ padding: 3%;
     top: 3%;
     display: flex;
     justify-content: center;
-    background-color: rgba(31, 31, 46, 0.90);
 }
 .textpad{
   padding: 0 10% 0 10%;
 }
 
 .tooltipm{
-  background-color: #1f1f2e;
+  background-color: #191919;
   font-size: 16px;
   border-radius: 50px;
   padding: 1px 5px 1px 5px;
@@ -263,5 +263,4 @@ padding: 3%;
     top: 3%;
     display: flex;
     justify-content: center;
-    background-color: rgba(31, 31, 46, 0.90);
 }
