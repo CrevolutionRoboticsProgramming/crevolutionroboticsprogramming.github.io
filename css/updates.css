@@ -402,3 +402,28 @@ font-weight: 900;
     padding: 3px;
     padding-left: 10px; padding-right: 10px;
   }
+  .modal-dialog {
+    width: 900px;    
+  }
+  .modal-content {
+    background-color: #0f0f0f;
+    border: #fff 3px solid;
+
+  }
+  .modal-body {
+    background-color: #1c1c1c;
+    border-top: #fff 2px solid; border-bottom: #fff 2px solid;
+
+  }
+  .modal {
+    backdrop-filter: blur(3px);
+  }
+  .carimg {
+    height: auto;
+    width: auto;
+    border-radius: 15px;
+  }
+  .carousel {
+    height: auto;
+    border-radius: 15px;
+  }
