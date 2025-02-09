@@ -264,3 +264,15 @@ padding: 3%;
     display: flex;
     justify-content: center;
 }
+.placeholder-back {
+  background-image: url("/assets/img/placeholder-robots.png");
+  background-size: cover;
+  background-position: 0;
+  border-bottom-left-radius: 25px;
+}
+.crescendo {
+  background-image: url("/assets/img/Robots/backdrops/crescendo.png");
+}
+.leftpart {
+  background-color: #191919;
+}

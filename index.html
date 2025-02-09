@@ -30,6 +30,7 @@
 
   <body>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/lite-yt-embed.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     
@@ -237,7 +238,7 @@
   </div>
 <br>
 <br>
-<div class="reefscape">
+<div class="reefscape-desk">
   <br>
 <img class="reefscapelogo" src="/assets/img/reefscape-text.svg">
 <br>
@@ -245,9 +246,11 @@
 <div class="container text-center">
   <div class="row">
     <div class="col">
-<iframe class="reefscape-vid"
-src="https://www.youtube.com/embed/YWbxcjlY9JY?si=HDpwnna6pjIKq48A">
-</iframe> 
+      <lite-youtube class="center reefscape-vid"
+      videoid="YWbxcjlY9JY"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen="allowfullscreen">
 <br>
 <br>
     </div>
@@ -256,6 +259,19 @@ src="https://www.youtube.com/embed/YWbxcjlY9JY?si=HDpwnna6pjIKq48A">
     </div>
   </div>
 </div>
+</div>
+
+<div class="reefscape-mobile">
+  <br>
+<img class="reefscapelogo" src="/assets/img/reefscape-text.svg">
+<br>
+<br>
+      <lite-youtube class="reefscape-vid"
+      videoid="YWbxcjlY9JY"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen="allowfullscreen"></lite-youtube>
+  <p class="reefscape-text-m"><span style="font-weight: 900;">Reefscape</span> is the 2025 FRC Game in FIRST's "DIVE" season. It is based on exploring and strengthening the ocean and its habitat. More information about the game can be found in the attached video.</p>
 </div>
 <br>
 <br>

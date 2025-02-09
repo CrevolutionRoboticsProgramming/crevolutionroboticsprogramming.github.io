@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+  box-sizing: border-box !important;
+}
 .navbar-nav li:hover {
   color: #000 !important;
   background-color: #efb821 !important;
@@ -15,6 +19,7 @@ nav {
   filter: drop-shadow(0px 0px 20px #000);
   overflow-x: hidden;
   position: sticky;
+  box-sizing:content-box;
 }
 #navspan {
   padding: 0px 0px 0px 0px;
@@ -35,4 +40,7 @@ nav {
 }
 .navbar-toggler:hover {
   color: #efb821;
+}
+br {
+  overflow-x: hidden;
 }
