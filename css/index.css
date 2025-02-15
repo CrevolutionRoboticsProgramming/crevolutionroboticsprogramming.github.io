@@ -220,11 +220,14 @@ body {
   margin-left: 100px; margin-right: 100px;
 }
 .carousel {
-  height: 700px;
+  height: 30%;
   background-image: linear-gradient(180deg, black, #00000000);
 }
+.carousel-inner {
+  height: 30%;
+}
 .carousel-item img {
-  height:700px;
+  height:30%;
 }
 .crevomark {
   width: 35%;
