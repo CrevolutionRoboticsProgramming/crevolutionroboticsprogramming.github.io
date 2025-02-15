@@ -220,11 +220,11 @@ body {
   margin-left: 100px; margin-right: 100px;
 }
 .carousel {
-  height:825px;
+  height: 700px;
   background-image: linear-gradient(180deg, black, #00000000);
 }
 .carousel-item img {
-  height:825px;
+  height:700px;
 }
 .crevomark {
   width: 35%;
@@ -328,6 +328,9 @@ a {
 .crevomark {
   width: 80%;
 }
+.nonmobile {
+  display: none;
+}
 }
 @media screen and (min-width: 770px) {
 
@@ -343,4 +346,7 @@ a {
   margin-left: 20%;  margin-right: 20%;
   margin-top: -5%;
   text-align: center;
+}
+label {
+  margin-right: 10px;
 }

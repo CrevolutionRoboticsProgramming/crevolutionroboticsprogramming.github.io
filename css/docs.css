@@ -355,7 +355,7 @@ h2 {
   font-style: normal;
 }
 
-.container {
+.container-desktop {
   height: 300px;
   width: 600px;
   top: 300px;
@@ -363,8 +363,7 @@ h2 {
   display: flex;
 }
 
-.card {
-  display: flex;
+.card-desktop {
   height: 280px;
   width: 200px;
   background-color: #17141d;
@@ -372,9 +371,21 @@ h2 {
   box-shadow: -1rem 0 3rem #000;
   margin-left: -50px;
   transition: 0.4s ease-out;
-  position: relative;
+  text-align: center;
   left: 0px;
     border: 5px white solid;
+}
+.card-mobile {
+  height: 400px;
+  display: flex;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  border: 5px white solid;
+  color: #fff;
+  text-align: center;
 }
 .used {
 
@@ -383,7 +394,7 @@ h2 {
   background-color: #000;
 }
 
-.card:not(:first-child) {
+.card-desktop:not(:first-child) {
     margin-left: -50px;
 }
 
@@ -394,7 +405,7 @@ h2 {
 }
 
 
-.card:hover ~ .card {
+.card-desktop:hover ~ .card {
   position: relative;
   left: 50px;
   transition: 0.4s ease-out;
@@ -469,6 +480,10 @@ svg {
   margin-bottom: 10%;
   transition: color 500ms cubic-bezier( 0, 1, 1, 1 );
 }
+.im {
+  font-size: 150px !important;
+  margin-bottom: 0% !important;
+}
 .used:hover i {
   color: #efb821;
 }
@@ -482,28 +497,15 @@ svg {
   margin-top: auto;
   margin-bottom: 10%;
 }
-@media screen and (max-width: 736px) {
-.container {
-  width: 100%;
-  margin: auto;
-}
-.emptybar  {
+@media screen and (max-width: 700px) {
+#desktop {
   display: none;
-}
-.filledbar {
-  display: none;
-}
-.card ~ .card {
-  position: relative;
-  margin-left: -10px;
-}
-.card:first-child {
-  margin-left: 0px;
-}
-.title {
-  font-size: 90%;
-  text-align: center;
-  margin-top: 15px;
+} 
 }
 
-}
+@media screen and (min-width: 701px) {
+  #mobile {
+    display: none;
+  } 
+  }
+  

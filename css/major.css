@@ -1,0 +1,181 @@
+:root {
+    --duration: 5000ms;
+    --angle: 90deg;
+    --c1: rgba(128, 64, 96, 1);
+    --c2: rgba(219, 189, 204, 1);
+    --c3: rgba(128, 64, 96, 0);
+  }
+  body {
+  background-color: #0f0f0f;
+  color:white;
+  overflow-x: hidden !important;
+  /* ^ Used to hide the scrollbar*/
+
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-variant-alternates: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: Montserrat, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  /*Chrome, Safari, and Opera*/
+  display: none;
+}
+::-webkit-scrollbar { 
+  width: 0 !important
+}
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* ^ Used to hide the scrollbar*/
+
+
+.aligntext {
+  text-align: left;
+  margin-left: 36px;
+}
+.textcolor {
+  color: white;
+}
+.textitalic {
+  font-style: italic;
+}
+.textspacer {
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.navbar-nav li:hover {
+  color: #000 !important;
+  background-color: #F0B825 !important;
+}
+nav {
+  border-bottom: 5px solid #efb821;
+  background-color: #1F1F1F;
+  opacity: 1;
+  font-family: Montserrat;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+#navspan {
+  padding: 0px 0px 0px 0px;
+}
+.nav-link {
+  padding: 22px 0 22px 0;
+  
+}
+
+
+.navbar-toggler {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  margin-right: 11px;
+}
+
+.bottomnav {
+  border-bottom: 5px solid #efb821;
+  background-color: #1f1f1f;
+}
+.bottomLogo {
+  width: 167px;
+  margin: 0px 0px 0px 30%;
+}
+.bottomLogom {
+  width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.bottomPR {
+  width: 70px;
+}
+.bottomA {
+  margin: 0px 10px 0px 10px;
+}
+.slogon {
+font-weight: 900;
+  margin: 20px 0 20px 0;
+  font-size: 24px;
+}
+/*------------------------------------------------------------------*/
+.flex-wrap{
+  margin: 0 5% 0 5%;  
+}
+  .ruby{
+    color: #f22a2a;
+  }
+  .ruby .colpart{
+    width: 425px;
+    max-width: 100% !important;
+    padding: 2% 3% 2% 3%;
+  }
+
+  .rubyline{
+    background-color: #f22a2a;
+    font-size: 2px;
+  }
+  .pblogo{
+    width: 700px !important;
+    max-width: 100% !important;
+    max-height: 187.1px !important;
+  }
+  h1{
+    font-size: 10vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+  @media screen and (min-width: 425px) {
+    h1 {
+       font-size: 60px;
+    }
+  }
+  #major {
+    height: fit-content;
+  background: conic-gradient(from var(--angle), #656CB2, #2e684c, #2e684c, #656CB2);
+  animation: borderRotate 30s linear infinite forwards;
+  border-top: 10px solid #fff; border-bottom: 10px solid #fff;
+  }
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+  }
+  
+  @keyframes borderRotate {
+    0% {--angle: 0deg;}
+    100% {--angle: 360deg;}
+  }
+  
+  #text {
+    margin: auto;
+    width: 50%;
+    height: auto;
+    display: block;
+  }
+  h4 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+  }
+  .number {
+    font-family: "Michroma";
+    text-align: center;
+    font-size: 200px;
+    margin-top: -30px;
+  }

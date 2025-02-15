@@ -6,6 +6,12 @@ body {
   color: #000 !important;
   background-color: #efb821 !important;
 }
+.navbar-nav .filler-over:hover {
+  background-color: #656cb2 !important;
+  .filler {
+    color: #fff !important;
+  }
+}
 nav {
   background-color: #1F1F1F;
   opacity: 1;
@@ -44,3 +50,20 @@ nav {
 br {
   overflow-x: hidden;
 }
+.filler {
+  color: #efb821 !important;
+}
+.fillermobile {
+i {
+  font-size: 30px;
+  color: #efb821;
+}
+}
+@media screen and (min-width: 900px) {
+.fillermobile { i {
+  display: none;
+}}}
+@media screen and (max-width: 900px) {
+  .filler {
+    display: none;
+}}
