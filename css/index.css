@@ -218,15 +218,35 @@ body {
   background-color: #090909;
   border-radius: 25px;
   margin-left: 100px; margin-right: 100px;
+  
 }
+
+.onmobile {
+  display: none !important;
+}
+@media screen and (max-width:770px) {
 .carousel {
-  height: 30%;
+  height: 700px;
   background-image: linear-gradient(180deg, black, #00000000);
 }
 .carousel-inner {
-  height: 30%;
+  height: 700px;
 }
-
+.carousel-item { img {
+  height: 700px;
+  width: 100%;
+}}
+.carousel-item source {
+  height: 700px;
+}
+.nonmobile {
+  display: none !important;
+}
+.onmobile {
+  display: block !important;
+  background-color: #24263b;
+}
+}
 .crevomark {
   width: 35%;
   margin-left: 50%; margin-right: 50%;
