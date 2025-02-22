@@ -402,9 +402,11 @@ font-weight: 900;
     padding: 3px;
     padding-left: 10px; padding-right: 10px;
   }
+  @media screen and (min-width: 900px) {
   .modal-dialog {
     width: 900px;    
   }
+}
   .modal-content {
     background-color: #0f0f0f;
     border: #fff 3px solid;
