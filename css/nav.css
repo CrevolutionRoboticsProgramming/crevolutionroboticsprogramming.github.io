@@ -50,20 +50,20 @@ nav {
 br {
   overflow-x: hidden;
 }
-.filler {
-  color: #efb821 !important;
+.watch {
+  color: #000 !important;
 }
-.fillermobile {
+.watchmobile {
 i {
   font-size: 30px;
-  color: #efb821;
+  color: #000;
 }
 }
 @media screen and (min-width: 900px) {
-.fillermobile { i {
+.watchmobile { i {
   display: none;
 }}}
 @media screen and (max-width: 900px) {
-  .filler {
+  .watch {
     display: none;
 }}
