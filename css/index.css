@@ -370,3 +370,104 @@ a {
 label {
   margin-right: 10px;
 }
+#comp {
+  background-image: linear-gradient(90deg, #efb821, #ac851c);
+  width: 50%;
+  #compbody {
+  padding: 10px;
+  }
+  h1, h5 {
+    font-weight: 900;
+    color: #000;
+  }
+  #compwatch {
+    background-color: #00000055;
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    margin: auto;
+    align-items: center;
+    transition: background-color 1s, color 1s, transform 1s;
+    p {
+    transform: scale(1);
+    transition: transform 1s ease-out;
+    text-align: center;
+  text-decoration: none;
+  margin-bottom: 0px;
+    }
+  }
+  #compwatch:hover {
+    background-color: #ffffff55;
+    color: #000;
+    p {
+      transform: scale(1.5);
+      transition: transform 1s;
+  }}
+}
+.linknoatt {
+  margin: auto;
+  text-decoration: none !important;
+  margin-bottom: 0px !important;
+  width: 100%;
+}
+
+#robotscylla {
+  background-image: linear-gradient(-90deg, #656cb2, #343972);
+  width: 50%;
+  #compbody {
+  padding: 10px;
+  margin-bottom: 0px;
+  }
+  h1, h5 {
+    font-weight: 900;
+    color: #fff;
+    text-align: right;
+  }
+  #scyllamore {
+    background-color: #00000055;
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    margin: auto;
+    align-items: center;
+    transition: background-color 1s, color 1s, transform 1s;
+    p {
+    transform: scale(1);
+    transition: transform 1s ease-out;
+    text-align: center;
+  text-decoration: none;
+  margin-bottom: 0px;
+    }
+  }
+  #scyllamore:hover {
+    background-color: #ffffff55;
+    color: #000;
+    p {
+      transform: scale(1.5);
+      transition: transform 1s;
+  }}
+}
+#topbox {
+  display: flex;
+}
+@media screen and (max-width: 770px) {
+  #scyllamore, #compwatch {
+    font-size: 20px !important;
+  }
+  #scyllamore:hover, #compwatch:hover {
+    p {
+      transform: scale(1) !important;
+      transition: transform 1s;
+  }
+  }
+  #robotscylla, #comp {
+    h1 {
+      font-size: 15px
+    }
+    h5 {
+      font-size: 12px
+    }
+    display:grid
+    }
+  }
+}
