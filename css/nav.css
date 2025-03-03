@@ -51,12 +51,12 @@ br {
   overflow-x: hidden;
 }
 .watch {
-  color: #efb821 !important;
+  color: #444 !important; /* #444 disabled; #efb821 enabled */
 }
 .watchmobile {
 i {
   font-size: 30px;
-  color: #efb821;
+  color: #444; /* #444 disabled; #efb821 enabled */
 }
 }
 @media screen and (min-width: 900px) {
