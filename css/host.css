@@ -203,3 +203,15 @@ h1{
 .cmpnm {
   font-size: 20px;
 }
+.swipercomp {
+  margin: auto;
+  display: block;
+  width: 400px;
+  height: 300px;
+  border-radius: 15px;
+  img {
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
+  }
+}
