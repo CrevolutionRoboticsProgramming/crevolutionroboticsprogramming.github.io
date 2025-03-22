@@ -51,7 +51,7 @@ br {
   overflow-x: hidden;
 }
 .watch {
-  color: #444 !important; /* #444 disabled; #efb821 enabled */
+  color: #efb821 !important; /* #444 disabled; #efb821 enabled */
 }
 .watchmobile {
 i {
