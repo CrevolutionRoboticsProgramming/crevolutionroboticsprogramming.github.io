@@ -56,7 +56,7 @@ br {
 .watchmobile {
 i {
   font-size: 30px;
-  color: #444; /* #444 disabled; #efb821 enabled */
+  color: #efb821; /* #444 disabled; #efb821 enabled */
 }
 }
 @media screen and (min-width: 900px) {
