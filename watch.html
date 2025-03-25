@@ -1,613 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-	<title>Crevolution Robotics</title>
-	<head>
-		
-		<meta charset="UTF8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link
-			rel="icon"
-			href="assets/img/CrevoSmaller.svg"
-			type="image/png"
-			sizes="16x16" />
-		<link
-			href="css/bootstrap.min.css"
-			rel="stylesheet">
-		<link rel="stylesheet" href="/css/lite-yt-embed.css"/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Lato"
-			rel="stylesheet"
-			type="text/css" />
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-		<link href="css/host.css" rel="stylesheet" type="text/css" />
-		<script src="js/bootstrap.min.js"></script>
-        <script src="js/jQuery.js"></script>
+<html>
+<head>
+<title>Nothing to watch.</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+href="css/bootstrap.min.css"
+rel="stylesheet">
+</head>
+<style type="text/css">
+body {
+  background-color: #0f0f0f;
+}
 
-		<div id="nav-placeholder">
-		</div>
-		<script>
-		$(function(){
-		  $("#nav-placeholder").load("assets/nav.html");
-		});
-		</script>
-	</head>
-	<body>
-		<script src="js/lite-yt-embed.js"></script>
-		<br>
-		<br>
-		<br>
-		<br>
+body, h1, p {
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-		<h1 class="text-center textcolor">Watch: Woodhaven Competition</h1>
-		<p id="disclaimer">If the embedded video does not work, click <a href="https://crevolution.org/watch">here</a>.</p>
-		<br>
-		<br>
-		<script src= "https://player.twitch.tv/js/embed/v1.js" class="livestream"></script>
-<div id="livestream"></div>
-<script type="text/javascript">
-  var options = {
-    width: "100%",
-	height: "100%",
-    channel: "firstinspires32",
-  };
-  var player = new Twitch.Player("livestream", options);
-  player.setVolume(0.5);
-</script>
+.container {
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 177px;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
-</iframe>
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
 
-	  <p id="disclaimer">More details on this competition's <a href="https://www.thebluealliance.com/event/2025mibro">Blue Alliance</a> page</p>
-<br>
-		<div class="record">
-			<img src="/assets/img/CrevoSmall.svg">
-			<h3>8-4-0 Final</h3>
+.col-md-6 {
+  width: 50%;
+}
 
+.col-md-push-3 {
+  margin-left: 25%;
+}
 
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 20px 0;
+}
 
+.lead {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
 
+p {
+  margin: 0 0 10px;
+}
+img{
+width:250px;
+height:250px ;
+}
+.enum {
+  color: #00000000;
+}
 
-		</div>
-		<br>
-		<div class="game">
+a {
+  color: #99f;
+  text-decoration: none;
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 
-			<div class="contained qual">
-			<p class="gamenumber">#07</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team crevo">2851</p>
-			<p class="team">7191</p>
-			<p class="team">1250</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance lose">58</div>
-				<div class="btn bluealliance win">69</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team">6057</p>
-			<p class="team">6029</p>
-			<p class="team">4768</p>
-			</div>
-			<p class="gamenumber">L</p>
-		</div>
-		<br>
-		<div class="game">
+<body>
+<div class="container text-center" id="error">
+    <img src="assets/img/CrevoSmall.svg">
+    <br>
+    <br>
+ <div class="row">
+    <div class="col-md-12">
+      <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
+        <h1>No Video</h1>
+    </div>
+  </div>
 
-			<div class="contained qual">
-			<p class="gamenumber">#11</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">9251</p>
-			<p class="team">2620</p>
-			<p class="team">3604</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance win">137</div>
-				<div class="btn bluealliance lose">57</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team">5046</p>
-			<p class="team crevo">2851</p>
-			<p class="team">1528</p>
-			</div>
-			<p class="gamenumber">L</p>
-		</div>
-		<br>
-		<div class="game">
+  <div class="row">
+    <div class="col-md-6 col-md-push-3">
+      <p class="lead">There is nothing to watch currently.</p>
+    </div>
+  </div>
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <a href="/" type="button" class="btn btn-primary">Home</a>
+    <a href="/watch.html" type="button" class="btn btn-primary">Retry</a>
+  </div>
+</div>
 
-			<div class="contained qual">
-			<p class="gamenumber">#16</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">8124</p>
-			<p class="team">5046</p>
-			<p class="team">6914</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance lose">79</div>
-				<div class="btn bluealliance win">88</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team crevo">2851</p>
-			<p class="team">6057</p>
-			<p class="team">5641</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		<br>
-		<div class="game">
+<p class="enum">enum real 11/8/24</p>
 
-			<div class="contained qual">
-			<p class="gamenumber">#21</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">6914</p>
-			<p class="team crevo">2851</p>
-			<p class="team">6081</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance win">106</div>
-				<div class="btn bluealliance lose">105</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team">5166</p>
-			<p class="team">5619</p>
-			<p class="team">5050</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		<br>
-		<div class="game">
-
-			<div class="contained qual">
-			<p class="gamenumber">#28</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">5050</p>
-			<p class="team">815</p>
-			<p class="team">6637</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance lose">110</div>
-				<div class="btn bluealliance win">125</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team">245</p>
-			<p class="team crevo">2851</p>
-			<p class="team">6081</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		<br>
-		<div class="game">
-
-			<div class="contained qual">
-			<p class="gamenumber">#34</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">5619</p>
-			<p class="team">123</p>
-			<p class="team crevo">2851</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance lose">94</div>
-				<div class="btn bluealliance win">156</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team">3604</p>
-			<p class="team">6057</p>
-			<p class="team">3667</p>
-			</div>
-			<p class="gamenumber">L</p>
-		</div>
-		<br>
-		<div class="game">
-
-			<div class="contained qual">
-			<p class="gamenumber">#43</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">3414</p>
-			<p class="team">6081</p>
-			<p class="team">8280</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance win">130</div>
-				<div class="btn bluealliance lose">100</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team crevo">2851</p>
-			<p class="team">6637</p>
-			<p class="team">7188</p>
-			</div>
-			<p class="gamenumber">L</p>
-		</div>
-		<br>
-		<div class="game">
-
-			<div class="contained qual">
-			<p class="gamenumber">#48</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">9651</p>
-			<p class="team">9312</p>
-			<p class="team crevo">2851</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance win">80</div>
-				<div class="btn bluealliance lose">76</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team">8522</p>
-			<p class="team">7191</p>
-			<p class="team">1189</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		<br>
-		<div class="game">
-
-			<div class="contained qual">
-			<p class="gamenumber">#53</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">9455</p>
-			<p class="team crevo">2851</p>
-			<p class="team">3414</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance win">119</div>
-				<div class="btn bluealliance lose">73</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team">9651</p>
-			<p class="team">8362</p>
-			<p class="team">8522</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		<br>
-		<div class="game">
-
-			<div class="contained qual">
-			<p class="gamenumber">#60</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">10607</p>
-			<p class="team">8280</p>
-			<p class="team">9455</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance lose">75</div>
-				<div class="btn bluealliance win">112</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team crevo">2851</p>
-			<p class="team">5263</p>
-			<p class="team">5166</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		<br>
-		<div class="game">
-
-			<div class="contained qual">
-			<p class="gamenumber">#67</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">1189</p>
-			<p class="team">2620</p>
-			<p class="team crevo">2851</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance win">133</div>
-				<div class="btn bluealliance lose">120</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team">6081</p>
-			<p class="team">280</p>
-			<p class="team">9312</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		<br>
-		<div class="game">
-
-			<div class="contained qual">
-			<p class="gamenumber">#73</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">9251</p>
-			<p class="team">7188</p>
-			<p class="team">3620</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance win">146</div>
-				<div class="btn bluealliance lose">150</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team">5050</p>
-			<p class="team">3604</p>
-			<p class="team crevo">2851</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		<br>
-
-		<h1 class="centered">Alliance 7</h1>
-		<h3 class="centered"><span class="crevo">2851</span> - 6637 - 6081</h3>
-		<br>
-<div class="game">
-			<div class="contained qual">
-			<p class="gamenumber">PM3</p>
-			</div>
-			<div class="contained rtm">
-			<p class="team">1189</p>
-			<p class="team">3604</p>
-			<p class="team">5641</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance lose">131</div>
-				<div class="btn bluealliance win">175</div>
-			  </div>
-			  <div class="contained btm">
-			<p class="team">6637</p>
-			<p class="team crevo">2851</p>
-			<p class="team">6081</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		<br>
-<div class="game">
-			<div class="contained qual">
-			<p class="gamenumber">PM8</p>
-			</div>
-			<div class="contained rtm">
-  	<p class="team">6637</p>
-			<p class="team crevo">2851</p>
-			<p class="team">6081</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance win">146</div>
-				<div class="btn bluealliance lose">133</div>
-			  </div>
-			  <div class="contained btm">
- 		<p class="team">815</p>
-			<p class="team">5046</p>
-			<p class="team">9312</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		  <br>
-
-<div class="game">
-			<div class="contained qual">
-			<p class="gamenumber">PM11</p>
-			</div>
-			<div class="contained rtm">
-  	<p class="team">245</p>
-			<p class="team">3620</p>
-			<p class="team">6029</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance lose">162</div>
-				<div class="btn bluealliance win">169</div>
-			  </div>
-			  <div class="contained btm">
- 		<p class="team">6637</p>
-			<p class="team crevo">2851</p>
-			<p class="team">6081</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		  <br>
-<div class="game">
-			<div class="contained qual">
-			<p class="gamenumber">F1</p>
-			</div>
-			<div class="contained rtm">
-  	<p class="team">6637</p>
-			<p class="team crevo">2851</p>
-			<p class="team">6081</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance lose">157</div>
-				<div class="btn bluealliance win">178</div>
-			  </div>
-			  <div class="contained btm">
- 		<p class="team">245</p>
-			<p class="team">3620</p>
-			<p class="team">6029</p>
-			</div>
-			<p class="gamenumber">L</p>
-		</div>
-		  <br>
-<div class="game">
-			<div class="contained qual">
-			<p class="gamenumber">F2</p>
-			</div>
-			<div class="contained rtm">
-  	<p class="team">6637</p>
-			<p class="team crevo">2851</p>
-			<p class="team">6081</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance win">164</div>
-				<div class="btn bluealliance lose">157</div>
-			  </div>
-			  <div class="contained btm">
- 		<p class="team">245</p>
-			<p class="team">3620</p>
-			<p class="team">6029</p>
-			</div>
-			<p class="gamenumber">W</p>
-		</div>
-		  <br>
-<div class="game">
-			<div class="contained qual">
-			<p class="gamenumber">F3</p>
-			</div>
-			<div class="contained rtm">
-  	<p class="team">6637</p>
-			<p class="team crevo">2851</p>
-			<p class="team">6081</p>
-			</div>
-			<div class="contained score btn-group" role="group">
-				<div class="btn redalliance lose">174</div>
-				<div class="btn bluealliance win">193</div>
-			  </div>
-			  <div class="contained btm">
- 		<p class="team">245</p>
-			<p class="team">3620</p>
-			<p class="team">6029</p>
-			</div>
-			<p class="gamenumber">L</p>
-		</div>
-		  <br>
-		  <br>
-		<!-- Footer -->
-		<footer class="d-none d-lg-block">
-			<div class="bg-1 bottomnav">
-				<div class="container-fluid">
-					<br />
-					<div class="row">
-						<div class="col-lg-3 ">
-							<a href="#home" class
-								style="height: 40px"><img
-									class="bottomLogo "
-									src="assets/img/CrevoSmall.svg" /></a>
-						</div>
-						<div class="col-lg-6  text-center">
-							<p class="textcolor slogon">
-								"A CREATIVE REVOLUTION"							</p>
-							<p class="textcolor">
-								For any comments or questions that
-								concern
-								Crevolution,
-							</p>
-							<p class="textcolor">please
-								contact us at
-								<a
-									href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p>
-
-						</div>
-						<div class="col-lg-3 text-center">
-							<a class="bottomA" target="_blank"
-								rel="noopener noreferrer"
-								href="https://instagram.com/crevolution.robotics?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
-									class="bottomPR"
-									src="assets/img/Social Media/Instagram.svg"></a>
-							<a class="bottomA" target="_blank"
-								rel="noopener noreferrer"
-								href="https://www.youtube.com/@crevolutionrobotics2851">
-								<img class="bottomPR"
-									src="assets/img/Social Media/Youtube.svg">
-							</a>
-							<br>
-							<br>
-							<a class="bottomA" target="_blank"
-								rel="noopener noreferrer"
-								href="https://www.facebook.com/Crevolution2851/"><img
-									class="bottomPR"
-									src="assets/img/Social Media/Facebook.svg"></a>
-							<a class="bottomA" target="_blank"
-								rel="noopener noreferrer"
-								href="https://twitter.com/Crevolution2851">
-								<img class="bottomPR"
-									src="assets/img/Social Media/Twitter.svg">
-							</a>
-						</div>
-					</div>
-					<br>
-				</div>
-			</div>
-		</footer>
-		<!-- Moblie footer -->
-		<footer class="d-lg-none">
-			<div id="contact_us" class="bg-1 bottomnav">
-				<div class="container-fluid text-center">
-					<br />
-					<a href="#home" class style="height: 40px"><img
-							class="bottomLogom"
-							src="assets/img/CrevoSmall.svg" /></a>
-
-					<p class="textcolor slogon">
-						"A CREATIVE REVOLUTION"					</p>
-					<p class="textcolor">
-						For any comments or questions that concern
-						Crevolution,
-					</p>
-					<p class="textcolor">please
-						contact us at
-						<a
-							href="mailto:crevo.robotics@gmail.com">crevo.robotics@gmail.com</a></p>
-					<div class="row">
-						<div class="col-3 text-center">
-							<a class="bottomA" target="_blank"
-								rel="noopener noreferrer"
-								href="https://instagram.com/crevolution.robotics?utm_source=ig_profile_share&igshid=jjtwtzz6dwv7"><img
-									class="bottomPR"
-									src="assets/img/Social Media/Instagram.svg"></a>
-						</div>
-						<div class="col-3 text-center">
-							<a class="bottomA" target="_blank"
-								rel="noopener noreferrer"
-								href="https://www.youtube.com/@crevolutionrobotics2851">
-								<img class="bottomPR"
-									src="assets/img/Social Media/Youtube.svg"></a>
-						</div>
-						<div class="col-3 text-center">
-							<a class="bottomA" target="_blank"
-								rel="noopener noreferrer"
-								href="https://www.facebook.com/Crevolution2851/"><img
-									class="bottomPR"
-									src="assets/img/Social Media/Facebook.svg"></a>
-						</div>
-						<div class="col-3 text-center">
-							<a class="bottomA" target="_blank"
-								rel="noopener noreferrer"
-								href="https://twitter.com/Crevolution2851">
-								<img class="bottomPR"
-									src="assets/img/Social Media/Twitter.svg"></a>
-
-						</div>
-					</div>
-					<br>
-				</div>
-			</div>
-		</footer>
-
-		<script>
-      $(document).ready(function () {
-        // Initialize Tooltip
-        $('[data-toggle="tooltip"]').tooltip();
-
-        // Add smooth scrolling to all links in navbar + footer link
-        $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top,
-              },
-              900,
-              function () {
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              }
-            );
-          } // End if
-        });
-      });
-    </script>
-	</body>
 </html>

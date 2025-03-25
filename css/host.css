@@ -185,6 +185,7 @@ h1{
 .overview {
   display: flex;
   margin: auto;
+  max-width: 500px;
 }
 .award {
   background-color: #efb821;
@@ -213,5 +214,17 @@ h1{
   object-fit: cover;
   width: 400px;
   height: 300px;
+  }
+}
+.swipercompv {
+  margin: auto;
+  display: block;
+  height: 400px;
+  width: 300px;
+  border-radius: 15px;
+  img {
+  object-fit: cover;
+  height: 400px;
+  width: 300px;
   }
 }
