@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!-- Responsiveness -->
+      <meta charset="UTF8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Page Title -->
+      <title>Crevolution - Events</title>
+       
+      <!-- Link Assets & CSS -->
+      <link rel="icon" href="/assets/img/logos/watermark.svg" type="image/png" sizes="16x16" />
+      <link rel="stylesheet" href="/css/bootstrap.css">
+      <link href="/css/index.css" rel="stylesheet" type="text/css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    </head>
+<body>
+
+  <!-- Link JS -->
+  <script src="/js/popper.js"></script>
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/jquery.js"></script>
+
+  <!-- Navbar located in /assets/nav.html -->
+  <div id="nav-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("/assets/nav.html");
+  });
+  </script>
+  <div class="jbo"> </div>
+    <div id="events-tc" class="jb t-card">
+      <div class="blktcbk">
+      <h1 class="title">EVENTS</h1>
+      </div>
+    </div>
+    <br>
+    <div id="event-mi25" class="event evact">
+      <a class="link" href="/events/2025/michigan"><div class="event-top">
+        <h1>MI STATE COMP <i data-bs-toggle="tooltip" data-bs-title="Incomplete Competition" class="bi bi-trophy"></i> <i data-bs-toggle="tooltip" data-bs-title="Upcoming" class="bi bi-clock"></i></h1>
+        <h3>4/03/25 - 4/05/25</h3>
+        <h4><i class="bi bi-geo-alt-fill"></i> Saginaw Valley State University</h4>
+      </div></a>
+    </div>
+    <div id="event-mibro25" class="event evact">
+      <a class="link" href="/events/2025/woodhaven"><div class="event-top">
+        <h1>WOODHAVEN <i data-bs-toggle="tooltip" data-bs-title="Complete Competition" class="bi bi-trophy-fill"></i></h1>
+        <h3>3/21/25 - 3/22/25</h3>
+        <h4><i class="bi bi-geo-alt-fill"></i> Woodhaven High School</h4>
+      </div></a>
+    </div>
+    <div class="event">
+      <div class="event-top">
+        <h1>CREV SCOUT TOUR</h1>
+        <h3>3/10/25</h3>
+        <h4><i class="bi bi-geo-alt-fill"></i> Heritage Junior High</h4>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-top">
+        <h1>BWW FUNDRAISER</h1>
+        <h3>3/10/25</h3>
+        <h4><i class="bi bi-geo-alt-fill"></i> Buffalo Wild Wings (Sterling Hts)</h4>
+      </div>
+    </div>
+    <div id="event-mifer25" class="event evact">
+      <a class="link" href="/events/2025/ferndale"><div class="event-top">
+        <h1>FERNDALE <i data-bs-toggle="tooltip" data-bs-title="Complete Competition" class="bi bi-trophy-fill"></i></h1>
+        <h3>3/10/25</h3>
+        <h4><i class="bi bi-geo-alt-fill"></i> Ferndale High School</h4>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-top">
+        <h1>BWW FUNDRAISER</h1>
+        <h3>3/10/25</h3>
+        <h4><i class="bi bi-geo-alt-fill"></i> Buffalo Wild Wings (Sterling Hts)</h4>
+      </div>
+    </div>
+    <div class="event">
+      <div class="event-top">
+        <h1>BWW FUNDRAISER</h1>
+        <h3>3/10/25</h3>
+        <h4><i class="bi bi-geo-alt-fill"></i> Buffalo Wild Wings (Sterling Hts)</h4>
+      </div>
+    </div>
+    <div id="event-kickoff25" class="event">
+      <a class="link" href="/events/2025/kickoff"><div class="event-top">
+        <h1>KICKOFF 2025 <i data-bs-toggle="tooltip" data-bs-title="Video Linked" class="bi bi-play-btn-fill"></i></h1>
+        <h3>1/04/25</h3>
+        <h4><i class="bi bi-geo-alt-fill"></i> Heritage Junior High</h4>
+      </div></a>
+    </div>
+  
+     <!-- Footer located in /assets/ftr.html -->
+  <div id="ftr-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#ftr-placeholder").load("/assets/ftr.html");
+  });
+  </script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!-- Responsiveness -->
+      <meta charset="UTF8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Page Title -->
+      <title>Crevolution - Iris</title>
+       
+      <!-- Link Assets & CSS -->
+      <link rel="icon" href="/assets/img/logos/watermark.svg" type="image/png" sizes="16x16" />
+      <link rel="stylesheet" href="/css/bootstrap.css">
+      <link href="/css/index.css" rel="stylesheet" type="text/css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    </head>
+<body>
+
+  <!-- Link JS -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/jquery.js"></script>
+
+  <!-- Navbar located in /assets/nav.html -->
+  <div id="nav-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("/assets/nav.html");
+  });
+  </script>
+  <div class="jbo"> </div>
+    <div class="iris jb t-card">
+      <div class="blktcbk">
+      <h1 class="title">IRIS</h1>
+      </div>
+    </div>
+
+    <div id="iris" class="carousel rc slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/img/robots/2012/a.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/robots/2012/b.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/robots/2012/c.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/robots/2012/d.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#iris" data-bs-slide="prev">
+        <span aria-hidden="true"><i style="font-size: 40px;" class="bi bi-caret-left-fill"></i></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#iris" data-bs-slide="next">
+        <span aria-hidden="true"><i style="font-size: 40px;" class="bi bi-caret-right-fill"></i></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1 class="heading">QUICK FACTS</h1>
+    <div class="robot-info-pg">
+    <div>
+      <p>Weight: 123 lbs</p>
+      <p>Size: 26" x 32" x 48"</p>
+      <p>Speed: 9 ft/s</p>
+    </div>
+    <div>
+      <p>Drive train: Tank</p>
+      <p>Status: Disassembled</p>
+    </div>
+    </div>
+    <h1 class="heading">MORE INFO</h1>
+    <p class="txtc">- A high drivetrain allows easy passage across the middle barrier.</p>
+    <p class="txtc">- A gorilla arm to lower the balance stations to be able to balance in the end game.</p>
+    <p class="txtc">- The turret shooter on the top of the robot allows it to be able to score 3-pointers from a wide range of orientations.</p>
+
+     <!-- Footer located in /assets/ftr.html -->
+  <div id="ftr-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#ftr-placeholder").load("/assets/ftr.html");
+  });
+  </script>
+
+</body>
+</html>

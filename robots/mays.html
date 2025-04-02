@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!-- Responsiveness -->
+      <meta charset="UTF8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Page Title -->
+      <title>Crevolution - Maysovertone</title>
+       
+      <!-- Link Assets & CSS -->
+      <link rel="icon" href="/assets/img/logos/watermark.svg" type="image/png" sizes="16x16" />
+      <link rel="stylesheet" href="/css/bootstrap.css">
+      <link href="/css/index.css" rel="stylesheet" type="text/css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    </head>
+<body>
+
+  <!-- Link JS -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/jquery.js"></script>
+
+  <!-- Navbar located in /assets/nav.html -->
+  <div id="nav-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("/assets/nav.html");
+  });
+  </script>
+  <div class="jbo"> </div>
+    <div class="maysovertone jb t-card">
+      <div class="blktcbk">
+      <h1 class="title">MAYSOVERTONE</h1>
+      </div>
+    </div>
+
+    <div id="mays" class="carousel rc slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/img/robots/2023/a.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/robots/2023/b.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/robots/2023/c.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/robots/2023/d.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mays" data-bs-slide="prev">
+        <span aria-hidden="true"><i style="font-size: 40px;" class="bi bi-caret-left-fill"></i></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mays" data-bs-slide="next">
+        <span aria-hidden="true"><i style="font-size: 40px;" class="bi bi-caret-right-fill"></i></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1 class="heading">QUICK FACTS</h1>
+    <div class="robot-info-pg">
+    <div>
+      <p>Weight: 106 lbs</p>
+      <p>Size: 24" x 26" x 31"</p>
+      <p>Speed: 16.5 ft/s</p>
+    </div>
+    <div>
+      <p>Drive train: MK4i Swerve</p>
+      <p>Status: Disassembled</p>
+    </div>
+    </div>
+    <h1 class="heading">MORE INFO</h1>
+    <p class="txtc">- Named in memoriam of Mays Overton.</p>
+    <p class="txtc">- Slapdown compliant roller intake, doubling as cube shooter.</p>
+    <p class="txtc">- Has a very low center of gravity to reduce the chance of tipping and aid in balancing.</p>
+    <p class="txtc">- Fast elevator with a claw to drop the cones on to the nodes at all the levels.</p>
+
+     <!-- Footer located in /assets/ftr.html -->
+  <div id="ftr-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#ftr-placeholder").load("/assets/ftr.html");
+  });
+  </script>
+
+</body>
+</html>

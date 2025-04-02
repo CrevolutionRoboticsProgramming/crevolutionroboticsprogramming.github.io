@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <!-- Responsiveness -->
+      <meta charset="UTF8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Page Title -->
+      <title>Crevolution - Pricus</title>
+       
+      <!-- Link Assets & CSS -->
+      <link rel="icon" href="/assets/img/logos/watermark.svg" type="image/png" sizes="16x16" />
+      <link rel="stylesheet" href="/css/bootstrap.css">
+      <link href="/css/index.css" rel="stylesheet" type="text/css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    </head>
+<body>
+
+  <!-- Link JS -->
+  <script src="/js/bootstrap.js"></script>
+  <script src="/js/jquery.js"></script>
+
+  <!-- Navbar located in /assets/nav.html -->
+  <div id="nav-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#nav-placeholder").load("/assets/nav.html");
+  });
+  </script>
+  <div class="jbo"> </div>
+    <div class="pricus jb t-card">
+      <div class="blktcbk">
+      <h1 class="title">PRICUS</h1>
+      </div>
+    </div>
+
+    <div id="pricus" class="carousel rc slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/img/robots/2015/a.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/robots/2015/b.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/robots/2015/c.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/robots/2015/d.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#pricus" data-bs-slide="prev">
+        <span aria-hidden="true"><i style="font-size: 40px;" class="bi bi-caret-left-fill"></i></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#pricus" data-bs-slide="next">
+        <span aria-hidden="true"><i style="font-size: 40px;" class="bi bi-caret-right-fill"></i></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1 class="heading">QUICK FACTS</h1>
+    <div class="robot-info-pg">
+    <div>
+      <p>Weight: 105 lbs</p>
+      <p>Size: 28" x 30" x 48"</p>
+      <p>Speed: 8 ft/s</p>
+    </div>
+    <div>
+      <p>Drive train: Tank</p>
+      <p>Status: Disassembled</p>
+    </div>
+    </div>
+    <h1 class="heading">MORE INFO</h1>
+    <p class="txtc">- Recycling container grabbers that grab the recycling containers in autonomously from the center of the field.</p>
+    <p class="txtc">- Intake able to move totes to scoring positions.</p>
+    <p class="txtc">- Quick elevator able to pick up and stack recycling containers and totes.</p>
+
+     <!-- Footer located in /assets/ftr.html -->
+  <div id="ftr-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#ftr-placeholder").load("/assets/ftr.html");
+  });
+  </script>
+
+</body>
+</html>
