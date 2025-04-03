@@ -680,6 +680,10 @@ input {
   color: #efb821;
   font-weight: 900;
 }
+.chickens {
+  color: #6AF778;
+  font-weight: 900;
+}
 .pdir {
   width: 100%;
   line-height: 50px;
