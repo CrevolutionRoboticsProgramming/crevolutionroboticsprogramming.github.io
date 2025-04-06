@@ -561,8 +561,11 @@ input {
     }
   }
 }
+#event-frc25 {
+  /*background-image: url("/assets/img/comps/frc25-base.JPG") !important;*/
+}
 #event-mi25 {
-  /*background-image: url("/assets/img/comps/") !important;*/
+  /*background-image: url("/assets/img/comps/mi25-base.JPG") !important;*/
 }
 #event-mibro25 {
   background-image: url("/assets/img/comps/mibro25-base.JPG") !important;
@@ -582,6 +585,12 @@ input {
 }
 #mibro25-tc {
   background-image: url("/assets/img/comps/mibro25-base.JPG");
+}
+#mi25-tc {
+  background-image: url("/assets/img/comps/mi25-base.JPG");
+}
+#frc25-tc {
+  background-image: url("/assets/img/comps/frc25-base.JPG");
 }
 /* Related to Events Total ^ */
 
