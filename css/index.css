@@ -78,6 +78,10 @@ opacity: 100%;
   color: #7DBBE7;
   text-decoration: none;
 }
+.nolink {
+  color: #fff;
+  text-decoration: none;
+}
 .t-card {
   height: 500px;
   background: #000;
@@ -253,7 +257,27 @@ footer {
   height: 600px;
   object-fit: cover;
 }
-
+#watchbanner {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+  background-color: #656cb2;
+  font-size: 35px;
+  transition: all .5s ease-in-out;
+  padding-left: 17.5px;
+}
+#watchbanner:hover {
+  background-color: #8c91ca;
+  padding-left: 0px;
+}
+#watchbanner-iconhide {
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transition: all .5s ease-in-out;
+}
+#watchbanner:hover { #watchbanner-iconhide{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}}
 #logofront {
   height: auto;
   max-height: 150px;
@@ -425,6 +449,11 @@ input {
     h1 {
       font-size: 40px;
     }
+  }
+  #watchbanner {
+    padding-top: 20px; padding-bottom: 20px;
+    font-size: 15px;
+    padding-left: 7.5px;
   }
   }
 @media screen and (max-width:500px) {
