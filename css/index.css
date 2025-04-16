@@ -772,6 +772,10 @@ input {
   .award {
     font-size: 20px;
   }
+  #livestream {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Related to Comp Overview ^ */
