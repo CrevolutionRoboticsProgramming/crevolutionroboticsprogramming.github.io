@@ -938,6 +938,10 @@ background-image: url("/assets/img/img/");
 p {
   margin-bottom: 0%;
 }
+.knownlink {
+  filter: drop-shadow(none);
+  transition: all .5s;
+  }
 .knownlink:hover {
 filter: drop-shadow(5px 5px #00000066);
 }
