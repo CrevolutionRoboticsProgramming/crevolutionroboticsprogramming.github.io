@@ -118,6 +118,15 @@ opacity: 100%;
 .outreach {
   background: repeating-linear-gradient(-45deg,#b265ac,#b265ac 10px,#a15c9c 10px,#a15c9c 20px);
 }
+.safety {
+  background: repeating-linear-gradient(-45deg,#D19630,#D19630 10px,#BA8730 10px,#BA8730 20px);
+}
+.business {
+  background: repeating-linear-gradient(-45deg,#BD1E59,#BD1E59 10px,#AF2055 10px,#AF2055 20px);
+}
+.executive {
+  background: repeating-linear-gradient(-45deg,#333344,#333344 10px,#444455 10px,#444455 20px);
+}
 
 @media screen and (max-width:770px) {
   .title {
