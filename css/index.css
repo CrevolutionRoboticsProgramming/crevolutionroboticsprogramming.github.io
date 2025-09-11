@@ -127,6 +127,9 @@ opacity: 100%;
 .executive {
   background: repeating-linear-gradient(-45deg,#333344,#333344 10px,#444455 10px,#444455 20px);
 }
+.notebook {
+  background: repeating-linear-gradient(-45deg,#ac8787,#ac8787 10px,#a18181 10px,#a18181 20px);
+}
 
 @media screen and (max-width:770px) {
   .title {
