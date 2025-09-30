@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       <!-- Page Title -->
-      <title>Crevolution - Watch</title>
+      <title>Crevolution - Template</title>
        
       <!-- Link Assets & CSS -->
       <link rel="icon" href="/assets/img/logos/watermark.svg" type="image/png" sizes="16x16" />
@@ -31,280 +31,296 @@
   });
   </script>
   <div class="jbo"> </div>
-    <div id="host-tc" class="jb t-card">
+    <div id="template-tc" class="jb t-card">
       <div class="blktcbk">
-      <h1 class="title">FRC WORLDS</h1>
-      <h2 class="txtc">ARCHIMEDES</h2>
+      <h1 class="title">Worlds 2025</h1>
       </div>
     </div>
+    
+  <div class="max-w-6xl mx-auto">
       <h1 class="heading">QUAL RECORD</h1>
-      <h3 class="txtc">3-7</h3>
+      <h3 class="txtc"><span id="team-record">--</span></h3>
+      <h1 class="heading">QUAL RANK</h1>
+      <h3 class="txtc"><span id="team-rank" class="font-semibold text-white">--</span></h3>
+  </div>
+
       
-      <div id="rp-reference">
-      <div class="refer"><i class="bi bi-trophy-fill"></i><p>Win Ranking Point</p></div>
-      <div class="refer"><i class="bi bi-robot"></i><p>Auton Ranking Point</p></div>
-      <div class="refer"><i class="bi bi-toggle-on"></i><p>Coral Ranking Point</p></div>
-      <div class="refer"><i class="bi bi-bootstrap-fill"></i><p>Barge Ranking Point</p></div>
+      <div id="match-schedule" class="match-list max-h-96 overflow-y-auto pr-2 space-y-3">
+        <p class="text-center text-gray-500" id="match-loading-message">Loading match data...</p>
       </div>
 
-      <div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p>4</p>
-        <p>4400</p>
-        <p>9576</p>
+
+
+
+
+
+
+
+
+      <script>
+        // --- API Configuration ---
+        const TEAM_KEY = 'frc2851';
+        const EVENT_KEY = '2025arc';
+        const API_KEY = 'azzCHBd2ABAiRH2wvlw8ThoDllzVGkpGCFnOCKq1XnNFWMyYMnJwWhn5ufNoGb7f';
+        const BASE_URL = 'https://www.thebluealliance.com/api/v3';
+        const HEADERS = { 'X-TBA-Auth-Key': API_KEY };
+        const RETRY_LIMIT = 3;
+
+        // --- Utility Functions ---
+
+        /**
+         * Converts TBA match type keys to readable names.
+         * @param {string} key 
+         */
+        function getMatchType(key) {
+            switch (key) {
+                case 'qm': return 'QUAL';
+                case 'qf': return 'PLAYOFF';
+                case 'sf': return 'PLAYOFF';
+                case 'f': return 'FINAL';
+                case 'p': return 'PRACTICE';
+                default: return 'Match';
+            }
+        }
+
+        /**
+         * Formats UTC timestamp into a readable local time string.
+         * @param {number} timestamp 
+         */
+        function formatMatchTime(timestamp) {
+            if (!timestamp) return 'Time TBD';
+            const date = new Date(timestamp * 1000);
+            return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        }
+
+        /**
+         * Handles the fetching logic with exponential backoff for resilience.
+         * @param {string} endpoint The TBA API endpoint (e.g., '/team/frc2851/event/2025mibro/matches')
+         * @param {number} attempt Current retry attempt count
+         */
+        async function fetchTBA(endpoint, attempt = 1) {
+            const url = `${BASE_URL}${endpoint}`;
+            const delay = Math.pow(2, attempt) * 100; // Exponential backoff: 200ms, 400ms, 800ms...
+
+            try {
+                const response = await fetch(url, { headers: HEADERS });
+
+                if (response.status === 304) {
+                    console.log(`[TBA Cache] Data for ${endpoint} has not changed.`);
+                    return JSON.parse(localStorage.getItem(endpoint)); // Retrieve from cache if not modified
+                }
+
+                if (!response.ok) {
+                    throw new Error(`HTTP Error: ${response.status} ${response.statusText}`);
+                }
+                
+                const data = await response.json();
+                
+                // Cache the successful response for 304 handling if using ETag/If-None-Match headers (TBA recommended)
+                // Note: The simple fetch above doesn't implement If-None-Match, but this simulates the concept.
+                localStorage.setItem(endpoint, JSON.stringify(data)); 
+                return data;
+
+            } catch (error) {
+                if (attempt < RETRY_LIMIT) {
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    return fetchTBA(endpoint, attempt + 1);
+                } else {
+                    throw new Error(`Failed to fetch ${endpoint} after ${RETRY_LIMIT} attempts. ${error.message}`);
+                }
+            }
+        }
+
+        /**
+         * Renders an individual match block.
+         * @param {object} match 
+         */
+        function renderMatch(match) {
+            const is2851Red = match.alliances.red.team_keys.includes(TEAM_KEY);
+            const is2851Blue = match.alliances.blue.team_keys.includes(TEAM_KEY);
+            const allianceClass = is2851Red ? 'crevo' : 
+                                   is2851Blue ? 'crevo' : 
+                                   'crevo';
+
+            const matchType = getMatchType(match.comp_level);
+            const matchTime = formatMatchTime(match.time);
+            const redScore = match.alliances.red.score === -1 ? 'TBD' : match.alliances.red.score;
+            const blueScore = match.alliances.blue.score === -1 ? 'TBD' : match.alliances.blue.score;
+            const hasPlayed = redScore !== 'TBD' || match.actual_time > 0;
+            const resultClass = hasPlayed ? (is2851Red && redScore > blueScore) || (is2851Blue && blueScore > redScore) ? 'text-green-400 font-bold' : 'text-red-400 font-bold' : 'text-gray-400';
+            const resultText = hasPlayed ? ((is2851Red && redScore > blueScore) || (is2851Blue && blueScore > redScore) ? 'WIN' : 'LOSS') : 'Upcoming';
+            const teamsToString = (keys) => keys.map(k => `<span class="${k === TEAM_KEY ? 'crevo' : 'text-gray-300'}">${k.substring(3)}</span>`).join('');
+
+            // --- NEW LOGIC FOR VIDEO LINK ---
+            let videoLink = '';
+            const youtubeVideo = match.videos?.find(v => v.type === 'youtube');
+            const videoId = youtubeVideo ? youtubeVideo.key : null;
+
+            if (videoId) {
+                const url = `https://www.youtube.com/watch?v=${videoId}`;
+                // Wrap the title in an anchor tag with click styling and a YouTube icon (simple SVG for a play button)
+                videoLink = `<a href="${url}" target="_blank" class="text-blue-300 hover:text-blue-200 hover:underline transition-colors duration-200 flex items-center group">
+                                <span>${matchType} ${match.match_number}</span>
+                                </a>`;
+            } else {
+                videoLink = `<span>${matchType} ${match.match_number}</span>`;
+            }
+            // ------------------------------------
+
+            return `
+            <div class="game"><div class="gamebar"><div class="alliance red-all aaflex">
+        <p class="aaflex">${teamsToString(match.alliances.red.team_keys)}</p>
       </div><div class="red-all-score all-score">
-        <h1>197</h1>
+        <h1>${redScore}</h1>
       </div><div class="middle-area">
-        <p>QUAL #08</p>
-        <p>CREVO L</p>
+        <p>${videoLink}</p>
+        <p>CREVO ${resultText}</p>
       </div><div class="blue-all-score all-score">
-        <h1>187</h1>
-      </div><div class="alliance blue-all">
-        <p class="crevo">2851</p>
-        <p>3489</p>
-        <p>1732</p>
-      </div></div><div class="rankpts">
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-robot"></i></div>
-      <div class="rpe got"><i class="bi bi-toggle-on"></i></div>
-      <div class="rpe got"><i class="bi bi-bootstrap-fill"></i></div></div></div>
+        <h1>${blueScore}</h1>
+      </div><div class="alliance blue-all aaflex">
+        <p class="aaflex">${teamsToString(match.alliances.blue.team_keys)}</p>
+            `;
+        }
 
-      <div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p class="crevo">2851</p>
-        <p>2338</p>
-        <p>4143</p>
-      </div><div class="red-all-score all-score">
-        <h1>217</h1>
-      </div><div class="middle-area">
-        <p>QUAL #16</p>
-        <p>CREVO W</p>
-      </div><div class="blue-all-score all-score">
-        <h1>196</h1>
-      </div><div class="alliance blue-all">
-        <p>2638</p>
-        <p>5216</p>
-        <p>7522</p>
-      </div></div><div class="rankpts">
-      <div class="rpe got"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-robot"></i></div>
-      <div class="rpe got"><i class="bi bi-toggle-on"></i></div>
-      <div class="rpe got"><i class="bi bi-bootstrap-fill"></i></div></div></div>
+        /**
+         * Fetches and displays Team 2851's current event status (rank/record) and event title.
+         */
+                async function loadStatus() {
+            try {
+                // Fetch Event Details for Title
+                const eventDetails = await fetchTBA(`/event/${EVENT_KEY}`);
+                const eventTitleElement = document.getElementById('event-title');
+                
+                // Add null check for robustness, although it should exist
+                if (eventTitleElement) {
+                    if (eventDetails && eventDetails.name) {
+                        eventTitleElement.textContent = eventDetails.name;
+                    } else {
+                        eventTitleElement.textContent = 'Event Details N/A';
+                    }
+                }
 
-      <div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p>9126</p>
-        <p>4788</p>
-        <p>3132</p>
-      </div><div class="red-all-score all-score">
-        <h1>216</h1>
-      </div><div class="middle-area">
-        <p>QUAL #28</p>
-        <p>CREVO L</p>
-      </div><div class="blue-all-score all-score">
-        <h1>160</h1>
-      </div><div class="alliance blue-all">
-        <p>11</p>
-        <p>10466</p>
-        <p class="crevo">2851</p>
-      </div></div><div class="rankpts">
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-robot"></i></div>
-      <div class="rpe failed"><i class="bi bi-toggle-on"></i></div>
-      <div class="rpe got"><i class="bi bi-bootstrap-fill"></i></div></div></div>
+                // Fetch Team Status
+                const status = await fetchTBA(`/team/${TEAM_KEY}/event/${EVENT_KEY}/status`);
 
-      <div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p>3940</p>
-        <p>10120</p>
-        <p>9234</p>
-      </div><div class="red-all-score all-score">
-        <h1>143</h1>
-      </div><div class="middle-area">
-        <p>QUAL #40</p>
-        <p>CREVO W</p>
-      </div><div class="blue-all-score all-score">
-        <h1>173</h1>
-      </div><div class="alliance blue-all">
-        <p>386</p>
-        <p>1076</p>
-        <p class="crevo">2851</p>
-      </div></div><div class="rankpts">
-      <div class="rpe got"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-robot"></i></div>
-      <div class="rpe got"><i class="bi bi-toggle-on"></i></div>
-      <div class="rpe failed"><i class="bi bi-bootstrap-fill"></i></div></div></div>
+                if (!status) {
+                    document.getElementById('team-rank').textContent = 'N/A';
+                    document.getElementById('team-record').textContent = 'N/A';
+                    return;
+                }
 
-      <div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p>836</p>
-        <p>9408</p>
-        <p>6369</p>
-      </div><div class="red-all-score all-score">
-        <h1>240</h1>
-      </div><div class="middle-area">
-        <p>QUAL #51</p>
-        <p>CREVO L</p>
-      </div><div class="blue-all-score all-score">
-        <h1>171</h1>
-      </div><div class="alliance blue-all">
-        <p class="crevo">2851</p>
-        <p>2601</p>
-        <p>2637</p>
-      </div></div><div class="rankpts">
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-robot"></i></div>
-      <div class="rpe got"><i class="bi bi-toggle-on"></i></div>
-      <div class="rpe failed"><i class="bi bi-bootstrap-fill"></i></div></div></div>
+                // Status/Rank Data
+                document.getElementById('team-rank').textContent = status.qual?.ranking?.rank || 'N/A';
+                document.getElementById('team-record').textContent = `${status.qual?.ranking?.record?.wins || 0}-${status.qual?.ranking?.record?.losses || 0}-${status.qual?.ranking?.record?.ties || 0}`;
+                document.getElementById('team-score').textContent = status.qual?.ranking?.sort_order_info?.[0]?.sort_value?.toFixed(2) || 'N/A';
 
-      <div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p>4329</p>
-        <p>2231</p>
-        <p class="crevo">2851</p>
-      </div><div class="red-all-score all-score">
-        <h1>173</h1>
-      </div><div class="middle-area">
-        <p>QUAL #63</p>
-        <p>CREVO L</p>
-      </div><div class="blue-all-score all-score">
-        <h1>200</h1>
-      </div><div class="alliance blue-all">
-        <p>4143</p>
-        <p>4585</p>
-        <p>604</p>
-      </div></div><div class="rankpts">
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-robot"></i></div>
-      <div class="rpe failed"><i class="bi bi-toggle-on"></i></div>
-      <div class="rpe got"><i class="bi bi-bootstrap-fill"></i></div></div></div>
+                // Playoff Status
+                const playoffText = status.playoff?.status ? 
+                    `${status.playoff.status.toUpperCase()} (${status.playoff.level.toUpperCase()})` : 
+                    status.status.toUpperCase();
+                document.getElementById('playoff-status').textContent = playoffText;
 
-      <div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p>6014</p>
-        <p>341</p>
-        <p class="crevo">2851</p>
-      </div><div class="red-all-score all-score">
-        <h1>213</h1>
-      </div><div class="middle-area">
-        <p>QUAL #76</p>
-        <p>CREVO L</p>
-      </div><div class="blue-all-score all-score">
-        <h1>215</h1>
-      </div><div class="alliance blue-all">
-        <p>3182</p>
-        <p>987</p>
-        <p>1701</p>
-      </div></div><div class="rankpts">
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-robot"></i></div>
-      <div class="rpe got"><i class="bi bi-toggle-on"></i></div>
-      <div class="rpe got"><i class="bi bi-bootstrap-fill"></i></div></div></div>
+            } catch (error) {
+                console.error('Error loading status:', error);
+                // Attempt to update status fields in case of fetch error
+                const teamRank = document.getElementById('team-rank');
+                if (teamRank) teamRank.textContent = 'API Error';
+            }
+        }
 
-      <div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p>4146</p>
-        <p>5801</p>
-        <p>9459</p>
-      </div><div class="red-all-score all-score">
-        <h1>175</h1>
-      </div><div class="middle-area">
-        <p>QUAL #93</p>
-        <p>CREVO W</p>
-      </div><div class="blue-all-score all-score">
-        <h1>210</h1>
-      </div><div class="alliance blue-all">
-        <p>1114</p>
-        <p class="crevo">2851</p>
-        <p>6358</p>
-      </div></div><div class="rankpts">
-      <div class="rpe got"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-robot"></i></div>
-      <div class="rpe got"><i class="bi bi-toggle-on"></i></div>
-      <div class="rpe failed"><i class="bi bi-bootstrap-fill"></i></div></div></div>
+        /**
+         * Fetches and displays Team 2851's match schedule.
+         */
+        async function loadMatches() {
+            const matchesContainer = document.getElementById('match-schedule');
+            // FIX: Move 'now' definition outside of the conditional block to ensure it's always in scope
+            const now = Math.floor(Date.now() / 1000); 
+            
+            try {
+                // Fetch ALL matches for the event that 2851 participated in
+                const allMatches = await fetchTBA(`/team/${TEAM_KEY}/event/${EVENT_KEY}/matches`);
 
-      <div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p>2935</p>
-        <p class="crevo">2851</p>
-        <p>6358</p>
-      </div><div class="red-all-score all-score">
-        <h1>137</h1>
-      </div><div class="middle-area">
-        <p>QUAL #105</p>
-        <p>CREVO L</p>
-      </div><div class="blue-all-score all-score">
-        <h1>208</h1>
-      </div><div class="alliance blue-all">
-        <p>2106</p>
-        <p>7211</p>
-        <p>117</p>
-      </div></div><div class="rankpts">
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-robot"></i></div>
-      <div class="rpe failed"><i class="bi bi-toggle-on"></i></div>
-      <div class="rpe failed"><i class="bi bi-bootstrap-fill"></i></div></div></div>
+                // Filter for Qualification (qm) and Elimination (qf, sf, f) matches, 
+                // and sort by scheduled time in DESCENDING order (newest on top)
+                const filteredMatches = allMatches
+                    .filter(m => m.comp_level !== 'p') // Filter out practice matches
+                    .sort((a, b) => b.time - a.time); // Newest matches (highest time) first
 
-      <div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p>1629</p>
-        <p class="crevo">2851</p>
-        <p>6358</p>
-      </div><div class="red-all-score all-score">
-        <h1>203</h1>
-      </div><div class="middle-area">
-        <p>QUAL #124</p>
-        <p>CREVO L</p>
-      </div><div class="blue-all-score all-score">
-        <h1>206</h1>
-      </div><div class="alliance blue-all">
-        <p>6548</p>
-        <p>1197</p>
-        <p>5298</p>
-      </div></div><div class="rankpts">
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe failed"><i class="bi bi-trophy-fill"></i></div>
-      <div class="rpe got"><i class="bi bi-robot"></i></div>
-      <div class="rpe got"><i class="bi bi-toggle-on"></i></div>
-      <div class="rpe failed"><i class="bi bi-bootstrap-fill"></i></div></div></div>
+                if (matchesContainer) {
+                    matchesContainer.innerHTML = ''; // Clear loading message
 
-        <!--<div id="alliance-pk">
-          <h1 class="heading">Alliance 0</h1>
-          <h1 class="alpk-tms">NAN - NAN - NAN</h1>
-        </div>-->
+                    if (filteredMatches.length === 0) {
+                        matchesContainer.innerHTML = '<p class="text-center text-gray-500">No official matches found for this event yet.</p>';
+                        return;
+                    }
 
-      <!--<div class="game"><div class="gamebar"><div class="alliance red-all">
-        <p>NAN</p>
-        <p>NAN</p>
-        <p>NAN</p>
-      </div><div class="red-all-score all-score">
-        <h1>-</h1>
-      </div><div class="middle-area">
-        <p>PLAYOFF 0</p>
-        <p>CREVO -</p>
-      </div><div class="blue-all-score all-score">
-        <h1>-</h1>
-      </div><div class="alliance blue-all">
-        <p>NAN</p>
-        <p>NAN</p>
-        <p>NAN</p>
-      </div></div><div class="rankpts">
-      <h1 class="pdir heading">To NAN</h1></div></div>-->
+                    // 'now' definition removed from here
+                    
+                    filteredMatches.forEach(match => {
+                        matchesContainer.innerHTML += renderMatch(match);
+                    });
+                }
+                
+                // Calculate next match time by finding the *earliest* match in the future (sort ASC)
+                const nextMatch = allMatches
+                    .filter(m => m.comp_level !== 'p' && m.time > now)
+                    .sort((a, b) => a.time - b.time)[0]; 
 
-      <!--<div id="overview">
+                const nextMatchTime = nextMatch ? formatMatchTime(nextMatch.time) : 'N/A';
+
+
+            } catch (error) {
+                console.error('Error loading matches:', error);
+                if (matchesContainer) {
+                    matchesContainer.innerHTML = `<p class="text-center text-red-400">Failed to load schedule: ${error.message}.</p>`;
+                }
+            }
+        }
+
+        /**
+         * Initialization function
+         */
+        async function initDashboard() {
+            try {
+                await loadStatus();
+                await loadMatches();
+
+                // Hide loading indicator and show content
+                const loadingIndicator = document.getElementById('loading-indicator');
+                if (loadingIndicator) loadingIndicator.classList.add('hidden');
+                
+                const content = document.getElementById('content');
+                if (content) content.classList.remove('hidden');
+
+            } catch (error) {
+                // Handle critical failure with robust null checks
+                console.error('Critical initialization error:', error);
+                
+                const loadingIndicator = document.getElementById('loading-indicator');
+                if (loadingIndicator) {
+                    loadingIndicator.classList.add('hidden');
+                }
+
+                const errorDetails = document.getElementById('error-details');
+                if (errorDetails) {
+                    errorDetails.textContent = error.message || 'An unknown error occurred during initialization.';
+                }
+                
+                const errorMessage = document.getElementById('error-message');
+                if (errorMessage) {
+                    errorMessage.classList.remove('hidden');
+                }
+            }
+        }
+
+
+        // Start the application
+        window.onload = initDashboard;
+    </script>
+
+      <div id="overview">
         <p class="award"><i class="bi bi-trophy-fill"></i> NAN </p>
-      </div>-->
-
-      
+      </div>
      <!-- Footer located in /assets/ftr.html -->
   <div id="ftr-placeholder">
   </div>

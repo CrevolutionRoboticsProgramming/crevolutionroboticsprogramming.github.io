@@ -24,6 +24,11 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+@font-face {
+  
+    font-family: "Michroma Modified";
+    src: url('/assets/michroma-modified-crevo.ttf') format('truetype');
+}
 ::selection {
   background: #efb821;
 }
@@ -695,6 +700,10 @@ input {
   font-size: 20px;
   line-height: 33px;
   font-weight: 700;
+}
+.aaflex {
+  display: flex;
+  flex-direction: column;
 }
 .all-score {
   width: 30%;
