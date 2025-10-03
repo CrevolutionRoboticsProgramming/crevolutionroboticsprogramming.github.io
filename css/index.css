@@ -194,6 +194,7 @@ footer {
   height: 100px;
   display: flex;
   margin-top: 150px;
+  width: 100%;
   img {
     height: 150px;
     margin-top: -75px;
