@@ -232,7 +232,7 @@ footer {
     transform: rotate(15deg);
   }
 }
-@media screen and (max-width:1900px) {
+@media screen and (max-width:1500px) {
   footer {
     display: inline-block;
     height: fit-content;
