@@ -232,7 +232,7 @@ footer {
     transform: rotate(15deg);
   }
 }
-@media screen and (max-width:770px) {
+@media screen and (max-width:1900px) {
   footer {
     display: inline-block;
     height: fit-content;
@@ -627,16 +627,16 @@ input {
 
 /* Related to Events Total v */
 #mifer25-tc {
-  background-image: url("/assets/img/comps/mifer25-base.JPG");
+  background-image: url("/assets/img/comps/mifer25-base.jpg");
 }
 #mibro25-tc {
-  background-image: url("/assets/img/comps/mibro25-base.JPG");
+  background-image: url("/assets/img/comps/mibro25-base.jpg");
 }
 #mi25-tc {
-  background-image: url("/assets/img/comps/mi25-base.JPG");
+  background-image: url("/assets/img/comps/mi25-base.jpg");
 }
 #frc25-tc {
-  background-image: url("/assets/img/comps/frc25-base.JPG");
+  background-image: url("/assets/img/comps/frc25-base.jpg");
 }
 /* Related to Events Total ^ */
 
