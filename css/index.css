@@ -10,6 +10,7 @@
   --red2: #b4534e;
   --orange: #f39158;
   --orange2: #e9905c;
+  --lightgold: #e4c060;
   --gold: #efb821;
   --gold2: #e6b42a;
   --green: #5bb35c;
@@ -145,7 +146,7 @@ opacity: 100%;
   transition: background-color .5s;
 }
 .button:hover {
-  background-color: #e4c060;
+  background-color: var(--lightgold);
 }
 .t-card {
   height: 500px;
@@ -420,6 +421,73 @@ footer {
 #index-spot-more:hover {
   background-color: #e4d097;
 }
+
+#events-plate {
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 100px;
+}
+.events-slot {
+  display: flex; 
+
+}
+#events-numbers {
+  display: flex;  
+}
+.week {
+  width: 12.5%;
+  display: flex;
+
+  align-items: center;
+  h1 {
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;     
+  }
+  i {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+  }
+  img {
+    margin: auto;
+  }
+  a {
+    width: 100%;
+  }
+  p {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+.evsl2 {
+  background: var(--striped-black-large);
+  border-radius: 15px;
+}
+.evt {
+  color: var(--gold);
+  transition: all .5s ease-out;
+}
+.evt:hover {
+  rotate: 15deg;
+  color: var(--white);
+}
+.novt {
+  color: var(--black2);
+}
+.pvt {
+  color: var(--black3);
+  transition: all .5s ease-out;
+}
+.pvt:hover {
+  rotate: 15deg;
+  color: var(--lightblue);
+}
+
+
 #contact-plate {
   background: var(--striped-black-large);
   margin-bottom: 150px;
@@ -524,7 +592,11 @@ input {
     #donate-btn {
       width: auto;
     }
+    #events-plate {
+  display: none;
 }
+}
+
 /* Related to Index ^ */
 
 /* Related to About Us v */
