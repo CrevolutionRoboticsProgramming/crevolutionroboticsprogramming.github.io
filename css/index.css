@@ -1133,100 +1133,20 @@ filter: drop-shadow(5px 5px #00000066);
 #robots-tc {
   background-image: url("/assets/img/robots/2024/c.jpg");
 }
-
-#robots-container {
+.robot-container {
   width: 100%;
+  height: 200px;
 }
-.rcrow {
-  height: 1000px;
-}
-.ropt {
-  width: 100%;
-  height: 50%;
+.robotpic {
+  height: 100%;
+  width: 50%;
   background-position: center;
   background-size: cover;
-  font-size: 20px;
-  font-weight: 700;
-  border-bottom: 10px solid var(--black);
-}
-.robot-totheback {
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(5px) brightness(50%);
-  padding: 20px;
-}
-.robot-logo {
-  width: auto;
-  height: 100px;
-  margin: auto;
-  display: block;
-}
-.robot-logo-txt {
-  font-size: 100px;
-  line-height: 100px;
-  text-align: center;
-  font-weight: 900;
-}
-.robot-info-container {
-  backdrop-filter: blur(7px) saturate(180%);
-    background-color: rgba(239, 184, 33, 0.5);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    width: 30%;
-    height: fit-content;
-    margin: auto;
-    padding: 15px;
-}
-.robot-lr {
-  display: flex;
-}
-.robot-info {
-  height: 100%;
-  width: 50%;
-}
-.robot-yr {
-  text-align: center;
-  font-weight: 900;
-  margin-top: 10px; margin-bottom: 10px;
-}
-.more-info-btn {
-  width: 50%;
-  height: 50px;
-  font-size: 25px;
-  font-weight: 900;
-  margin: auto;
-  display: block;
-  border-radius: 20px;
-  background-color: var(--white);
-  border: none;
-  margin-top: 20px;
 }
 
-@media screen and (max-width:770px) {
-  .rcrow {
-    height: 1000px;
-    display: block;
-  }
-  .ropt {
-    height: 500px;
-    width: 100%;
-  }
-  .robot-logo {
-    width: 80%;
-  }
-.robot-info-container {
-  width: 100%;
-  }
-  .robot-logo-txt {
-    font-size: 60px;
-  }
-  .just-mays {
-    font-size: 30px !important;
-  }
-  .long-txt {
-    font-size: 50px !important;
-  }
-}
+
+
+
 .scylla {
   background-image: url("/assets/img/robots/2025/a.jpg");
 }
