@@ -427,6 +427,12 @@ footer {
   width: 80%;
   margin-bottom: 100px;
 }
+#m-events {
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 100px;
+  display: none;
+}
 .events-slot {
   display: flex; 
 
@@ -436,6 +442,35 @@ footer {
 }
 .week {
   width: 12.5%;
+  display: flex;
+
+  align-items: center;
+  h1 {
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;     
+  }
+  i {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+  }
+  img {
+    margin: auto;
+  }
+  a {
+    width: 100%;
+  }
+  p {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+.m-week {
+  width: 100%;
   display: flex;
 
   align-items: center;
@@ -594,7 +629,10 @@ input {
     }
     #events-plate {
   display: none;
-}
+    }
+    #m-events {
+      display: block;
+    }
 }
 
 /* Related to Index ^ */
