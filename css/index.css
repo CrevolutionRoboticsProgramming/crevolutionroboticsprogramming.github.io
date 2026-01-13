@@ -137,6 +137,9 @@ opacity: 100%;
   color: var(--white);
   text-decoration: none;
 }
+a {
+  text-decoration: none;
+}
 .button {
   font-weight: 900;
   background-color: var(--gold);
@@ -1134,19 +1137,64 @@ filter: drop-shadow(5px 5px #00000066);
   background-image: url("/assets/img/robots/2024/c.jpg");
 }
 .robot-container {
-  width: 100%;
+  width: 50%;
+  margin-left: 25%;
   height: 200px;
+  border-radius: 15px;
+  background-image: var(--striped-black-large);
+  display: flex;
+  transition: all .2s ease-in-out;
+  margin-top: 20px;
+
+} 
+.robotlgin {
+  display: flex;
+  width: 50%
 }
 .robotpic {
   height: 100%;
   width: 50%;
   background-position: center;
   background-size: cover;
+  border-radius: 15px;
+  transition: all .2s ease-in-out;
+}
+.robotlogo {
+  img {
+    height: 100px;
+    margin: 50px;
+    width: 50%;
+  }
+  h1 {
+    font-size: 40px;
+    margin-left: 50px; margin-right: 50px;
+    margin-top: 80px;
+    font-weight: 900;
+    color: var(--white);
+    width: 50%;
+  }
+}
+.robotinfo {
+  width: 50%;
+  height: 160px;
+  text-align: left;
+  margin-top: 20px;
+  display: block !important;
+  color: var(--white);
+}
+.robot-container:hover {
+  filter: brightness(150%);
+  border-radius: 5px;
+  width: 55%;
+  margin-left: 22.5%;
+}
+.robotpic:hover {
+  border-radius: 5px;
 }
 
-
-
-
+.x2026bot {
+  background-image: url("/assets/img/spotimg/sand.png");
+}
 .scylla {
   background-image: url("/assets/img/robots/2025/a.jpg");
 }
@@ -1226,6 +1274,32 @@ filter: drop-shadow(5px 5px #00000066);
   padding: 40px;
   }
 }
+@media screen and (max-width:1500px) {
+  .robot-container {
+    display: block;
+    height: 400px;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .robotpic {
+    height: 50%;
+    width: 100%;
+  }
+  .robotlogo {
+    width: 50%;
+  }
+  .robotinfo {
+    height: 50%;
+    width: 50%;
+  }
+  .robotshrink {
+     margin-left: 0%;
+     margin-right: 0%;
+  }
+  .robotlgin {
+    width: 100%;
+  }
+}
 @media screen and (max-width:770px) {
   .rc {
     width: 200px;
@@ -1234,5 +1308,34 @@ filter: drop-shadow(5px 5px #00000066);
       width: 200px;
       height: 150px;
     }
+  }
+  .robot-container {
+    display: block;
+    height: 600px;
+    width: 313.84px;
+    margin: auto;
+  }
+  .robotpic {
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    img {
+      margin: auto;
+    }
+  }
+  .robotlogo {
+    width: 100%;
+    h1 {
+      text-align: center;
+    }
+  }
+  .robotinfo {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+  }
+  .robotlgin {
+    display: block;
   }
 }
