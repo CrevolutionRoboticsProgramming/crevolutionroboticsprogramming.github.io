@@ -1280,6 +1280,7 @@ filter: drop-shadow(5px 5px #00000066);
     height: 400px;
     width: 70%;
     margin-left: 15%;
+    margin-top: 20px;
   }
   .robotpic {
     height: 50%;
@@ -1314,7 +1315,7 @@ filter: drop-shadow(5px 5px #00000066);
     height: 600px;
     width: 313.84px;
     margin: auto;
-    margin-top: 20px
+    margin-top: 20px;
   }
   .robotpic {
     height: 200px;
