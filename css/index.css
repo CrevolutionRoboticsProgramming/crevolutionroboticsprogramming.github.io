@@ -1137,8 +1137,8 @@ filter: drop-shadow(5px 5px #00000066);
   background-image: url("/assets/img/robots/2024/c.jpg");
 }
 .robot-container {
-  width: 50%;
-  margin-left: 25%;
+  width: 80%;
+  margin-left: 10%;
   height: 200px;
   border-radius: 15px;
   background-image: var(--striped-black-large);
@@ -1185,8 +1185,8 @@ filter: drop-shadow(5px 5px #00000066);
 .robot-container:hover {
   filter: brightness(150%);
   border-radius: 5px;
-  width: 55%;
-  margin-left: 22.5%;
+  width: 85%;
+  margin-left: 7.5%;
 }
 .robotpic:hover {
   border-radius: 5px;
