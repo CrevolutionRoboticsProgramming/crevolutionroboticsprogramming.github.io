@@ -1187,9 +1187,9 @@ filter: drop-shadow(5px 5px #00000066);
   border-radius: 5px;
   width: 85%;
   margin-left: 7.5%;
-}
-.robotpic:hover {
-  border-radius: 5px;
+  .robotpic {
+    border-radius: 5px;
+  }
 }
 
 .x2026bot {
@@ -1224,7 +1224,7 @@ filter: drop-shadow(5px 5px #00000066);
 }
 .achilles {
   background-image: url("/assets/img/robots/2016/a.jpg");
-  background-position: 50% 4cqmax;
+  background-position: 50%;
 }
 .pricus {
   background-image: url("/assets/img/robots/2015/a.jpg");
