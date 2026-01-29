@@ -12,7 +12,7 @@
   --orange2: #e9905c;
   --lightgold: #e4c060;
   --gold: #efb821;
-  --gold2: #e6b42a;
+  --gold2: #dfb02f;
   --green: #5bb35c;
   --green2: #5eac60;
   --teal: #4da08e;
@@ -722,49 +722,128 @@ input {
 #events-tc {
   background-image: url("/assets/img/img/events.jpg");
 }
-.event {
-  background: var(--striped-black-large);
-  width: 100%;
-  height: fit-content;
+.event-container {
+  width: 80%;
+  margin-left: 10%;
+  height: 200px;
+  border-radius: 15px;
+  background-image: var(--striped-black-large);
+  display: flex;
+  transition: all .2s ease-in-out;
+  margin-top: 20px;
+
+} 
+.eventnmin {
+  display: flex;
+  width: 50%;
+  transition: all .2s ease-in-out;
+}
+.eventpic {
+  background-image: var(--striped-gold);
+  height: 100%;
+  width: 50%;
   background-position: center;
   background-size: cover;
-  transition: filter .5s;
+  border-radius: 15px;
+  transition: all .2s ease-in-out;
 }
-.evact:hover {
-  filter: brightness(150%);
-}
-.event-top {
-  backdrop-filter: blur(2px) brightness(50%);
-  width: fit-content;
-  text-align: center;
-  padding: 10px;
+.eventname {
+  font-size: 40px;
+  margin-left: 50px; margin-right: 50px;
+  margin-top: 80px;
+  font-weight: 900;
   color: var(--white);
-  text-decoration: none !important;
-  h1 {
-    font-weight: 900;
+  width: 50%;
+  transition: all .2s ease-in-out;
+}
+.eventinfo {
+  width: 50%;
+  height: 160px;
+  text-align: left;
+  margin-top: 20px;
+  display: block !important;
+  color: var(--white);
+}
+.event-container:hover {
+  filter: brightness(150%);
+  border-radius: 5px;
+  width: 85%;
+  margin-left: 7.5%;
+  .eventpic {
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width:1500px) {
+  .event-container {
+    display: block;
+    height: 400px;
+    width: 70%;
+    margin-left: 15%;
     margin-top: 20px;
-    font-size: 50px;
+    transition: all .2s ease-in-out;
   }
-  h3 {
-    font-weight: 800;
+  .eventpic {
+    height: 50%;
+    width: 100%;
   }
-  h4 {
-    margin-bottom: 20px;
+  .eventname {
+    width: 50%;
+  }
+  .eventinfo {
+    height: 50%;
+    width: 50%;
+  }
+  .eventnmin {
+    width: 100%;
   }
 }
 @media screen and (max-width:770px) {
-  .event-top {
+  .event-container {
+    display: block;
+    height: 350px;
+    width: 313.84px;
+    margin: auto;
+    margin-top: 20px;
+    transition: all .2s ease-in-out;
+  }
+  .eventpic {
+    height: 200px;
     width: 100%;
-    h1 {
-      font-size: 30px;
+    margin: auto;
+    border-radius: 15px;
+    img {
+      margin: auto;
     }
   }
+  .eventname {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+  .eventinfo {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+  }
+  .eventnmin {
+    display: block;
+  }
+}
+
+#event-mimar26 {
+  /* background-image: url("/assets/img/comps/mitry26-base.jpg") !important; */
 }
 #event-mitry26 {
   /* background-image: url("/assets/img/comps/mitry26-base.jpg") !important; */
 }
 #event-kickoff26 {
-  /* background-image: url("/assets/img/img/kickoff25.jpg") !important; */
+  background-image: url("/assets/img/img/kickoff26.jpg") !important;
+    background-position: 50% 5%;
 }
 
 #event-frc25 {
