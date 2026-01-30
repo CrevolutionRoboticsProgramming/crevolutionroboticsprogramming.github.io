@@ -727,7 +727,7 @@ input {
   margin-left: 10%;
   height: 200px;
   border-radius: 15px;
-  background-image: var(--striped-black-large);
+  background-image: var(--striped-black-large2);
   display: flex;
   transition: all .2s ease-in-out;
   margin-top: 20px;
@@ -739,7 +739,7 @@ input {
   transition: all .2s ease-in-out;
 }
 .eventpic {
-  background-image: var(--striped-gold);
+  background-image: var(--striped-darkblue);
   height: 100%;
   width: 50%;
   background-position: center;
@@ -749,12 +749,19 @@ input {
 }
 .eventname {
   font-size: 40px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin-left: 50px; margin-right: 50px;
-  margin-top: 80px;
   font-weight: 900;
   color: var(--white);
   width: 50%;
   transition: all .2s ease-in-out;
+  i {
+    margin-left: 20px;
+  }
 }
 .eventinfo {
   width: 50%;
@@ -801,10 +808,10 @@ input {
 @media screen and (max-width:770px) {
   .event-container {
     display: block;
-    height: 350px;
+    height: 370px;
     width: 313.84px;
     margin: auto;
-    margin-top: 20px;
+    margin-bottom: 20px !important;
     transition: all .2s ease-in-out;
   }
   .eventpic {
@@ -819,7 +826,8 @@ input {
   .eventname {
     width: 100%;
     height: 50px;
-    margin-top: 10px;
+    font-size: 25px;
+    margin-top: 12.5px;
     margin-left: 0%;
     display: flex;
     align-items: center;
@@ -835,49 +843,83 @@ input {
   }
 }
 
-#event-mimar26 {
+.mimar26 {
+  background-image: var(--striped-gold);
   /* background-image: url("/assets/img/comps/mitry26-base.jpg") !important; */
 }
-#event-mitry26 {
+.mitry26 {
+  background-image: var(--striped-gold);
   /* background-image: url("/assets/img/comps/mitry26-base.jpg") !important; */
 }
-#event-kickoff26 {
+.kickoff26 {
   background-image: url("/assets/img/img/kickoff26.jpg") !important;
     background-position: 50% 5%;
 }
 
-#event-frc25 {
+.frc25 {
   background-image: url("/assets/img/comps/frc25-base.jpg") !important;
 }
-#event-mi25 {
+.mi25 {
   background-image: url("/assets/img/comps/mi25-base.jpg") !important;
 }
-#event-mibro25 {
-  background-image: url("/assets/img/comps/mibro25-base.JPG") !important;
+.mibro25 {
+  background-image: url("/assets/img/comps/mibro25-base.jpg") !important;
 }
-#event-mifer25 {
-  background-image: url("/assets/img/comps/mifer25-base.JPG") !important;
+.mifer25 {
+  background-image: url("/assets/img/comps/mifer25-base.jpg") !important;
 }
-#event-kickoff25 {
+.kickoff25 {
   background-image: url("/assets/img/img/kickoff25.jpg") !important;
   background-position: 50% 65%;
 }
-/* Related to Events ^ */
 
-/* Related to Events Total v */
-#mifer25-tc {
-  background-image: url("/assets/img/comps/mifer25-base.jpg");
+.rainbow24 {
+  /* background-image: url("/assets/img/comps/rainbow24-base.jpg") !important; */
 }
-#mibro25-tc {
-  background-image: url("/assets/img/comps/mibro25-base.jpg");
+.frc24 {
+  background-image: url("/assets/img/comps/frc24-base.jpg") !important;
+  background-position: 50% 75%;
 }
-#mi25-tc {
-  background-image: url("/assets/img/comps/mi25-base.jpg");
+.mi24 {
+  background-image: url("/assets/img/comps/mi24-base.jpg") !important;
 }
-#frc25-tc {
-  background-image: url("/assets/img/comps/frc25-base.jpg");
+.mitry24 {
+  background-image: url("/assets/img/comps/mitry24-base.jpg") !important;
 }
-/* Related to Events Total ^ */
+.mibro24 {
+  background-image: url("/assets/img/comps/mibro24-base.jpg") !important;
+}
+
+.mitr223 {
+  /* background-image: url("/assets/img/comps/mitr223-base.jpg") !important; */
+}
+.mitry23 {
+  /* background-image: url("/assets/img/comps/mitr223-base.jpg") !important; */
+}
+
+.marc22 {
+  /* background-image: url("/assets/img/comps/marc22-base.jpg") !important; */
+}
+.mimcc22 {
+  /* background-image: url("/assets/img/comps/mimcc22-base.jpg") !important; */
+}
+.miroc22 {
+  /* background-image: url("/assets/img/comps/miroc22-base.jpg") !important; */
+}
+
+.frc19 {
+  background-image: url("/assets/img/comps/frc19-base.jpg") !important;
+}
+.mi19 {
+  /* background-image: url("/assets/img/comps/mi19-base.jpg") !important; */
+}
+.mimar19 {
+  /* background-image: url("/assets/img/comps/mimar19-base.jpg") !important; */
+}
+.micen19 {
+  background-image: url("/assets/img/comps/micen19-base.jpg") !important;
+}
+/* Related to Events ^ */
 
 /* Related to Comp Overview */
 #host-tc {
