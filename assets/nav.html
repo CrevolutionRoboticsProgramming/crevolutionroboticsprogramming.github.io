@@ -1,31 +1,107 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/"><img id="navbaricon" src="/assets/img/logos/watermark.svg"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/events">EVENTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/robots">ROBOTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/sponsors">SPONSORS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/watch">WATCH</a>
-          </li>
-        </ul>
-      </div>
+<div id="fullnav">
+  <div id="navbar">
+    <a id="navbarlogo" href="/"><img  src="/assets/img/logos/watermark.svg"></a>
+    <p id="nvtxt-blank" class="navbartext"> </p>
+    <p id="nvtxt-home" class="navbartext">Home</p>
+    <p id="nvtxt-about" class="navbartext">About</p>
+    <p id="nvtxt-history" class="navbartext">History</p>
+    <p id="nvtxt-robots" class="navbartext">Robots</p>
+    <p id="nvtxt-sponsors" class="navbartext">Sponsors</p>
+    <a id="watchicon"  href="/watch"><img src="/assets/img/icons/watch.svg"></a>
+    <a id="menuicon" onclick="myFunction()"><img src="/assets/img/icons/menu.svg"></a>
+  </div>
+  <div id="undernavbar" style="height: 80px">
+    <div id="navicons">
+      <a onmouseover="hoverhome()" class="navicon-home" href="/"><img lass="navicon-home" src="/assets/img/icons/home.svg"></a>
+      <a onmouseover="hoverabout()" class="navicon-about" href="/about"><img src="/assets/img/icons/about.svg"></a>
+      <a onmouseover="hoverhistory()" class="navicon-history" href="/history"><img src="/assets/img/icons/history.svg"></a>
+      <a onmouseover="hoverrobots()" class="navicon-robots" href="/robots"><img src="/assets/img/icons/robots.svg"></a>
+      <a onmouseover="hoversponsors()" class="navicon-sponsors" href="/sponsors"><img src="/assets/img/icons/sponsors.svg"></a>
     </div>
-  </nav>
+  </div>
+</div>
+<script>
+  const isMobile = () => {
+  if (navigator.userAgentData) {
+    return navigator.userAgentData.mobile;
+  }
+  return /Mobi|Android/i.test(navigator.userAgent);
+  };
+
+  var home = document.getElementById("nvtxt-home");
+  var about = document.getElementById("nvtxt-about");
+  var histor = document.getElementById("nvtxt-history");
+  var robots = document.getElementById("nvtxt-robots");
+  var sponsors = document.getElementById("nvtxt-sponsors");
+  var blank = document.getElementById("nvtxt-blank");
+  function myFunction() {
+    var x = document.getElementById("undernavbar");
+    var y = document.getElementById("navicons");
+    var z = document.getElementById("watchicon");
+    if (x.style.height === "80px") {
+      if (isMobile()) {
+        y.style.marginBottom = "95px"
+      } else {
+        y.style.marginTop = "85px";
+      }
+      x.style.height = "120px";
+      z.style.display = "none";
+      blank.style.display = "grid";
+    } else {      
+      if (isMobile()) {
+        y.style.marginBottom = "45px"
+      } else {
+        y.style.marginTop = "45px";
+      }
+      x.style.height = "80px";
+      z.style.display = "flex";
+      home.style.display = "none";
+      about.style.display = "none";
+      histor.style.display = "none";
+      robots.style.display = "none";
+      sponsors.style.display = "none";
+      blank.style.display = "none";
+    }
+  } 
+  function hoverhome() {
+    home.style.display = "grid";
+    about.style.display = "none";
+    histor.style.display = "none";
+    robots.style.display = "none";
+    sponsors.style.display = "none";
+    blank.style.display = "none";
+  }
+  function hoverabout() {
+    home.style.display = "none";
+    about.style.display = "grid";
+    histor.style.display = "none";
+    robots.style.display = "none";
+    sponsors.style.display = "none";
+    blank.style.display = "none";
+  }
+  function hoverhistory() {
+    home.style.display = "none";
+    about.style.display = "none";
+    histor.style.display = "grid";
+    robots.style.display = "none";
+    sponsors.style.display = "none";
+    blank.style.display = "none";
+  }
+  function hoverrobots() {
+    home.style.display = "none";
+    about.style.display = "none";
+    histor.style.display = "none";
+    robots.style.display = "grid";
+    sponsors.style.display = "none";
+    blank.style.display = "none";
+  }
+  function hoversponsors() {
+    home.style.display = "none";
+    about.style.display = "none";
+    histor.style.display = "none";
+    robots.style.display = "none";
+    sponsors.style.display = "grid";
+    blank.style.display = "none";
+  }
+</script>

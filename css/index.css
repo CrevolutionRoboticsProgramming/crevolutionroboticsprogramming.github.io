@@ -204,10 +204,12 @@ a {
     font-size: 40px;
   }
   .jb {
+    height: 500px !important;
     clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 
     90% 98%, 80% 100%, 70% 98%, 60% 100%, 50% 98%, 40% 100%, 30% 98%, 20% 100%, 10% 98%);
   }
   .jbo {
+    height: 510px !important;
     clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 
     90% 98%, 80% 100%, 70% 98%, 60% 100%, 50% 98%, 40% 100%, 30% 98%, 20% 100%, 10% 98%);
   }
@@ -215,39 +217,103 @@ a {
 /* All Pages ^ */
 
 /* Related to Navbar v */
-.navbar {
-  background-color: var(--black3);
-  
-  border-radius: 20px;
-  width: max-content;
-  min-width: 350px;
-  margin: auto;
-  margin-top: 5px;
+#fullnavbar {
   filter: drop-shadow(0px 0px 20px var(--black2));
 }
-.nav-link {
-  color: var(--white) !important;
-  font-family: Montserrat;
-  font-weight: 700 !important;
-  letter-spacing: 1px;
+#navbar {
+  background-color: var(--black3);
+  border-radius: 20px;
+  width: 350px;
+  margin: auto;
+  margin-top: 5px;
+  position: fixed;
+  z-index: 900;
+  display: flex;
+  transform: translate(-50%, 0);
+  left: 50%;
+  height: 80px;
+}
+#navbarlogo {
+  width: 33%;
+  img {
+    height: 60px;
+    margin: 10px;
+  }
+}
+#watchicon {
+  display: flex;
+  width: 33%;
+  opacity: 10%;
+  img {
+    width: 60px;
+    margin: 10px;
+    margin: 0 auto;
+  }
+}
+#menuicon {
+  display: flex;
+  width: 33%;
+    img {
+    height: 60px;
+    margin: 10px;
+    margin-left: auto; margin-right: 10px;
+    cursor: pointer;
+  }
+}
+#undernavbar {
+  background-color: var(--black2);
+  border-radius: 20px;
+  width: 350px;
+  margin: auto;
+  margin-top: 5px;
+  position: fixed;
+  z-index: 899;
+  display: flex;
+  transform: translate(-50%, 0);
+  left: 50%;
+  height: 80px;
+  transition: all .2s;
+}
+#navicons {
+  width: 350px;
+  margin-top: 45px;
+  margin-left: auto; margin-right: auto;
+  height: 30px;
+  display: flex;
+  transition: all .2s;
+  a {
+    height: 30px;
+    width: 20%;
+    margin-left: 20px;
+    flex-grow: 1;
+    img {
+      height: 30px;
+    }
+  }
+}
+.navbartext {
+  width: 33%;
+  display: none;
   text-align: center;
+  align-items: center;
+  height: 100%;
+  font-weight: 700;
+  font-size: 20px;
 }
-#navbaricon {
-  height: 50px;
-  margin-right: 50px;
+.navicon-home:hover | #nvtx-a {
+  display: grid !important;
 }
-.navbar-toggler {
-  box-shadow:0 0 0 0 !important;
-  color: var(--white);
-  font-size: 40px;
-  transition: color 100ms;
-}
-.navbar-nav a {
-  transition: color 100ms;
-  color: var(--white);
-}
-.navbar-nav a:hover {
-  color: var(--gold) !important;
+@media screen and (max-width:990px) {
+  #navbar {
+    bottom: 10px;
+  }
+  #undernavbar {
+    bottom: 10px;
+  }
+  #navicons {
+    margin-bottom: 45px;
+    margin-top: 5px;
+  }
 }
 /* Related to Navbar ^ */
 
@@ -710,10 +776,14 @@ input {
   .st-left {
     width: 100%;
   }
-  .programming {
-    h1 {
-      font-size: 35px;
-    }
+  .programming h1 {
+    font-size: 35px;
+  }
+  .notebook h1 {
+    font-size: 30px;
+  }
+  #aboutheading {
+    font-size: 35px;
   }
 }
 /* Related to About ^ */
