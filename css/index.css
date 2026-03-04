@@ -456,14 +456,15 @@ footer {
   border-bottom-left-radius: 12.5px;
   border-top-left-radius: 12.5px;
   border-right: 5px solid var(--black3);
-  background-image: url(/assets/img/spotimg/sand.png);
+  background-image: url(/assets/img/spotimg/safetyanimation26.png);
   background-size: cover;
   background-position: center;
 }
+
 #index-spot-rightpanel {
   width: 50%;
 }
-#scyllalogo {
+#indexlogo {
  width: 60%;
  height: auto;
  margin-top: 50px;
