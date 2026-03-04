@@ -243,7 +243,8 @@ a {
 #watchicon {
   display: flex;
   width: 33%;
-  opacity: 10%;
+  opacity: 100%;
+  color: #efb821;
   img {
     width: 60px;
     margin: 10px;
