@@ -247,7 +247,7 @@
                 // and sort by scheduled time in DESCENDING order (newest on top)
                 const filteredMatches = allMatches
                     .filter(m => m.comp_level !== 'p') // Filter out practice matches
-                    .sort((a, b) =< b.time - a.time); // Newest matches (highest time) first
+                    .sort((a, b) <= b.time - a.time); // Newest matches (highest time) first
 
                 if (matchesContainer) {
                     matchesContainer.innerHTML = ''; // Clear loading message
@@ -267,7 +267,7 @@
                 // Calculate next match time by finding the *earliest* match in the future (sort ASC)
                 const nextMatch = allMatches
                     .filter(m => m.comp_level !== 'p' && m.time > now)
-                    .sort((a, b) => a.time - b.time)[0]; 
+                    .sort((a, b) <= a.time - b.time)[0]; 
 
                 const nextMatchTime = nextMatch ? formatMatchTime(nextMatch.time) : 'N/A';
 
