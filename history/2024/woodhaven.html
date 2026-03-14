@@ -135,6 +135,8 @@
          * @param {object} match 
          */
         function renderMatch(match) {
+
+            
             const is2851Red = match.alliances.red.team_keys.includes(TEAM_KEY);
             const is2851Blue = match.alliances.blue.team_keys.includes(TEAM_KEY);
             const allianceClass = is2851Red ? 'crevo' : 
@@ -143,6 +145,7 @@
 
             const matchType = getMatchType(match.comp_level);
             const matchTime = formatMatchTime(match.time);
+            
             const redScore = match.alliances.red.score === -1 ? 'TBD' : match.alliances.red.score;
             const blueScore = match.alliances.blue.score === -1 ? 'TBD' : match.alliances.blue.score;
             const hasPlayed = redScore !== 'TBD' || match.actual_time > 0;
@@ -155,15 +158,26 @@
             const youtubeVideo = match.videos?.find(v => v.type === 'youtube');
             const videoId = youtubeVideo ? youtubeVideo.key : null;
 
+
+            // If it's a playoff match, show "SF 1-2" (Set 1, Match 2) instead of just "PLAYOFF 1"
+    let matchLabel = '';
+    if (match.comp_level === 'qm' || match.comp_level === 'p') {
+        matchLabel = `${matchType} ${match.match_number}`;
+    } else {
+        // For Playoffs (qf, sf, f), use Set Number - Match Number
+        matchLabel = `${matchType} ${match.set_number}-${match.match_number}`;
+    }
+
             if (videoId) {
                 const url = `https://www.youtube.com/watch?v=${videoId}`;
                 // Wrap the title in an anchor tag with click styling and a YouTube icon (simple SVG for a play button)
                 videoLink = `<a href="${url}" target="_blank" class="text-blue-300 hover:text-blue-200 hover:underline transition-colors duration-200 flex items-center group">
-                                <span>${matchType} ${match.match_number}</span>
-                                </a>`;
-            } else {
-                videoLink = `<span>${matchType} ${match.match_number}</span>`;
+                                <span>${matchLabel}</span> 
+                     </a>`;
+    } else {
+        videoLink = `<span>${matchLabel}</span>`;
             }
+            
             // ------------------------------------
 
             return `
