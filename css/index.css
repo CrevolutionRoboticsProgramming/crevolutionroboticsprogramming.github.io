@@ -460,7 +460,7 @@ footer {
   border-bottom-left-radius: 12.5px;
   border-top-left-radius: 12.5px;
   border-right: 5px solid var(--black3);
-  background-image: url(/assets/img/spotimg/safetyanimation26.png);
+  background-image: url(/assets/img/spotimg/sand.png);
   background-size: cover;
   background-position: center;
 }
@@ -1388,7 +1388,7 @@ filter: drop-shadow(5px 5px #00000066);
   }
 }
 
-.x2026bot {
+.vulcan {
   background-image: url("/assets/img/spotimg/sand.png");
 }
 .scylla {
