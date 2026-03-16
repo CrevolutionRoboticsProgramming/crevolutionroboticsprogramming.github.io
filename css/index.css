@@ -386,6 +386,9 @@ footer {
 
 /* Related to 404 v */
 #f404-tc {
+  background-image: url("/assets/img/img/vulcanfall.jpg");
+}
+#novid-tc {
   background-image: url("/assets/img/img/johnbot.JPG");
   background-position: 50% 25%;
 }
