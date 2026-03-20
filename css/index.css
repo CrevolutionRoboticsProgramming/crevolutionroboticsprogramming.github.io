@@ -301,7 +301,7 @@ a {
   font-weight: 700;
   font-size: 20px;
 }
-.navicon-home:hover | #nvtx-a {
+.navicon-home:hover #nvtx-a {
   display: grid !important;
 }
 @media screen and (max-width:990px) {
@@ -460,7 +460,7 @@ footer {
   border-bottom-left-radius: 12.5px;
   border-top-left-radius: 12.5px;
   border-right: 5px solid var(--black3);
-  background-image: url(/assets/img/spotimg/sand.png);
+  background-image: url(/assets/img/robots/2026/b.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1389,7 +1389,7 @@ filter: drop-shadow(5px 5px #00000066);
 }
 
 .vulcan {
-  background-image: url("/assets/img/spotimg/sand.png");
+  background-image: url("/assets/img/robots/2026/a.jpg");
 }
 .scylla {
   background-image: url("/assets/img/robots/2025/a.jpg");
@@ -1530,6 +1530,7 @@ filter: drop-shadow(5px 5px #00000066);
       margin: 50px 0%;
     }
     img {
+      height:auto;
       width: auto;
     }
   }
