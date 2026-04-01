@@ -54,9 +54,9 @@
   --purple: #015D52;
   --purple2: #EDFF21;
   --magenta: #A2231D;
-  --magenta2: #B32428; +
+  --magenta2: #B32428;
   
-  --thunder-green: #efb821; +
+  --thunder-green: #efb821;
 
   --striped-black: repeating-linear-gradient(-45deg,var(--black2),var(--black2) 5px,var(--black) 5px,var(--black) 10px);
   --striped-black2: repeating-linear-gradient(-45deg,var(--black3),var(--black3) 5px,var(--black2) 5px,var(--black2) 10px);
