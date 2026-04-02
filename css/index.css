@@ -1,6 +1,5 @@
 /* All Pages v */
 :root {
-/*
   --black: #0f0f0f;
   --black2: #000;
   --black3: #1f1f1f;
@@ -28,36 +27,7 @@
   --magenta2: #a7486e;
   
   --thunder-green: #6af778;
-*/
-
-  --black: #252850;
-  --black2: #25221B;
-  --black3: #18171C;
-  --white: #A5A5A5;
-  --white2: #fff;
-
-  --red: #E5BE01;
-  --red2: #F54021;
-  --orange: #781F19;
-  --orange2: #9D9101;
-  --lightgold: #D95030;
-  --gold: #35682D;
-  --gold2: #3F888F;
-  --green: #DC9D00;
-  --green2: #FF2301;
-  --teal: #4E3B31;
-  --teal2: #E4A010;
-  --lightblue: #00BB2D;
-  --lightblue2: #316650;
-  --darkblue: #A18594;
-  --darkblue2: #C6A664;
-  --purple: #015D52;
-  --purple2: #EDFF21;
-  --magenta: #A2231D;
-  --magenta2: #B32428;
   
-  --thunder-green: #efb821;
-
   --striped-black: repeating-linear-gradient(-45deg,var(--black2),var(--black2) 5px,var(--black) 5px,var(--black) 10px);
   --striped-black2: repeating-linear-gradient(-45deg,var(--black3),var(--black3) 5px,var(--black2) 5px,var(--black2) 10px);
   --striped-white: repeating-linear-gradient(-45deg,var(--white2),var(--white2) 5px,var(--white) 5px,var(--white) 10px);
