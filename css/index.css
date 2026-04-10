@@ -243,8 +243,6 @@ a {
 #watchicon {
   display: flex;
   width: 33%;
-  opacity: 100%;
-  filter(tint(#efb821));
   img {
     width: 60px;
     margin: 10px;
@@ -767,8 +765,11 @@ input {
 #marketing-right {
   background-image: url("/assets/img/subteam/marketing.jpg");
 }
-#outreach-right {
-  background-image: url("/assets/img/subteam/outreach.jpg");
+#safety-right {
+  background-image: url("/assets/img/spotimg/safetyanimation26.png");
+}
+#business-right {
+  background-image: url("/assets/img/subteam/business.jpg");
 }
 @media screen and (max-width:770px) {
   .about-list {
@@ -917,13 +918,15 @@ input {
     display: block;
   }
 }
-
-.mimar26 {
-  background-image: url("/assets/img/comps/mimar26-base.jpg");
+.mi26 {
+  background-image: var(--striped-gold);
 }
 .mitry26 {
-  background-image: var(--striped-gold);
-  /* background-image: url("/assets/img/comps/mitry26-base.jpg") !important; */
+  background-image: url("/assets/img/comps/mitry26-base.jpg") !important;
+  background-position: 50% 75%;
+}
+.mimar26 {
+  background-image: url("/assets/img/comps/mimar26-base.jpg") !important;
 }
 .kickoff26 {
   background-image: url("/assets/img/img/kickoff26.jpg") !important;
@@ -1106,7 +1109,7 @@ input {
 #alliance-pk {
   width: 100%;
   text-align: center;
-  background: var(--striped-gold)
+  background: var(--striped-gold);
   margin-bottom: 50px;
   h1 {
     color: var(--black2);
