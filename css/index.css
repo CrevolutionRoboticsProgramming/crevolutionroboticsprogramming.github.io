@@ -458,7 +458,7 @@ footer {
   border-bottom-left-radius: 12.5px;
   border-top-left-radius: 12.5px;
   border-right: 5px solid var(--black3);
-  background-image: url(/assets/img/robots/2026/b.jpg);
+  background-image: url(/assets/img/img/open.JPG);
   background-size: cover;
   background-position: center;
 }
@@ -1545,4 +1545,22 @@ filter: drop-shadow(5px 5px #00000066);
   .robotlgin {
     display: block;
   }
+}
+
+#open-tc {
+  background-image: url("/assets/img/img/open.JPG") 
+}
+#openmore {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  width: auto;
+  height: 50px;
+  font-weight: 900;
+  background-color: var(--gold);
+  border: 5px solid var(--black3);
+  border-radius: 15px;
+  font-size: 20px;
+  margin-top: 15px;
+  transition: background-color .5s;
 }
