@@ -918,8 +918,11 @@ input {
     display: block;
   }
 }
+.frc26 {
+  background: var(--striped-gold);
+}
 .mi26 {
-  background-image: var(--striped-gold);
+  background-image: url("/assets/img/comps/mi26-base.jpg") !important;
 }
 .mitry26 {
   background-image: url("/assets/img/comps/mitry26-base.jpg") !important;
