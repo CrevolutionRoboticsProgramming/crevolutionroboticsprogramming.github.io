@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
       <!-- Page Title -->
-      <title>Crevolution - States 26</title>
+      <title>Crevolution - Worlds 26</title>
        
       <!-- Link Assets & CSS -->
       <link rel="icon" href="/assets/img/logos/watermark.svg" type="image/png" sizes="16x16" />
@@ -31,9 +31,9 @@
   });
   </script>
   <div class="jbo"> </div>
-    <div class="mitry26 jb t-card">
+    <div class="frc26 jb t-card">
       <div class="blktcbk">
-      <h1 class="title">States 2026</h1>
+      <h1 class="title">Worlds 2026</h1>
       </div>
     </div>
 
@@ -44,8 +44,10 @@
       <h3 class="txtc"><span id="team-rank" class="font-semibold text-white">--</span></h3>
   </div>
 
-    <iframe id="livestream" width="560" height="315" src="https://www.youtube.com/embed/jojgMPK-SNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      
+    <!--
+    <iframe id="livestream" width="560" height="315" src="https://www.youtube.com/embed/aBXq7oZ0x00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    -->
+  
       <div id="match-schedule" class="match-list max-h-96 overflow-y-auto pr-2 space-y-3">
         <p class="text-center text-gray-500" id="match-loading-message">Loading match data...</p>
       </div>
@@ -57,10 +59,11 @@
 
 
 
+
       <script>
         // --- API Configuration ---
         const TEAM_KEY = 'frc2851';
-        const EVENT_KEY = '2026micmp3';
+        const EVENT_KEY = '2026---';
         const API_KEY = 'azzCHBd2ABAiRH2wvlw8ThoDllzVGkpGCFnOCKq1XnNFWMyYMnJwWhn5ufNoGb7f';
         const BASE_URL = 'https://www.thebluealliance.com/api/v3';
         const HEADERS = { 'X-TBA-Auth-Key': API_KEY };
@@ -264,7 +267,7 @@
                 // and sort by scheduled time in DESCENDING order (newest on top)
                 const filteredMatches = allMatches
                     .filter(m => m.comp_level !== 'p') // Filter out practice matches
-                    .sort((a, b) => b.time - a.time); // Newest matches (highest time) first
+                    .sort((a, b) => a.time - b.time); // switch a and b to swap order
 
                 if (matchesContainer) {
                     matchesContainer.innerHTML = ''; // Clear loading message
@@ -339,7 +342,7 @@
     </script>
 
       <div id="overview">
-        <p class="award"><i class="bi bi-award-fill"></i> Current Event </p>
+        <p class="award"><i class="bi bi-award-fill"></i> Upcoming Event </p>
       </div>
      <!-- Footer located in /assets/ftr.html -->
   <div id="ftr-placeholder">
