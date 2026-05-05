@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html>
     <head>
@@ -45,9 +44,7 @@
       <h3 class="txtc"><span id="team-rank" class="font-semibold text-white">--</span></h3>
   </div>
 
-    <!--
-    <iframe id="livestream" width="560" height="315" src="https://www.youtube.com/embed/aBXq7oZ0x00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    -->
+    
   
       <div id="match-schedule" class="match-list max-h-96 overflow-y-auto pr-2 space-y-3">
         <p class="text-center text-gray-500" id="match-loading-message">Loading match data...</p>
@@ -268,7 +265,7 @@
                 // and sort by scheduled time in DESCENDING order (newest on top)
                 const filteredMatches = allMatches
                     .filter(m => m.comp_level !== 'p') // Filter out practice matches
-                    .sort((a, b) => a.time - b.time); // switch a and b to swap order
+                    .sort((a, b) => b.time - a.time); // switch a and b to swap order
 
                 if (matchesContainer) {
                     matchesContainer.innerHTML = ''; // Clear loading message
@@ -342,9 +339,6 @@
         window.onload = initDashboard;
     </script>
 
-      <div id="overview">
-        <p class="award"><i class="bi bi-award-fill"></i> Upcoming Event </p>
-      </div>
      <!-- Footer located in /assets/ftr.html -->
   <div id="ftr-placeholder">
   </div>
@@ -356,9 +350,3 @@
 
 </body>
 </html>
-=======
-<meta charset="utf-8">
-<title>Redirecting</title>
-<meta http-equiv="refresh" content="0; /watch">
-<link rel="canonical" href="/watch">
->>>>>>> Stashed changes
