@@ -941,7 +941,7 @@ input {
   background-image: url("/assets/img/comps/frc19-base.jpg") !important;
 }
 .mi19 {
-  /* background-image: url("/assets/img/comps/mi19-base.jpg") !important; */
+  background-image: url("/assets/img/comps/mi19-base.jpg") !important;
 }
 .mimar19 {
   /* background-image: url("/assets/img/comps/mimar19-base.jpg") !important; */
@@ -953,10 +953,33 @@ input {
 .miwat18 {
 background-image: url("/assets/img/comps/miwat18-base.JPG") !important;
 }
+.mitry18 {
+background-image: url("/assets/img/comps/mitry18-base.jpg") !important;
+}
 
 .frc17 {
 background-image: url("/assets/img/comps/frc17-base.jpg") !important;
+}
+.mitry17 {
+background-image: url("/assets/img/comps/mitry17-base.jpg") !important;
+}
 
+.mitry16 {
+background-image: url("/assets/img/comps/mitry16-base.jpg") !important;
+}
+
+.miwat15 {
+background-image: url("/assets/img/comps/miwat15-base.jpg") !important;
+}
+.micen15 {
+background-image: url("/assets/img/comps/micen15-base.jpg") !important;
+}
+
+.mi14 {
+background-image: url("/assets/img/comps/mi14-base.jpg") !important;
+}
+.micen14 {
+background-image: url("/assets/img/comps/micen14-base.jpg") !important;
 }
 
 .frc13 {
@@ -970,6 +993,9 @@ background-image: url("/assets/img/comps/midet13-base.jpg") !important;
 }
 .mitry13 {
 background-image: url("/assets/img/comps/mitry13-base.jpg") !important;
+}
+.miwat13 {
+background-image: url("/assets/img/comps/miwat13-base.jpg") !important;
 }
 /* Related to Events ^ */
 
