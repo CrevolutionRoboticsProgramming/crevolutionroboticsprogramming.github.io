@@ -45,7 +45,7 @@
   --striped-purple: repeating-linear-gradient(-45deg,var(--purple2),var(--purple2) 10px,var(--purple) 10px,var(--purple) 20px);
   --striped-magenta: repeating-linear-gradient(-45deg,var(--magenta2),var(--magenta2) 10px,var(--magenta) 10px,var(--magenta) 20px);
 
-
+  --radius: 15px;
 
 
 
@@ -126,7 +126,7 @@ a {
   font-weight: 900;
   background-color: var(--gold);
   border: 5px solid var(--black3);
-  border-radius: 15px;
+  border-radius: var(--radius);
   font-size: 20px;
   transition: background-color .5s;
 }
@@ -200,7 +200,7 @@ a {
 /* Related to Navbar v */
 #navbar {
   background-color: var(--black3);
-  border-radius: 20px;
+  border-radius: var(--radius);
   width: 350px;
   margin: auto;
   margin-top: 5px;
@@ -239,7 +239,7 @@ a {
 }
 #undernavbar {
   background-color: var(--black2);
-  border-radius: 20px;
+  border-radius: var(--radius);
   width: 350px;
   margin: auto;
   margin-top: 5px;
@@ -390,7 +390,7 @@ footer {
   width: 75%;
   height: 500px;
   background: var(--striped-black-large);
-  border-radius: 25px;
+  border-radius: var(--radius);
   margin: auto;
   margin-top: 100px; margin-bottom: 100px;
   border: 10px solid var(--black3);
@@ -430,7 +430,7 @@ footer {
   font-weight: 900;
   background-color: var(--gold);
   border: 5px solid var(--black3);
-  border-radius: 15px;
+  border-radius: var(--radius);
   font-size: 20px;
   margin-top: 15px;
   transition: background-color .5s;
@@ -517,7 +517,7 @@ footer {
 }
 .evsl2 {
   background: var(--striped-black-large);
-  border-radius: 15px;
+  border-radius: var(--radius);
 }
 .evt {
   color: var(--gold);
@@ -563,7 +563,7 @@ input {
   width: 200px;
   height: 50px;
   border: 5px solid var(--white);
-  border-radius: 15px;
+  border-radius: var(--radius);
   margin: auto;
   margin-top: 20px;
   display: block;
@@ -606,7 +606,7 @@ input {
 @media screen and (max-width:770px) {
   #index-spot {
     width: 100%;
-    border-radius: 0px;
+    border-radius: 0px; /* keep radius */
     height: fit-content;
     background-image: url(/assets/img/robots/2026/b.jpg);
     background-size: cover;
@@ -747,7 +747,7 @@ input {
   width: 80%;
   margin-left: 10%;
   height: 200px;
-  border-radius: 15px;
+  border-radius: var(--radius);
   background-image: var(--striped-black-large2);
   display: flex;
   transition: all .2s ease-in-out;
@@ -765,7 +765,7 @@ input {
   width: 50%;
   background-position: center;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: var(--radius);
   transition: all .2s ease-in-out;
 }
 .eventname {
@@ -794,11 +794,11 @@ input {
 }
 .event-container:hover {
   filter: brightness(150%);
-  border-radius: 5px;
+  border-radius: 5px; /* keep radius */
   width: 85%;
   margin-left: 7.5%;
   .eventpic {
-    border-radius: 5px;
+    border-radius: 5px; /* keep radius */
   }
 }
 
@@ -839,7 +839,7 @@ input {
     height: 200px;
     width: 100%;
     margin: auto;
-    border-radius: 15px;
+    border-radius: var(--radius);
     img {
       margin: auto;
     }
@@ -1046,7 +1046,7 @@ background-image: url("/assets/img/comps/mitry09.jpg") !important;
   width: 70%;
   height: 500px;
   margin-bottom: 50px;
-  border-radius: 25px;
+  border-radius: var(--radius);
 }
 .game {
   height: 150px;
@@ -1203,23 +1203,23 @@ background-image: url("/assets/img/comps/mitry09.jpg") !important;
 }
 .plat {
   background-color: #6c6e86;    
-  border-radius: 30px;
+  border-radius: var(--radius);
 }
 .goldtr {
   background-color: #967c44;
-  border-radius: 30px;
+  border-radius: var(--radius);
 }
 .silv {
   background-color: #463f50;
-  border-radius: 30px;
+  border-radius: var(--radius);
 }
 .brnz {
   background-color: #63432b;
-  border-radius: 30px;
+  border-radius: var(--radius);
 }
 .memb {
   background-color: #6b2323;
-  border-radius: 30px;
+  border-radius: var(--radius);
 }
 #sponsor-pg {
 .row {
@@ -1250,7 +1250,7 @@ background-image: url("/assets/img/comps/mitry09.jpg") !important;
 .card {
   background: #00000000;
   padding : 4px;
-  border-radius: 32px;
+  border-radius: 17px; /* keep 2 more than var(--radius), can't find how to add 2 through css :( */
   position: relative;
   overflow: hidden;
 }
@@ -1263,7 +1263,7 @@ background-image: url("/assets/img/comps/mitry09.jpg") !important;
   left: 0;
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+  border-radius: 50%; /* keep radius */
   background: rgb(255, 255, 255, 0.5);
 }
 .fakeblob {
@@ -1274,7 +1274,7 @@ background-image: url("/assets/img/comps/mitry09.jpg") !important;
   left: 0;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 50%; /* keep radius */
 }
 .inner {
   transition: background 300ms ease-in-out;
@@ -1319,7 +1319,7 @@ filter: drop-shadow(5px 5px #00000066);
   width: 80%;
   margin-left: 10%;
   height: 200px;
-  border-radius: 15px;
+  border-radius: var(--radius);
   background-image: var(--striped-black-large);
   display: flex;
   transition: all .2s ease-in-out;
@@ -1335,7 +1335,7 @@ filter: drop-shadow(5px 5px #00000066);
   width: 50%;
   background-position: center;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: var(--radius);
   transition: all .2s ease-in-out;
 }
 .robotlogo {
@@ -1363,11 +1363,11 @@ filter: drop-shadow(5px 5px #00000066);
 }
 .robot-container:hover {
   filter: brightness(150%);
-  border-radius: 5px;
+  border-radius: 5px; /* keep radius */
   width: 85%;
   margin-left: 7.5%;
   .robotpic {
-    border-radius: 5px;
+    border-radius: 5px; /* keep radius */
   }
 }
 
@@ -1442,7 +1442,7 @@ filter: drop-shadow(5px 5px #00000066);
   img {
   height: 300px;
   width: 400px;
-  border-radius: 25px;
+  border-radius: var(--radius);
 }
 }
 .robot-info-pg {
@@ -1500,7 +1500,7 @@ filter: drop-shadow(5px 5px #00000066);
     height: 200px;
     width: 100%;
     margin: auto;
-    border-radius: 15px;
+    border-radius: var(--radius);
     img {
       margin: auto;
     }
@@ -1524,5 +1524,121 @@ filter: drop-shadow(5px 5px #00000066);
   }
   .robotlgin {
     display: block;
+  }
+}
+
+/* Camps below */
+#camps-tc {
+  background-image: url("/assets/img/menohas.png");
+}
+#uppcamps-tc {
+  background-image: url("/assets/img/menohas.png");
+}
+#lowcamps-tc {
+  background-image: url("/assets/img/menohas.png");
+}
+.campspot {
+  width: 80%;
+  height: auto;
+  background: var(--striped-black-large);
+  margin: auto;
+  display: flex;
+  margin-bottom: 25px;
+  border-radius: var(--radius);
+}
+.camppic {
+  border-radius: 50%;
+  width: 150px !important;
+  height: 150px;
+  background-image: url(/assets/img/menohas.png);
+  background-size: cover;
+  margin-top: 25px !important;
+}
+.camptxt {
+  margin: 25px 25px 25px 25px;
+  max-width: 90%;
+  * {
+    text-align: left;
+    margin-top: 15px;
+  }
+  li {
+    margin-top: 0;
+  }
+}
+.campbtn {
+  width: 150px;
+  border-radius: var(--radius);
+  height: 50px;
+  background-color: var(--gold);
+  font-weight: 800;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+}
+.campleft {
+  margin-bottom: 25px;
+  h6 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+  }
+  * {
+    margin: 10px auto 0 25px;
+  }
+  p {
+    font-size: 15px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  a {
+    margin: 0 !important;
+  }
+}
+.camptimedate {
+  display: block !important;
+  * {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width:990px) {
+  .campspot {
+    display: block;
+    padding: 25px 0 25px 0;
+  }
+  .camppic {
+    margin-top: 0 !important;
+  }
+  .camptxt {
+    max-width: 100%;
+    margin-bottom: 0;
+    h1 {
+      font-size: 35px;
+    }
+  }
+  .campleft {
+    display: block;
+    margin: auto;
+    width: auto;
+    * {
+      text-align: center;
+    }
+  }
+  .campleft {
+    margin: 0 0 25px 0;
+    * {
+      margin: 10px auto auto auto;
+    }
+    div {
+      display: flex;
+    }
+  }
+  .campbtn {
+    margin: inherit auto;
+    display: block;
+  }
+  .camptimedate {
+    margin-top: 0 !important;
   }
 }
