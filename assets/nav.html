@@ -8,6 +8,7 @@
     <p id="nvtxt-history" class="navbartext">History</p>
     <p id="nvtxt-robots" class="navbartext">Robots</p>
     <p id="nvtxt-sponsors" class="navbartext">Sponsors</p>
+    <p id="nvtxt-camps" class="navbartext">Summer Camps</p>
     <a style="opacity: 0%;" id="watchicon"  href="/watch"><img src="/assets/img/icons/watch.svg"></a>
     <a id="menuicon" onclick="myFunction()"><img src="/assets/img/icons/menu.svg"></a>
   </div>
@@ -18,6 +19,7 @@
       <a onmouseover="hoverhistory()" class="navicon-history" href="/history"><img src="/assets/img/icons/history.svg"></a>
       <a onmouseover="hoverrobots()" class="navicon-robots" href="/robots"><img src="/assets/img/icons/robots.svg"></a>
       <a onmouseover="hoversponsors()" class="navicon-sponsors" href="/sponsors"><img src="/assets/img/icons/sponsors.svg"></a>
+      <!--<a onmouseover="hovercamps()" class="navicon-camps" href="/camps"><img src="/assets/img/icons/camps.svg"></a>-->
     </div>
   </div>
 </div>
@@ -34,6 +36,7 @@
   var histor = document.getElementById("nvtxt-history");
   var robots = document.getElementById("nvtxt-robots");
   var sponsors = document.getElementById("nvtxt-sponsors");
+  var camps = document.getElementById("nvtxt-camps");
   var blank = document.getElementById("nvtxt-blank");
   function myFunction() {
     var x = document.getElementById("undernavbar");
@@ -61,6 +64,7 @@
       histor.style.display = "none";
       robots.style.display = "none";
       sponsors.style.display = "none";
+      camps.style.display = "none";
       blank.style.display = "none";
     }
   } 
@@ -70,6 +74,7 @@
     histor.style.display = "none";
     robots.style.display = "none";
     sponsors.style.display = "none";
+    camps.style.display = "none";
     blank.style.display = "none";
   }
   function hoverabout() {
@@ -78,6 +83,7 @@
     histor.style.display = "none";
     robots.style.display = "none";
     sponsors.style.display = "none";
+    camps.style.display = "none";
     blank.style.display = "none";
   }
   function hoverhistory() {
@@ -86,6 +92,7 @@
     histor.style.display = "grid";
     robots.style.display = "none";
     sponsors.style.display = "none";
+    camps.style.display = "none";
     blank.style.display = "none";
   }
   function hoverrobots() {
@@ -94,6 +101,7 @@
     histor.style.display = "none";
     robots.style.display = "grid";
     sponsors.style.display = "none";
+    camps.style.display = "none";
     blank.style.display = "none";
   }
   function hoversponsors() {
@@ -102,6 +110,16 @@
     histor.style.display = "none";
     robots.style.display = "none";
     sponsors.style.display = "grid";
+    camps.style.display = "none";
+    blank.style.display = "none";
+  }
+  function hovercamps() {
+    home.style.display = "none";
+    about.style.display = "none";
+    histor.style.display = "none";
+    robots.style.display = "none";
+    sponsors.style.display = "none";
+    camps.style.display = "grid";
     blank.style.display = "none";
   }
 </script>

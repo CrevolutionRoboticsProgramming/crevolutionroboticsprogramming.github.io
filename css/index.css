@@ -46,6 +46,7 @@
   --striped-magenta: repeating-linear-gradient(-45deg,var(--magenta2),var(--magenta2) 10px,var(--magenta) 10px,var(--magenta) 20px);
 
   --radius: 15px;
+  --radiushover: 5px;
 
 
 
@@ -201,7 +202,7 @@ a {
 #navbar {
   background-color: var(--black3);
   border-radius: var(--radius);
-  width: 350px;
+  width: 400px;
   margin: auto;
   margin-top: 5px;
   position: fixed;
@@ -212,7 +213,7 @@ a {
   height: 80px;
 }
 #navbarlogo {
-  width: 33%;
+  width: 25%;
   img {
     height: 60px;
     margin: 10px;
@@ -220,7 +221,7 @@ a {
 }
 #watchicon {
   display: flex;
-  width: 33%;
+  width: 50%;
   img {
     width: 60px;
     margin: 10px;
@@ -229,7 +230,7 @@ a {
 }
 #menuicon {
   display: flex;
-  width: 33%;
+  width: 25%;
     img {
     height: 60px;
     margin: 10px;
@@ -269,7 +270,7 @@ a {
   }
 }
 .navbartext {
-  width: 33%;
+  width: 50%;
   display: none;
   text-align: center;
   align-items: center;
@@ -280,6 +281,7 @@ a {
 @media screen and (max-width:990px) {
   #navbar {
     bottom: 10px;
+    width: 350px;
   }
   #undernavbar {
     bottom: 10px;
@@ -794,11 +796,11 @@ input {
 }
 .event-container:hover {
   filter: brightness(150%);
-  border-radius: 5px; /* keep radius */
+  border-radius: var(--radiushover);
   width: 85%;
   margin-left: 7.5%;
   .eventpic {
-    border-radius: 5px; /* keep radius */
+    border-radius: var(--radiushover);
   }
 }
 
@@ -1363,11 +1365,11 @@ filter: drop-shadow(5px 5px #00000066);
 }
 .robot-container:hover {
   filter: brightness(150%);
-  border-radius: 5px; /* keep radius */
+  border-radius: var(--radiushover);
   width: 85%;
   margin-left: 7.5%;
   .robotpic {
-    border-radius: 5px; /* keep radius */
+    border-radius: var(--radiushover);
   }
 }
 
@@ -1602,6 +1604,22 @@ filter: drop-shadow(5px 5px #00000066);
   }
 }
 
+#campsindex {
+  display: flex;
+  width: 100%;
+}
+.camplevel {
+  display: block;
+  width: 49%;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+  border-radius: var(--radius);
+  transition: all .2s ease-in-out;
+}
+.camplevel:hover {
+  width: 50%;
+  border-radius: var(--radiushover);
+}
 @media screen and (max-width:990px) {
   .campspot {
     display: block;
@@ -1640,5 +1658,14 @@ filter: drop-shadow(5px 5px #00000066);
   }
   .camptimedate {
     margin-top: 0 !important;
+  }
+  #campsindex {
+    display: block;
+  }
+  .camplevel {
+    width: 90%;
+  }
+  .camplevel:hover {
+    width: 95%;
   }
 }
