@@ -1570,10 +1570,10 @@ filter: drop-shadow(5px 5px #00000066);
   background-image: url("/assets/img/menohas.png");
 }
 #uppcamps-tc {
-  background-image: url("/assets/img/menohas.png");
+  background-image: url("/assets/img/carousel/2026-teamimg.jpg");
 }
 #lowcamps-tc {
-  background-image: url("/assets/img/menohas.png");
+  background-image: url("/assets/img/carousel/2025-teamimg.jpg");
 }
 .campspot {
   width: 80%;
@@ -1588,7 +1588,7 @@ filter: drop-shadow(5px 5px #00000066);
   border-radius: 50%;
   width: 150px !important;
   height: 150px;
-  background-image: url(/assets/img/menohas.png);
+  background-image: url(/assets/img/img/johnbot.JPG);
   background-size: cover;
   margin-top: 25px !important;
 }
