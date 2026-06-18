@@ -1592,6 +1592,15 @@ filter: drop-shadow(5px 5px #00000066);
   background-size: cover;
   margin-top: 25px !important;
 }
+.cmp-rk {
+  background-image: url(/assets/img/img/rocket.svg);
+}
+.cmp-3d {
+  background-image: url(/assets/img/img/3days.svg);
+}
+.cmp-fe {
+  background-image: url(/assets/img/img/future.svg);
+}
 .camptxt {
   margin: 25px 25px 25px 25px;
   max-width: 90%;
@@ -1713,6 +1722,7 @@ filter: drop-shadow(5px 5px #00000066);
   padding: 10px;
   background: var(--striped-gold);
   border-radius: var(--radius);
+  margin-bottom: 25px;
 }
 .outreachevent {
   width: 90%;
