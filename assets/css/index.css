@@ -194,6 +194,7 @@ a {
   border: none;
   font-size: 20px;
   transition: all 200ms;
+  color: var(--black);
 }
 .crevbtn:hover {
   background-color: var(--lightgold);
@@ -267,7 +268,8 @@ a {
   }
 }
 #undernavbar {
-  background-color: var(--black2);
+  background-color: #000000aa;
+  backdrop-filter: blur(10px);
   border-radius: var(--radius);
   width: 350px;
   margin: auto;
@@ -462,18 +464,7 @@ footer {
   width: 50%;
   height: 50px;
   margin-left: 25%; margin-right: 25%;
-  font-weight: 900;
-  background-color: var(--gold);
-  border: 5px solid var(--black3);
-  border-radius: var(--radius);
-  font-size: 20px;
-  margin-top: 15px;
-  transition: background-color .5s;
 }
-#index-spot-more:hover {
-  background-color: #e4d097;
-}
-
 #events-plate {
   margin-left: 10%;
   width: 80%;
@@ -486,8 +477,7 @@ footer {
   display: none;
 }
 .events-slot {
-  display: flex; 
-
+  display: flex;
 }
 #events-numbers {
   display: flex;  
@@ -574,35 +564,6 @@ footer {
   color: var(--lightblue);
 }
 
-
-#contact-plate {
-  background: var(--striped-black-large);
-  margin-bottom: 150px;
-  padding-bottom: 50px;
-}
-.form-floating {
-width: 60%;
-margin: auto;
-min-width: 350px;
-}
-label {
-  color: var(--black2);
-  font-weight: 900;
-}
-input {
-  filter: drop-shadow(0px 0px 20pxs);
-}
-#form-submit {
-  background-color: var(--black2);
-  color: var(--white);
-  width: 200px;
-  height: 50px;
-  border: 5px solid var(--white);
-  border-radius: var(--radius);
-  margin: auto;
-  margin-top: 20px;
-  display: block;
-}
 #donate-plate {
   display: flex;
   width: 100%;
